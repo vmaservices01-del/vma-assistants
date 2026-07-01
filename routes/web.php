@@ -34,7 +34,7 @@ Route::post('/site-password', function (Request $request) {
 
         session(['frontend_unlocked' => true]);
 
-        return redirect()->intended('/');
+        return redirect(session('url.intended', '/'));
     }
 
     return back()->withErrors([
