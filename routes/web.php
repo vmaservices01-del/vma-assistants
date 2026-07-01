@@ -30,7 +30,7 @@ Route::post('/site-password', function (Request $request) {
         'password' => 'required'
     ]);
 
-    if ($request->password === env('FRONTEND_PASSWORD')) {
+    if ($request->password === "12345") {
 
         session(['frontend_unlocked' => true]);
 
