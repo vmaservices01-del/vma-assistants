@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Define the font stack as a variable */
+    --font-open-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    
+    /* Apply it to the standard --font variable to match your screenshot system */
+    --font: var(--font-open-sans);
+}
+
+@layer base {
+    html {
+        /* This ensures it applies to the absolute root */
+        font-family: var(--font);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.animate-float {
+    animation: float 5s ease-in-out infinite;
+}
