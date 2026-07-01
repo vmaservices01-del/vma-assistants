@@ -20,27 +20,27 @@ use Illuminate\Http\Request;
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/site-password', function () {
-    return view('site-password');
-})->name('frontend.password');
+// Route::get('/site-password', function () {
+//     return view('site-password');
+// })->name('frontend.password');
 
-Route::post('/site-password', function (Request $request) {
+// Route::post('/site-password', function (Request $request) {
 
-    $request->validate([
-        'password' => 'required'
-    ]);
+//     $request->validate([
+//         'password' => 'required'
+//     ]);
 
-    if ($request->password === "12345") {
+//     if ($request->password === "12345") {
 
-        session(['frontend_unlocked' => true]);
+//         session(['frontend_unlocked' => true]);
 
-        return redirect(session('url.intended', '/'));
-    }
+//         return redirect(session('url.intended', '/'));
+//     }
 
-    return back()->withErrors([
-        'password' => 'Incorrect password.'
-    ]);
-})->name('frontend.password.submit');
+//     return back()->withErrors([
+//         'password' => 'Incorrect password.'
+//     ]);
+// })->name('frontend.password.submit');
 
 
 Route::middleware('auth')->group(function () {
@@ -91,7 +91,7 @@ Route::prefix('backend')->name('backend.')->middleware(['auth'])->group(function
 require __DIR__.'/auth.php';
 
 
-Route::middleware('frontend.password')->group(function () {
+// Route::middleware('frontend.password')->group(function () {
     // Redirect /home to /
     Route::permanentRedirect('/home', '/');
 
@@ -109,4 +109,4 @@ Route::middleware('frontend.password')->group(function () {
 
     Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
-});
+// });
