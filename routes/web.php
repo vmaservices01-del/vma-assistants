@@ -8,39 +8,11 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Backend\PostController; 
 use App\Http\Controllers\Backend\MediaController; 
 use App\Http\Controllers\Backend\FormSubmissionController;
-use App\Http\Middleware\FrontendPasswordMiddleware;
+ use App\Http\Controllers\FrontendPasswordController;
 use Illuminate\Support\Facades\Route; 
 use Illuminate\Http\Request;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// Route::get('/site-password', function () {
-//     return view('site-password');
-// })->name('frontend.password');
-
-// Route::post('/site-password', function (Request $request) {
-
-//     $request->validate([
-//         'password' => 'required'
-//     ]);
-
-//     if ($request->password === "12345") {
-
-//         session(['frontend_unlocked' => true]);
-
-//         return redirect(session('url.intended', '/'));
-//     }
-
-//     return back()->withErrors([
-//         'password' => 'Incorrect password.'
-//     ]);
-// })->name('frontend.password.submit');
 
 
 Route::middleware('auth')->group(function () {
@@ -90,23 +62,29 @@ Route::prefix('backend')->name('backend.')->middleware(['auth'])->group(function
 
 require __DIR__.'/auth.php';
 
+// 1. Password Prompt Routes (Must be outside the middleware group)
+Route::get('/enter-password', [FrontendPasswordController::class, 'showForm'])->name('frontend.password.form');
+Route::post('/enter-password', [FrontendPasswordController::class, 'verify'])->name('frontend.password.verify');
 
-// Route::middleware('frontend.password')->group(function () {
-    // Redirect /home to /
-    Route::permanentRedirect('/home', '/');
+// 2. Protect Frontend Routes with the Middleware Group
+Route::middleware(['frontend.password'])->group(function () {
 
-    // Your actual homepage route
-    Route::get('/', [PageController::class, 'homepage'])->name('home');
-    // Blog Routes
-    Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+// Redirect /home to /
+Route::permanentRedirect('/home', '/');
 
-    // Service Routes
-    Route::get('/services/{slug}', [PageController::class, 'showService'])->name('services.show');
+// Your actual homepage route
+Route::get('/', [PageController::class, 'homepage'])->name('home');
+// Blog Routes
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+
+// Service Routes
+Route::get('/services/{slug}', [PageController::class, 'showService'])->name('services.show');
 
 
 
-    Route::get('/{slug}', [PageController::class, 'show'])->name('page.show');
+Route::get('/{slug}', [PageController::class, 'show'])->name('page.show');
 
-    Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
-// });
+});
+
