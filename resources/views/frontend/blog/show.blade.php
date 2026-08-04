@@ -95,11 +95,11 @@
                         <p class="text-slate-500 text-sm mb-8 leading-relaxed">
                             Talk to our experts about scaling your administrative capacity with remote clinical talent.
                         </p>
-                        <a href="#" class="block w-full py-4 bg-indigo-600 text-white text-center font-bold rounded-xl hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
+                        <a href="/contact" class="block w-full py-4 bg-indigo-600 text-white text-center font-bold rounded-xl hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
                             Book a Demo
                         </a>
                         <div class="mt-4 text-center">
-                            <a href="#" class="text-xs text-slate-400 hover:text-indigo-600 font-medium transition-colors">Pricing & ROI Calculator</a>
+                            <a href="/" class="text-xs text-slate-400 hover:text-indigo-600 font-medium transition-colors">Pricing & ROI Calculator</a>
                         </div>
                     </div>
 
