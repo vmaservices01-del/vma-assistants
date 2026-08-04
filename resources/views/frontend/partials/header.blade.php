@@ -146,7 +146,8 @@
                 <!-- Vertical Dropdown Container (Matches Screenshot Layout) -->
                 <div x-show="openMenu === 'Our Expertise'" 
                      x-cloak 
-                     class="absolute left-0 top-full mt-0 w-[340px] bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 p-3 z-50 space-y-1">
+                     class="absolute left-0 top-full mt-0 w-80 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 p-3 z-50 space-y-1"
+                     style="width: 340px;">
                     
                     <!-- Dental Billing Services -->
                     <a href="{{ url('dental-billing') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item">
