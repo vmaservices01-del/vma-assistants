@@ -24,26 +24,29 @@
     <div class="relative z-10 max-w-4xl mx-auto text-center">
         <!-- Dynamic Badge -->
         <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20 animate-fade-in">
-            ✦ Excellent on Trustpilot
+            TRUSTED BY HEALTHCARE TEAMS
         </span>
 
         <h1 class="text-2xl md:text-3xl lg:text-5xl max-w-2xl  mx-auto font-extrabold text-white leading-[1.1] tracking-tight mb-8 text-balance">
-            Hire a Remote Medical <br class="hidden md:block"> 
+           Hire a Virtual <br class="hidden md:block"> 
             <span class="text-white">Administrative Assistant for Your Practice</span>
         </h1>
 
         <p class="max-w-2xl mx-auto text-lg text-slate-300 mb-12 text-[16px]">
-            Free-up time and streamline your practice with a remote medical administrative assistant who keeps things on-track.
+            Free up your time with a reliable virtual administrative assistant, trained to support healthcare workflows. Streamline operations, reduce workload, and keep your practice running smoothly.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <button class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20">
-                Hire Now 
+    
+            <a href="#form" class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20 decoration-transparent">
+                Hire Now
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
-            </button>
-            <button class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg">
-                Explore Pricing
-            </button>
+            </a>
+
+            <a href="/contact" class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg flex items-center justify-center decoration-transparent">
+                View Pricing
+            </a>
+            
         </div>
 
         <!-- Trust Checklist Bar (Dark) -->
@@ -53,21 +56,21 @@
                     <div class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
                         <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <span class="text-sm font-medium text-slate-300 tracking-wide">No payment until you hire</span>
+                    <span class="text-sm font-medium text-slate-300 tracking-wide">No payment until you onboard</span>
                 </div>
                 <div class="hidden md:block w-px h-4 bg-white/10"></div>
                 <div class="flex items-center gap-2.5">
                     <div class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
                         <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <span class="text-sm font-medium text-slate-300 tracking-wide">BAA signed before you hire</span>
+                    <span class="text-sm font-medium text-slate-300 tracking-wide">HIPAA compliant virtual assistant services</span>
                 </div>
                 <div class="hidden md:block w-px h-4 bg-white/10"></div>
                 <div class="flex items-center gap-2.5">
                     <div class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
                         <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <span class="text-sm font-medium text-slate-300 tracking-wide">HIPAA & SOC 2 compliant</span>
+                    <span class="text-sm font-medium text-slate-300 tracking-wide">Flexible, scalable support</span>
                 </div>
             </div>
         </div>
@@ -75,26 +78,39 @@
 </section>
 
 <!-- SECTION 2: LOGO TICKER -->
-<section class="max-w-6xl mx-auto py-14 bg-white border-b border-slate-50">
+<section class="py-12 bg-white" id="next-section">
+    <!-- Header Text -->
     <div class="text-center mb-10">
-        <h2 class="text-xs font-bold text-[13px] leading-relaxed text-gray-400 tracking-[0.2em] uppercase">
-            Trusted by 1,000+ Healthcare & Insurance Organizations
+        <h2 class="text-xs font-bold text-[13px] leading-relaxed text-gray-400 tracking-[0.2em] uppercase capitalize">
+            TRUSTED BY HEALTHCARE PROVIDERS AND MEDICAL ORGANIZATIONS
         </h2>
     </div>
+
+    <!-- Container - Width limited so only 5 fit at once -->
     <div class="group w-full max-w-[1200px] mx-auto overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        
         <ul class="flex items-center animate-infinite-scroll">
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Northwest_Dental.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/DHR-Health.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Navaderm.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/Allied_Physicians.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Simmerer_Insurance.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <!-- Duplicate for loop -->
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Northwest_Dental.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/DHR-Health.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Navaderm.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/Allied_Physicians.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Simmerer_Insurance.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
+            <!-- Set items to 1/5th width (20% each) to ensure 5 show at once -->
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/D0IWUCKlfIN2B7ru7kkDF36htzoi3kJjiyD0Gn2X.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/WAc7RiBMw34XQirhMT373U9xfekN8W5KXsxZBpCr.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/BrLQUqJbpIWzf83XIopM6zKU1dUxravZWY94zpjn.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/TcR3QfnKhnHAJyAq3NOlDuy7Sq1oj4G0owO50DLR.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/Cs9xaywMjCMdqJELzjw7rWuu2nbEUvAMjKsuYkLc.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/rNJ6gBO6TrKIwDqcMgHJaWrAN4UBWBMK7scB0Bxg.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+
+            <!-- Set items to 1/5th width (20% each) to ensure 5 show at once -->
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/D0IWUCKlfIN2B7ru7kkDF36htzoi3kJjiyD0Gn2X.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/WAc7RiBMw34XQirhMT373U9xfekN8W5KXsxZBpCr.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/BrLQUqJbpIWzf83XIopM6zKU1dUxravZWY94zpjn.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/TcR3QfnKhnHAJyAq3NOlDuy7Sq1oj4G0owO50DLR.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/Cs9xaywMjCMdqJELzjw7rWuu2nbEUvAMjKsuYkLc.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/rNJ6gBO6TrKIwDqcMgHJaWrAN4UBWBMK7scB0Bxg.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
         </ul>
+    </div>
+
+    <!-- Subtext -->
+    <div class="text-center mt-10 px-6">
+        <p class="text-gray-500 text-[15px] leading-relaxed max-w-lg mx-auto">Built for efficiency, accuracy, and speed to help you deliver better care without the administrative burden.</p>
     </div>
 </section>
 
@@ -103,47 +119,52 @@
     <div class="max-w-6xl mx-auto px-6">
         <div class="text-center max-w-4xl mx-auto mb-16">
             <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-6 border border-[var(--primary)]/20">
-                Our Expertise
+                What we Offer
             </span>
-            <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-4 tracking-tight">What Does a Remote Medical Receptionist Do?</h2>
-            <p class="text-slate-500 text-lg">Role-specific medical professionals, trained for regulated environments.</p>
+            <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-4 tracking-tight">What Does a Virtual Administrative Assistant Do?</h2>
+            <p class="text-slate-500 text-lg">Role-trained professionals providing reliable medical office administrative support services tailored for healthcare environments.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             @php 
                 $cards = [
                     [
-                        'title' => 'Seamless Call Routing', 
+                        'title' => 'Appointment Scheduling', 
+                        'desc' => 'Efficient virtual assistant for appointment scheduling to manage calendars and reduce no-shows.',
                         'icon' => 'M 22 16.92 v 3 a 2 2 0 0 1 -2.18 2 a 19.79 19.79 0 0 1 -8.63 -3.07 a 19.5 19.79 0 0 1 -6 -6 a 19.79 19.79 0 0 1 -3.07 -8.67 A 2 2 0 0 1 4.11 2 h 3 a 2 2 0 0 1 2 1.72 a 12.06 12.06 0 0 0 .57 2.4 a 2 2 0 0 1 -.45 2.11 L 8.09 9.91 a 16 16 0 0 0 6 6 l 1.27 -1.27 a 2 2 0 0 1 2.11 -.45 a 12.06 12.06 0 0 0 2.4 .57 A 2 2 0 0 1 22 16.92 z' // Phone
                     ],
                     [
-                        'title' => 'Smart Scheduling', 
+                        'title' => 'Call Coordination', 
+                        'desc' => 'Seamless communication support for patient calls, follow-ups, and daily coordination.',
                         'icon' => 'M 8 2 v 4 M 16 2 v 4 M 3 10 h 18 M 5 4 h 14 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 z' // Calendar
                     ],
                     [
-                        'title' => 'Instant Answers', 
+                        'title' => 'Administrative Documentation', 
+                        'desc' => 'Accurate handling of records and reports as part of remote admin assistant services.',
                         'icon' => 'M 21 15 a 2 2 0 0 1 -2 2 H 7 l -4 4 V 5 a 2 2 0 0 1 2 -2 h 14 a 2 2 0 0 1 2 2 z' // Chat Bubble
                     ],
                     [
-                        'title' => 'Insurance Made Easy', 
+                        'title' => 'Insurance & Billing Support', 
+                        'desc' => 'Assistance with basic billing processes and insurance coordination workflows.',
                         'icon' => 'M 12 22 s 8 -4 8 -10 V 5 l -8 -3 -8 3 v 7 c 0 6 8 10 8 10 z M 9 11 l 2 2 4 -4' // Shield Check
                     ],
                     [
-                        'title' => 'Hassle-Free Billing', 
+                        'title' => 'Workflow Management', 
+                        'desc' => 'Organized support to keep your operations running efficiently without delays.',
                         'icon' => 'M 12 22 a 10 10 0 1 0 0 -20 a 10 10 0 0 0 0 20 z M 12 6 v 12 M 15 8 H 10 a 2 2 0 0 0 0 4 h 4 a 2 2 0 0 1 0 4 H 9' // Symmetrical Circle Dollar
                     ]
                 ];
             @endphp
 
             @foreach($cards as $card)
-            <div class="group bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
+            <div class="group bg-white px-2 py-4 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
                 <div class="w-14 h-14 bg-[var(--primary)] rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-[var(--primary)]/20 group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ $card['icon'] }}"></path>
                     </svg>
                 </div>
                 <h3 class="text-[16px] font-bold text-slate-900 mb-3 px-2 group-hover:text-[var(--primary)] transition-colors">{{ $card['title'] }}</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">Efficient support for every patient interaction.</p>
+                <p class="text-sm text-slate-500 leading-relaxed">{{ $card['desc'] }}.</p>
             </div>
             @endforeach
         </div>
@@ -158,10 +179,10 @@
                 What's Included
             </span>
             <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-2 tracking-tight">
-                One flat fee. <span class="text-[var(--primary)]">Everything below.</span>
+                Simple Pricing. <span class="text-[var(--primary)]">Complete Support.</span>
             </h2>
             <p class="text-slate-500 text-md max-w-2xl mx-auto leading-relaxed">
-                We wrap your talent in the enterprise infrastructure that powers 1,000+ Edge team members.
+                VMA provides complete affordable virtual assistant services designed to support healthcare providers with reliable infrastructure and trained professionals.
             </p>
         </div>
 
@@ -169,19 +190,23 @@
             @php 
                 $fees = [
                     [
-                        'title' => 'Equipment & IT', 
+                        'title' => 'Administrative Support', 
+                        'desc' => 'Fully managed onboarding for your dedicated virtual assistant for healthcare.',
                         'icon' => 'M 4 21 h 16 a 2 2 0 0 0 2 -2 V 5 a 2 2 0 0 0 -2 -2 H 4 a 2 2 0 0 0 -2 2 v 14 a 2 2 0 0 0 2 2 z M 2 10 h 20 M 6 6 h 1 M 10 6 h 1 M 14 6 h 1' // Monitor UI Screen
                     ],
                     [
                         'title' => 'Payroll & Benefits', 
+                        'desc' => 'Structured workflows to ensure consistent delivery and efficiency.',
                         'icon' => 'M 12 22 a 10 10 0 1 0 0 -20 a 10 10 0 0 0 0 20 z M 12 6 v 12 M 15 8 H 10 a 2 2 0 0 0 0 4 h 4 a 2 2 0 0 1 0 4 H 9' // Symmetrical Circle Dollar
                     ],
                     [
                         'title' => 'Security & Compliance', 
+                        'desc' => 'HIPAA-ready processes for secure remote healthcare administrative services.',
                         'icon' => 'M 19 11 H 5 a 2 2 0 0 0 -2 2 v 7 a 2 2 0 0 0 2 2 h 14 a 2 2 0 0 0 2 -2 v -7 a 2 2 0 0 0 -2 -2 z M 7 11 V 7 a 5 5 0 0 1 10 0 v 4' // Padlock Security
                     ],
                     [
                         'title' => 'Legal & Contracts', 
+                        'desc' => 'Simple agreements and ongoing support for smooth operations.',
                         'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 8 12 h 8 M 8 16 h 5 M 16 15 l 3 -3 l -2 -2 l -3 3 v 2 h 2 z' // Contract Document with Signature Pen
                     ]
                 ];
@@ -193,7 +218,7 @@
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $fee['icon'] }}"></path></svg>
                 </div>
                 <h3 class="text-[18px] font-bold text-slate-900 mb-4">{{ $fee['title'] }}</h3>
-                <p class="text-sm text-slate-500 leading-relaxed mb-8 italic">Full enterprise-grade infrastructure managed by our team.</p>
+                <p class="text-sm text-slate-500 leading-relaxed mb-8 italic">{{ $fee['desc'] }}</p>
                 <span class="mt-auto inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold border border-emerald-100">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     Included
@@ -225,14 +250,14 @@
             <!-- Text Column (Spans 7) -->
             <div class="lg:col-span-7 order-2 lg:order-1">
                 <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-8 tracking-tight leading-[1.15] text-balance">
-                    Reduce Costs, <span class="text-[var(--primary)]">Elevate Care</span>
+                    Spend less. <span class="text-[var(--primary)]">Care more. </span>
                 </h2>
                 <div class="space-y-6 max-w-2xl">
                     <p class="text-slate-500 text-[16px] leading-relaxed">
-                        Running a medical practice is tough enough without the added strain of time-consuming daily operations. That's time better spent on patient care or growing your practice.
+                        Running a busy healthcare practice already demands your full attention. Let our virtual office assistant professionals manage scheduling, follow-ups, and administrative coordination so your team can focus more on patient care.
                     </p>
                     <p class="text-slate-500 text-[16px] leading-relaxed">
-                        Delegate all back-office & administrative tasks to your remote hires. Spend time where it matters most. With Edge, you get efficiency, speed, and a trusted partner who understands your needs.
+                        With outsourced administrative support, you gain efficiency, flexibility, and trusted remote healthcare administrative services tailored to your workflow.
                     </p>
                 </div>
             </div>
@@ -271,14 +296,14 @@
             <!-- Text Column (Spans 7) -->
             <div class="lg:col-span-7 order-2 lg:order-2">
                 <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-8 tracking-tight leading-[1.15] text-balance">
-                    Doctor-Patient Privacy? <span class="text-[var(--primary)]">Perfected.</span>
+                    Protected Privacy <span class="text-[var(--primary)]">at every step.</span>
                 </h2>
                 <div class="space-y-6 max-w-2xl">
                     <p class="text-slate-500 text-[16px] leading-relaxed">
-                        Consultations are often deeply personal. Your patients can feel anxious or uncomfortable with an extra person in the room. The presence of someone else can feel intrusive.
+                        Patients value privacy during consultations. Our HIPAA compliant virtual assistant services work remotely behind the scenes, helping clinics maintain patient comfort and confidentiality.
                     </p>
                     <p class="text-slate-800 text-[16px] leading-relaxed font-semibold">
-                        Our remote medical talent remains off-site & off-screen, allowing patients to maintain their privacy & comfort during their visit.
+                        From appointment scheduling to medical office administrative support services, VMA team keeps your operations organized while your providers stay focused on care.
                     </p>
                 </div>
             </div>
@@ -287,39 +312,77 @@
     </div>
 </section>
 
-<section class="px-6 py-20 bg-gray-50 antialiased">
-    <div class="max-w-6xl mx-auto">
+<section class="max-w-6xl mx-auto px-6 py-20 bg-white antialiased">
+    <div class="max-w-7xl mx-auto">
         
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20">
-                EHR Certifications
+                REMOTE ADMIN ASSISTANT SERVICES
             </span>
-            <h2 class="text-[#111827] text-[26px] md:text-[36px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
-                EHR Support & Management for the plateforms <span class="text-[var(--primary)]">you already run</span>
+            <h2 class="text-[#111827] text-[30px] md:text-[42px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
+              Administrative Support for the Platforms <span class="text-[var(--primary)]">You Already Use</span>
             </h2>
             <p class="text-black text-[14px] md:text-[16px] leading-relaxed max-w-2xl mx-auto font-normal">
-                Our 4-week training program, Edge Edu, covers workflows, documentation templates, and compliance protocols for healthcare systems.
+                Our dedicated virtual assistant for healthcare teams is trained to work with the systems your practice already depends on.
             </p>
         </div>
 
-        <!-- EHR Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            @php
-                $ehrList = [
-                    ['title' => 'Epic', 'desc' => 'MyChart, Orders, InBasket, Haiku', 'icon' => 'building'],
-                    ['title' => 'athenahealth', 'desc' => 'athenaClinicals, Collector, Communicator', 'icon' => 'building'],
-                    ['title' => 'eClinicalWorks', 'desc' => 'Scheduling, billing, patient portal', 'icon' => 'building'],
-                    ['title' => 'CareCloud', 'desc' => 'Practice mgmt, RCM, telehealth', 'icon' => 'building'],
-                    ['title' => 'Tebra (Kareo)', 'desc' => 'Billing, scheduling, patient engage', 'icon' => 'building'],
-                    ['title' => 'RingCentral', 'desc' => 'Patient communications, VOIP', 'icon' => 'phone'],
-                    ['title' => 'Availity / NaviNet', 'desc' => 'Eligibility, prior auth, claims', 'icon' => 'lock'],
-                    ['title' => 'Phreesia', 'desc' => 'Digital intake, payments, analytics', 'icon' => 'chart'],
-                ];
-            @endphp
+        @php
+            $ehrList = [
+                // EHRs / Practice Management (1-15)
+                ['title' => 'ICA Notes', 'desc' => 'Behavioral health specific charting, clinical notes, and specialized therapy templates.', 'icon' => 'building'],
+                ['title' => 'Advanced MD', 'desc' => 'Cloud-based clinical charting, practice management, and automated medical billing.', 'icon' => 'building'],
+                ['title' => 'NextGen', 'desc' => 'Unified clinical workflows, electronic prescribing, and integrated patient portal access.', 'icon' => 'building'],
+                ['title' => 'Progno CIS', 'desc' => 'Customizable clinical documentation, telehealth modules, and patient communication logs.', 'icon' => 'building'],
+                ['title' => 'CareCloud', 'desc' => 'Modern cloud charting, appointment booking, and patient engagement dashboards.', 'icon' => 'building'],
+                ['title' => 'Epic', 'desc' => 'Enterprise charting, Order Entry, InBasket message routing, and Haiku mobile clinical tools.', 'icon' => 'building'],
+                ['title' => 'AllScripts', 'desc' => 'Clinical documentation, active problem lists, e-prescribing, and chart reviews.', 'icon' => 'building'],
+                ['title' => 'Kareo', 'desc' => 'Independent clinic clinical charting, billing codes, and patient communications.', 'icon' => 'building'],
+                ['title' => 'Athena Health', 'desc' => 'Unified cloud-native EHR, patient scheduling, and automated RCM billing cycles.', 'icon' => 'building'],
+                ['title' => 'Cerner', 'desc' => 'Hospital-grade inpatient clinical charting, database queries, and medication administration.', 'icon' => 'building'],
+                ['title' => 'Medisoft Clinical', 'desc' => 'EHR charting integrated directly with specialized independent clinic billing managers.', 'icon' => 'building'],
+                ['title' => 'Office Ally', 'desc' => 'High-volume insurance eligibility verification, clearinghouse submissions, and billing portals.', 'icon' => 'lock'],
+                ['title' => 'eClinicalWorks', 'desc' => 'Healow patient portal management, clinical charting, and structured encounter templates.', 'icon' => 'building'],
+                ['title' => 'Amazing Charts', 'desc' => 'Clinician-focused, rapid encounter documenting, lab tracking, and e-prescriptions.', 'icon' => 'chart'],
+                ['title' => 'Practice Fusion', 'desc' => 'Streamlined cloud medical records, appointment tracking, and lab integration.', 'icon' => 'building'],
 
+                // Clinical, Specialty & Hospital Systems (16-20)
+                ['title' => 'Altera', 'desc' => 'Scalable enterprise electronic health records, inpatient charting, and clinic management.', 'icon' => 'building'],
+                ['title' => 'CollaborateMD', 'desc' => 'High-speed medical billing claims, billing diagnostics, and practice scheduling.', 'icon' => 'lock'],
+                ['title' => 'eMDs', 'desc' => 'Comprehensive multi-specialty charting, billing, and direct laboratory interfaces.', 'icon' => 'building'],
+                ['title' => 'Evident', 'desc' => 'Community hospital clinical charting, emergency logs, and inpatient data entry.', 'icon' => 'building'],
+                ['title' => 'FreeMED', 'desc' => 'Flexible, open-source clinical records, custom databases, and treatment plan tracking.', 'icon' => 'building'],
+
+                // Clinical Systems & Tools (21-25)
+                ['title' => 'GE Healthcare', 'desc' => 'Advanced diagnostic imaging data integration, clinical scheduling, and charting.', 'icon' => 'chart'],
+                ['title' => 'Greenway Health', 'desc' => 'Prime Suite clinical charting, workflow tracking, and lab order routing.', 'icon' => 'building'],
+                ['title' => 'MEDITECH', 'desc' => 'Integrated hospital records database, bedside charting, and patient data entry.', 'icon' => 'building'],
+                ['title' => 'Medgen', 'desc' => 'Outpatient clinical documentation, structured SOAP notes, and reporting panels.', 'icon' => 'building'],
+                ['title' => 'MEDHOST', 'desc' => 'Emergency department tracking, inpatient clinical flow sheets, and financial records.', 'icon' => 'building'],
+
+                // Billing / Eligibility / Security Portals (26-30)
+                ['title' => 'Mitochon Systems', 'desc' => 'Cloud EMR, secure Health Information Exchange (HIE), and patient data tracking.', 'icon' => 'lock'],
+                ['title' => 'NextGen Healthcare', 'desc' => 'Specialized billing cycle management, insurance claims processing, and portal management.', 'icon' => 'lock'],
+                ['title' => 'NueMD', 'desc' => 'Secure insurance eligibility checks, billing claims tracking, and scheduling tools.', 'icon' => 'lock'],
+                ['title' => 'OpenEMR', 'desc' => 'Open-source patient charts, custom encounter forms, and integrated billing cycles.', 'icon' => 'chart'],
+                ['title' => 'OpenMRS', 'desc' => 'Global health metadata-driven records platform, patient tracking, and research charting.', 'icon' => 'chart'],
+
+                // Enterprise, Intake & Analytics (31-33)
+                ['title' => 'Oracle Health', 'desc' => 'Hospital database administration, system analytics, and clinical operations charting.', 'icon' => 'chart'],
+                ['title' => 'Webchart', 'desc' => 'Web-native clinical documentation, occupational health portals, and database search.', 'icon' => 'chart'],
+                ['title' => 'ZipChart EMR', 'desc' => 'Rapid, tablet-optimized clinical documentation, custom macros, and encounter logs.', 'icon' => 'chart'],
+            ];
+
+            // Shuffles the array randomly on each page render
+            shuffle($ehrList);
+        @endphp
+
+        <!-- EHR Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="ehr-grid">
             @foreach($ehrList as $ehr)
-                <div class="bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group">
+                <!-- Hide cards starting from index 8 initially -->
+                <div class="ehr-card bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group {{ $loop->index >= 8 ? 'hidden' : '' }}">
                     
                     <!-- Dynamic Icon Container -->
                     <div class="mb-6 text-[var(--primary)] transition-transform duration-300 group-hover:scale-110">
@@ -345,17 +408,41 @@
             @endforeach
         </div>
 
-        <!-- Call to Action Button -->
-        <div class="mt-20 text-center">
-            <a href="#" 
-               class="inline-block px-12 py-4 rounded-2xl text-white font-bold text-[17px] shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
-               style="background-color: var(--primary);">
-                Learn More
-            </a>
+        <!-- Show More Button -->
+        <div class="text-center mt-12">
+            <button id="show-more-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+                Show More Platforms
+            </button>
         </div>
 
     </div>
 </section>
+
+<!-- Vanilla JS Progressive Loader -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const increment = 4; // Reveal 4 cards on each click
+
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden cards
+                const hiddenCards = document.querySelectorAll('.ehr-card.hidden');
+
+                // Reveal up to the next 4 cards
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
+
+                // If no more hidden cards exist, hide the button completely
+                if (document.querySelectorAll('.ehr-card.hidden').length === 0) {
+                    showMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
+
 
 <section class="py-20 px-6 bg-white antialiased">
     <div class="max-w-6xl mx-auto">
@@ -363,7 +450,7 @@
         <!-- Header Section -->
         <div class="text-center mb-20">
             <h2 class="text-[#111827]  text-[26px] md:text-[36px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
-                Why Hire With Edge
+                Why Hire With VMA Assistants
             </h2>
             <p class="text-black text-[14px] md:text-[16px] leading-relaxed max-w-md mx-auto font-normal">
                 Solve your most pressing workforce challenges with fast, easy access to bilingual, trained talent.
@@ -375,28 +462,28 @@
             @php
                 $features = [
                     [
-                        'title' => 'Top-Tier Talent',
-                        'desc' => 'With a 2-4% acceptance rate (depending on role), our talent is rigorously vetted, expertly trained, and ready to excel from day one.'
+                        'title' => 'Healthcare-Focused Support',
+                        'desc' => 'Experienced virtual administrative assistant professionals trained for clinics and medical offices.'
                     ],
                     [
-                        'title' => 'Risk-Free Hiring',
-                        'desc' => 'No fees, no commitments—you only pay when you\'ve found your perfect remote talent.'
+                        'title' => 'Affordable Staffing Solutions',
+                        'desc' => 'Reduce overhead up to 65% with affordable virtual assistant services designed for healthcare providers.'
                     ],
                     [
-                        'title' => 'Payroll & Benefits',
-                        'desc' => 'From recruiting to payroll, we manage the details so you can focus on running your business.'
+                        'title' => 'HIPAA Compliant Assistance',
+                        'desc' => 'Secure and compliance support with HIPAA, SOC 2 Type II, ISO 27001, and GDPR.'
                     ],
                     [
-                        'title' => 'Pre-Vetted & Trained',
-                        'desc' => 'Work with talent from our 2-4% acceptance pipeline, pre-vetted and trained to deliver results from day one.'
+                        'title' => 'Appointment Scheduling Support',
+                        'desc' => 'Reliable virtual assistant for appointment scheduling and patient follow-ups.'
                     ],
                     [
-                        'title' => 'Compliance You Trust',
-                        'desc' => 'Full compliance with HIPAA, SOC 2 Type II, ISO 27001, and GDPR.'
+                        'title' => 'Flexible Remote Assistance',
+                        'desc' => 'Scalable outsourced administrative support tailored to your practice needs from day 1.'
                     ],
                     [
-                        'title' => 'Cost-Effective Hiring',
-                        'desc' => 'Hire vetted remote talent at up to 70% less than typical in-house costs.'
+                        'title' => 'No Risk of Pre-Payment',
+                        'desc' => 'Pay when you find the best fit for your workflow. No prior commitments.'
                     ]
                 ];
             @endphp
@@ -425,10 +512,10 @@
 
         <!-- Call to Action Button -->
         <div class="mt-20 text-center">
-            <a href="#" 
+            <a href="#form" 
                class="inline-block px-12 py-4 rounded-2xl text-white font-bold text-[17px] shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
                style="background-color: var(--primary);">
-                Hire Now
+                Get Your Assistant Today
             </a>
         </div>
 
@@ -441,7 +528,7 @@
     }
 </style>
 
-<section class="py-24 bg-white overflow-hidden">
+<section class="py-24 bg-white overflow-hidden" id="form">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
@@ -449,10 +536,10 @@
             <div class="lg:col-span-7">
                 <div class="max-w-xl">
                     <h2 class=" text-[26px] md:text-[36px] font-[900] leading-[1.1] tracking-[-0.04em] text-[#002d5b] mb-4 tracking-tight">
-                        Book a Discovery Call
+                       Plan Your Free Consultation Call 
                     </h2>
                     <p class="text-slate-500 text-[16px] mb-10">
-                        A quick chat to understand your practice's needs and explore how we can help.
+                        Let’s connect for a quick chat to understand your practice’s needs and see how we can support you.
                     </p>
 
                     @if(session('success'))
@@ -569,7 +656,7 @@
 
                         <!-- Disclaimer Text -->
                         <p class="text-[11px] leading-relaxed text-slate-400 mt-6">
-                            Searching for job openings? Check out our <a href="#" class="text-[var(--primary)] font-bold hover:underline">careers page</a>. By submitting this form, you agree to Teem's Privacy Policy, and to receive email and text messages. You can unsubscribe at any time.
+                            Looking for career opportunities? Check out our <a href="#" class="text-[var(--primary)] font-bold hover:underline">careers page</a>. By submitting this form, you agree to our Privacy Policy and consent to receive email and text messages. You can unsubscribe at any time.
                         </p>
 
                         <!-- Dynamic Submit Button -->
@@ -606,26 +693,26 @@
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 mb-10">
             <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             <span class="text-white/90 text-[13px] font-medium tracking-wide">
-                Limited onboarding spots this month
+                Limited spots available this month
             </span>
         </div>
 
         <!-- Main Heading -->
         <h2 class="text-white text-[42px] md:text-[46px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6">
-            Your next full-time hire <br>
-            is <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">7 days away</span>
+            Hire your next Remote Administrative  <br>
+            Team in <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">just 5 days</span>
         </h2>
 
         <!-- Subheading -->
         <p class="text-white/80 text-[13px] md:text-[16px] leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-            Book a Demo. See certified candidates matched to your industry.<br class="hidden md:block">
-            No cost, no contract, no risk.
+            Connect with remote medical professionals and get your team up.<br class="hidden md:block">
+            Fast. Flexible. Trusted. 
         </p>
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
-                Book a Demo 
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+                Secure Your Spot
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -636,11 +723,11 @@
         <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-4">
             @php
                 $benefits = [
-                    'No payment until you hire',
-                    'No contract lock-in',
-                    'Replacement guarantee',
-                    'Quick demo',
-                    'Cancel anytime'
+                    'Pay only when you hire',
+                    'No long-term lock-in',
+                    'Guaranteed replacement',
+                    'Fast 15-min demo',
+                    'Cancel Anytime'
                 ];
             @endphp
 

@@ -48,12 +48,12 @@
             </div>
 
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter leading-[1] mb-6 capitalize">
-                 <span class="text-gray-900">Prioritize your patients.</span><br>
-                <span class="text-primary">Minimize operational workload.</span>
+                 <span class="text-gray-900">Hire Certified Remote Healthcare</span><br>
+                <span class="text-primary">Professionals for Better Patient Care</span>
             </h1>
 
             <p class="text-black text-[16px] leading-relaxed mb-8 max-w-lg">
-               VMA recruits, trains, and manages reliable remote healthcare professionals including medical transcriptionists, virtual medical assistants, and documentation specialists. Our team is experienced with leading EHR platforms to support smooth day-to-day operations.
+               VMA delivers a remote medical team for patient care coordination, virtual medical assistance, front desk operations, medical coding, eligibility verification, pre-authorizations, and more. Every professional is trained to work confidently with today's leading EHR platforms. 
             </p>
 
             <div class="flex flex-col sm:flex-row gap-3">
@@ -122,7 +122,7 @@
         Expand healthcare operations with reliable support.
     </h2>
     <p class="text-black mb-10 max-w-lg mx-auto leading-relaxed">
-        VMA professionals are trained in EHR workflows, medical documentation, ICD-10 processes, and clinical coordination.
+        Trained in leading EHR systems, ICD-10 & CPT coding, telehealth platforms, and HIPAA compliance.
     </p>
 
     <!-- Browse Button -->
@@ -135,75 +135,69 @@
         @php
             $roles = [
                 [
-                    'title' => 'Medical Transcriptionist', 
-                    'desc' => 'Converts recorded medical notes into clear, accurate, and organized documentation.', 
-                    'url' => '/roles/receptionist',
+                    'title' => 'Front Desk Expert', 
+                    'desc' => 'Manages patient check-ins, appointment coordination, registration, intake forms, and front-office operations.', 
+                    'url' => '/services/front-desk-expert',
                     'icon' => 'M 12 1 a 3 3 0 0 0 -3 3 v 8 a 3 3 0 0 0 6 0 V 4 a 3 3 0 0 0 -3 -3 z M 19 10 v 2 a 7 7 0 0 1 -14 0 v -2 M 12 19 v 4 M 8 23 h 8' // Microphone (audio transcription)
                 ],
                 [
-                    'title' => 'Virtual Medical Assistant', 
-                    'desc' => 'Supports scheduling, coordination, and daily administrative healthcare tasks remotely.', 
-                    'url' => '/roles/coder',
+                    'title' => 'Virtual Medical Receptionist', 
+                    'desc' => 'Answers calls, schedules appointments, manages patient inquiries, and coordinates front-office communication.', 
+                    'url' => '/services/medical-receptionist',
                     'icon' => 'M 4 21 h 16 a 2 2 0 0 0 2 -2 V 5 a 2 2 0 0 0 -2 -2 H 4 a 2 2 0 0 0 -2 2 v 14 a 2 2 0 0 0 2 2 z M 2 10 h 20 M 12 6 v 6 M 10 9 h 4' // Remote desktop support with medical cross
                 ],
                 [
                     'title' => 'Medical Scribe', 
-                    'desc' => 'Records patient visits and updates documentation during virtual or in-person consultations.', 
-                    'url' => '/roles/scribe',
+                    'desc' => 'Documents patient encounters, updates EHR records, prepares clinical notes, and supports physician documentation.', 
+                    'url' => '/services/virtual-medical-scribing',
                     'icon' => 'M 12 20 h 9 M 16.5 3.5 a 2.121 2.121 0 0 1 3 3 L 7 19 l -4 1 l 1 -4 L 16.5 3.5 z' // Pencil writing/Scribing
                 ],
                 [
-                    'title' => 'Clinical Documentation Specialist', 
-                    'desc' => 'Maintains accurate patient records while supporting compliant clinical workflows.', 
-                    'url' => '/roles/scribe',
+                    'title' => 'Virtual Chronic Care Management', 
+                    'desc' => 'Answers calls, schedules appointments, manages patient inquiries, and coordinates front-office communication', 
+                    'url' => '/services/virtual-chronic-care-management',
                     'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 16 13 H 8 M 16 17 H 8 M 10 9 H 8' // Structured clinical document page
                 ],
                 [
-                    'title' => 'EMR Documentation Assistant', 
-                    'desc' => 'Updates and manages electronic medical records with accuracy and efficiency.', 
-                    'url' => '/roles/scribe',
+                    'title' => 'Remote Patient Monitoringt', 
+                    'desc' => 'Tracks patient vitals, monitors health data, supports virtual care, and escalates clinical concerns.', 
+                    'url' => '/services/remote-patient-monitoringe',
                     'icon' => 'M 4 21 h 16 a 2 2 0 0 0 2 -2 V 5 a 2 2 0 0 0 -2 -2 H 4 a 2 2 0 0 0 -2 2 v 14 a 2 2 0 0 0 2 2 z M 2 10 h 20 M 6 6 h 1 M 10 6 h 1 M 14 6 h 1' // EMR Software dashboard monitor screen
                 ],  
                 [
-                    'title' => 'Remote Patient Support Assistant', 
-                    'desc' => 'Provides administrative assistance and communication support for patient care operations.', 
-                    'url' => '/roles/scribe',
+                    'title' => 'Eligibility & Benefits Verification', 
+                    'desc' => 'Verifies insurance eligibility, benefits, coverage, copays, deductibles, and patient policy details before appointments.', 
+                    'url' => '/services/eligibility-and-benefits-verification',
                     'icon' => 'M 21 15 a 2 2 0 0 1 -2 2 H 7 l -4 4 V 5 a 2 2 0 0 1 2 -2 h 14 a 2 2 0 0 1 2 2 z' // Chat bubble messaging
                 ],              
                 [
-                    'title' => 'Healthcare Coordinator', 
-                    'desc' => 'Assists with patient communication, scheduling, and operational support for healthcare teams.', 
-                    'url' => '/roles/receptionist',
+                    'title' => 'Pre-Authorization Service', 
+                    'desc' => 'Obtains prior authorizations, verifies medical necessity, and secures payer approvals before treatment.', 
+                    'url' => '/services/pre-authorization-services',
                     'icon' => 'M 8 2 v 4 M 16 2 v 4 M 3 10 h 18 M 5 4 h 14 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 z M 9 16 l 2 2 4 -4' // Coordination Calendar Checklist
-                ],
+                ],                
                 [
-                    'title' => 'HIPAA Compliance Support', 
-                    'desc' => 'Helps maintain secure documentation processes aligned with healthcare compliance standards.', 
-                    'url' => '/roles/coder',
-                    'icon' => 'M 19 11 H 5 a 2 2 0 0 0 -2 2 v 7 a 2 2 0 0 0 2 2 h 14 a 2 2 0 0 0 2 -2 v -7 a 2 2 0 0 0 -2 -2 z M 7 11 V 7 a 5 5 0 0 1 10 0 v 4' // Padlock security
-                ],
-                [
-                    'title' => 'Medical Billing Assistant', 
-                    'desc' => 'Helps organize billing information, coding details, and insurance-related documentation.', 
-                    'url' => '/roles/scribe',
+                    'title' => 'Provider & Payer Credentialing', 
+                    'desc' => 'Manages provider enrollment, credentialing, CAQH profiles, payer applications, and revalidation processes.', 
+                    'url' => '/services/provider-and-payers-credentialing',
                     'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 8 12 h 8 M 8 16 h 5' // Statement invoice sheet
                 ],                
                 [
-                    'title' => 'Medical Records Specialist', 
-                    'desc' => 'Organizes, reviews, and maintains patient files with accuracy and confidentiality.', 
-                    'url' => '/roles/scribe',
+                    'title' => 'Medical Billing & Coding', 
+                    'desc' => 'Performs accurate ICD-10 and CPT coding, claim submission, charge entry, and billing compliance.', 
+                    'url' => '/services/medical-billing-and-coding',
                     'icon' => 'M 22 19 a 2 2 0 0 1 -2 2 H 4 a 2 2 0 0 1 -2 -2 V 5 a 2 2 0 0 1 2 -2 h 5 l 2 3 h 9 a 2 2 0 0 1 2 2 z M 2 10 h 20' // File Folder
                 ],
                 [
-                    'title' => 'Prior Authorization Assistant', 
-                    'desc' => 'Supports authorization workflows and documentation for faster patient processing.', 
-                    'url' => '/roles/scribe',
+                    'title' => 'Accounts Receivable (AR) Services', 
+                    'desc' => 'Handles claims follow-up, payment posting, denial management, collections, and outstanding account resolution.', 
+                    'url' => '/services/account-receivable-services',
                     'icon' => 'M 21 2 L 11 12 M 21 2 v 6 M 21 2 h -6 M 11 12 a 5 5 0 1 0 -7.07 7.07 a 5 5 0 0 0 7.07 -7.07 z' // Key (Approvals/Authorizations)
                 ],
                 [
-                    'title' => 'Healthcare Administrative Assistant', 
-                    'desc' => 'Handles day-to-day operational tasks to help healthcare practices run more smoothly.', 
-                    'url' => '/roles/receptionist',
+                    'title' => 'Virtual Administrative Assistant', 
+                    'desc' => 'Manages scheduling, data entry, patient records, email correspondence, and administrative workflows remotely.', 
+                    'url' => '/services/virtual-administrative-assistant',
                     'icon' => 'M 8 2 v 4 M 16 2 v 4 M 3 10 h 18 M 5 4 h 14 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 z M 9 16 l 2 2 4 -4', // Duplicate of Healthcare Coordinator (Coordination calendar)
                 ],
             ];
@@ -248,33 +242,71 @@
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20">
-                EHR Ready Talent
+                EMR Ready Talent
             </span>
             <h2 class="text-[#111827] text-[30px] md:text-[42px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
-               Certified in the EHR  <span class="text-[var(--primary)]">You Already Use</span>
+               Ready to Work Within <span class="text-[var(--primary)]">Your Existing EHR</span>
             </h2>
             <p class="text-black text-[14px] md:text-[16px] leading-relaxed max-w-2xl mx-auto font-normal">
-                Stop wasting time on software training. VMA 4-week intensive training program provides vetted and certified in high-volume documentation and  complex billing cycles. We hit the ground running so your clinic never misses a beat.
+                Stop wasting time on software training. VMA 2-week intensive training program is built for healthcare practices, technical expertise, administrative excellence, and compliance-focused support.
             </p>
         </div>
 
-        <!-- EHR Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            @php
-                $ehrList = [
-                    ['title' => 'Epic', 'desc' => 'Charting, Order Entry, InBasket, Haiku.', 'icon' => 'building'],
-                    ['title' => 'athenahealth', 'desc' => 'Workflows, Collections, Patient Communications.', 'icon' => 'building'],
-                    ['title' => 'eClinicalWorks', 'desc' => 'Scheduling, Billing, Portal Management.', 'icon' => 'building'],
-                    ['title' => 'CareCloud', 'desc' => 'RCM, Telehealth, Practice Management.', 'icon' => 'building'],
-                    ['title' => 'Tebra (Kareo)', 'desc' => 'Billing, Engagement, Patient Scheduling.', 'icon' => 'building'],
-                    ['title' => 'RingCentral', 'desc' => 'VOIP, Communications, Call Routing.', 'icon' => 'phone'],
-                    ['title' => 'Availity / NaviNet', 'desc' => 'Eligibility, Authorizations, Claims Processing.', 'icon' => 'lock'],
-                    ['title' => 'Phreesia', 'desc' => 'Intake, Digital Payments, Patient Analytics.', 'icon' => 'chart'],
-                ];
-            @endphp
+        @php
+            $ehrList = [
+                // EHRs / Practice Management (1-15)
+                ['title' => 'ICA Notes', 'desc' => 'Behavioral health specific charting, clinical notes, and specialized therapy templates.', 'icon' => 'building'],
+                ['title' => 'Advanced MD', 'desc' => 'Cloud-based clinical charting, practice management, and automated medical billing.', 'icon' => 'building'],
+                ['title' => 'NextGen', 'desc' => 'Unified clinical workflows, electronic prescribing, and integrated patient portal access.', 'icon' => 'building'],
+                ['title' => 'Progno CIS', 'desc' => 'Customizable clinical documentation, telehealth modules, and patient communication logs.', 'icon' => 'building'],
+                ['title' => 'CareCloud', 'desc' => 'Modern cloud charting, appointment booking, and patient engagement dashboards.', 'icon' => 'building'],
+                ['title' => 'Epic', 'desc' => 'Enterprise charting, Order Entry, InBasket message routing, and Haiku mobile clinical tools.', 'icon' => 'building'],
+                ['title' => 'AllScripts', 'desc' => 'Clinical documentation, active problem lists, e-prescribing, and chart reviews.', 'icon' => 'building'],
+                ['title' => 'Kareo', 'desc' => 'Independent clinic clinical charting, billing codes, and patient communications.', 'icon' => 'building'],
+                ['title' => 'Athena Health', 'desc' => 'Unified cloud-native EHR, patient scheduling, and automated RCM billing cycles.', 'icon' => 'building'],
+                ['title' => 'Cerner', 'desc' => 'Hospital-grade inpatient clinical charting, database queries, and medication administration.', 'icon' => 'building'],
+                ['title' => 'Medisoft Clinical', 'desc' => 'EHR charting integrated directly with specialized independent clinic billing managers.', 'icon' => 'building'],
+                ['title' => 'Office Ally', 'desc' => 'High-volume insurance eligibility verification, clearinghouse submissions, and billing portals.', 'icon' => 'lock'],
+                ['title' => 'eClinicalWorks', 'desc' => 'Healow patient portal management, clinical charting, and structured encounter templates.', 'icon' => 'building'],
+                ['title' => 'Amazing Charts', 'desc' => 'Clinician-focused, rapid encounter documenting, lab tracking, and e-prescriptions.', 'icon' => 'chart'],
+                ['title' => 'Practice Fusion', 'desc' => 'Streamlined cloud medical records, appointment tracking, and lab integration.', 'icon' => 'building'],
 
+                // Clinical, Specialty & Hospital Systems (16-20)
+                ['title' => 'Altera', 'desc' => 'Scalable enterprise electronic health records, inpatient charting, and clinic management.', 'icon' => 'building'],
+                ['title' => 'CollaborateMD', 'desc' => 'High-speed medical billing claims, billing diagnostics, and practice scheduling.', 'icon' => 'lock'],
+                ['title' => 'eMDs', 'desc' => 'Comprehensive multi-specialty charting, billing, and direct laboratory interfaces.', 'icon' => 'building'],
+                ['title' => 'Evident', 'desc' => 'Community hospital clinical charting, emergency logs, and inpatient data entry.', 'icon' => 'building'],
+                ['title' => 'FreeMED', 'desc' => 'Flexible, open-source clinical records, custom databases, and treatment plan tracking.', 'icon' => 'building'],
+
+                // Clinical Systems & Tools (21-25)
+                ['title' => 'GE Healthcare', 'desc' => 'Advanced diagnostic imaging data integration, clinical scheduling, and charting.', 'icon' => 'chart'],
+                ['title' => 'Greenway Health', 'desc' => 'Prime Suite clinical charting, workflow tracking, and lab order routing.', 'icon' => 'building'],
+                ['title' => 'MEDITECH', 'desc' => 'Integrated hospital records database, bedside charting, and patient data entry.', 'icon' => 'building'],
+                ['title' => 'Medgen', 'desc' => 'Outpatient clinical documentation, structured SOAP notes, and reporting panels.', 'icon' => 'building'],
+                ['title' => 'MEDHOST', 'desc' => 'Emergency department tracking, inpatient clinical flow sheets, and financial records.', 'icon' => 'building'],
+
+                // Billing / Eligibility / Security Portals (26-30)
+                ['title' => 'Mitochon Systems', 'desc' => 'Cloud EMR, secure Health Information Exchange (HIE), and patient data tracking.', 'icon' => 'lock'],
+                ['title' => 'NextGen Healthcare', 'desc' => 'Specialized billing cycle management, insurance claims processing, and portal management.', 'icon' => 'lock'],
+                ['title' => 'NueMD', 'desc' => 'Secure insurance eligibility checks, billing claims tracking, and scheduling tools.', 'icon' => 'lock'],
+                ['title' => 'OpenEMR', 'desc' => 'Open-source patient charts, custom encounter forms, and integrated billing cycles.', 'icon' => 'chart'],
+                ['title' => 'OpenMRS', 'desc' => 'Global health metadata-driven records platform, patient tracking, and research charting.', 'icon' => 'chart'],
+
+                // Enterprise, Intake & Analytics (31-33)
+                ['title' => 'Oracle Health', 'desc' => 'Hospital database administration, system analytics, and clinical operations charting.', 'icon' => 'chart'],
+                ['title' => 'Webchart', 'desc' => 'Web-native clinical documentation, occupational health portals, and database search.', 'icon' => 'chart'],
+                ['title' => 'ZipChart EMR', 'desc' => 'Rapid, tablet-optimized clinical documentation, custom macros, and encounter logs.', 'icon' => 'chart'],
+            ];
+
+            // Shuffles the array randomly on each page render
+            shuffle($ehrList);
+        @endphp
+
+        <!-- EHR Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="ehr-grid">
             @foreach($ehrList as $ehr)
-                <div class="bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group">
+                <!-- Hide cards starting from index 8 initially -->
+                <div class="ehr-card bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group {{ $loop->index >= 8 ? 'hidden' : '' }}">
                     
                     <!-- Dynamic Icon Container -->
                     <div class="mb-6 text-[var(--primary)] transition-transform duration-300 group-hover:scale-110">
@@ -300,101 +332,40 @@
             @endforeach
         </div>
 
+        <!-- Show More Button -->
+        <div class="text-center mt-12">
+            <button id="show-more-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+                Show More Platforms
+            </button>
+        </div>
+
     </div>
 </section>
 
-<section class="max-w-6xl mx-auto py-20 px-6 bg-white antialiased" x-data="{ activeTab: 'ar-management' }">
-    <div class="max-w-6xl mx-auto">
-        
-        <!-- Section Header -->
-        <div class="text-center mb-16 lg:mb-20">
-            <span class="inline-block px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-[0.2em] mb-6"
-                  style="color: var(--primary); background-color: color-mix(in srgb, var(--primary), transparent 90%);">
-                VMA Services
-            </span>
-            <h2 class="text-[#111827] text-[30px] md:text-[42px] font-[900] leading-[1.1] tracking-[-0.04em] max-w-3xl mx-auto">
-                Complete Dental Revenue <br class="hidden md:block"> Cycle Management
-            </h2>
-        </div>
+<!-- Vanilla JS Progressive Loader -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const increment = 4; // Reveal 4 cards on each click
 
-        <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
-            
-            <!-- Left Side: Professional Navigation Pills -->
-            <div class="w-full lg:w-[35%] flex flex-col gap-3">
-                @php
-                    $services = [
-                        ['id' => 'rcm', 'label' => 'End-to-End RCM Services'],
-                        ['id' => 'medical-billing', 'label' => 'Medical Billing'],
-                        ['id' => 'ar-management', 'label' => 'AR Management'],
-                        ['id' => 'credentialing', 'label' => 'Credentialing Services'],
-                    ];
-                @endphp
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden cards
+                const hiddenCards = document.querySelectorAll('.ehr-card.hidden');
 
-                @foreach($services as $service)
-                    <button 
-                        @click="activeTab = '{{ $service['id'] }}'"
-                        class="w-full text-center lg:text-left px-8 py-5 rounded-full text-[13px] font-[800] uppercase tracking-widest transition-all duration-300 border"
-                        :style="activeTab === '{{ $service['id'] }}' 
-                                ? 'background-color: var(--primary); border-color: var(--primary); color: white;' 
-                                : 'background-color: #F9FAFB; border-color: #F3F4F6; color: #6B7280;'"
-                        :class="activeTab === '{{ $service['id'] }}' ? 'shadow-xl shadow-[var(--primary)]/20 scale-[1.02] z-10' : 'hover:bg-gray-100 hover:border-gray-200'"
-                    >
-                        {{ $service['label'] }}
-                    </button>
-                @endforeach
-            </div>
+                // Reveal up to the next 4 cards
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
 
-            <!-- Right Side: Content Area with Unique Data -->
-            <div class="w-full lg:w-[65%] min-h-[400px] rounded-[2rem] border border-gray-50 p-2 md:p-8 shadow-[var(--primary)]/20 bg-gray-50">
-                
-                <!-- 1. End-to-End RCM -->
-                <div x-show="activeTab === 'rcm'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4">
-                    <h3 class="text-[#111827] text-[20px] md:text-[26px] font-[700] leading-tight mb-6 tracking-tight">Seamless Revenue Operations </h3>
-                    <p class="text-black text-[16px] leading-relaxed mb-8 font-normal">We handle the full lifecycle of your claims to  maximize your collection rate and minimize administrative friction.</p>
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Outsource medical transcription services for accurate clinical coding.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Real-time monitoring of claim status and patient eligibility.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Comprehensive financial auditing to plug revenue leaks.</p></li>
-                    </ul>
-                </div>
-
-                <!-- 2. Medical Billing -->
-                <div x-show="activeTab === 'medical-billing'" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4">
-                    <h3 class="text-[#111827] text-[20px] md:text-[26px] font-[700] leading-tight mb-6 tracking-tight">Precision Billing for Better Cash Flow </h3>
-                    <p class="text-black text-[16px] leading-relaxed mb-8 font-normal">We offer affordable medical transcription services and billing expertise that eliminate errors before they lead to denials.</p>
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Meticulous dental coding and clean claim submission.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Reliable medical transcription company standards for documentation.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Transparent billing practices that build patient trust.</p></li>
-                    </ul>
-                </div>
-
-                <!-- 3. AR Management -->
-                <div x-show="activeTab === 'ar-management'" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4">
-                    <h3 class="text-[#111827] text-[20px] md:text-[26px] font-[700] leading-tight mb-6 tracking-tight">Superior AR Recovery Services </h3>
-                    <p class="text-black text-[16px] leading-relaxed mb-8 font-normal">We boost revenue by clearing your aging backlog and speeding up payouts through persistent, professional outreach.</p>
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Targeted action on stalled or short-paid dental insurance filings.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Decisive cutting of overdue claims in 30/60/90+ day cycles.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Regular data insights on payment cycles and remaining balances.</p></li>
-                    </ul>
-                </div>
-
-                <!-- 4. Credentialing -->
-                <div x-show="activeTab === 'credentialing'" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4">
-                    <h3 class="text-[#111827] text-[20px] md:text-[26px] font-[700] leading-tight mb-6 tracking-tight">Stay Compliant and Accessible </h3>
-                    <p class="text-black text-[16px] leading-relaxed mb-8 font-normal">Don’t let paperwork keep you out of network. When you hire virtual medical assistants through the VMA program, we manage the tedious credentialing process for you.</p>
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">New and existing provider re-credentialing.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Maintenance of CAQH profiles and primary source verification.</p></li>
-                        <li class="flex items-start gap-4"><span class="mt-2 w-2 h-2 rounded-full flex-shrink-0" style="background-color: var(--primary);"></span><p class="text-black font-normal">Medical transcription services for clinics and transcription services</p></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
+                // If no more hidden cards exist, hide the button completely
+                if (document.querySelectorAll('.ehr-card.hidden').length === 0) {
+                    showMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
 
 <style>
     [x-cloak] { display: none !important; }
@@ -406,7 +377,7 @@
         <!-- Top Header Text -->
         <div class="max-w-sm mx-auto text-center mb-12">
             <p class="text-black text-[14px] md:text-[16px] leading-relaxed font-normal">
-              When you partner with VMA, you’re joining a proven platform designed for growth. Healthcare, dental, and insurance organizations rely on minimal overhead with top-tier care.
+             When you partner with VMA, you’re joining a proven platform designed for growth. Healthcare, dental, and insurance organizations rely on minimal overhead with top-tier care
             </p>
         </div>
 
@@ -417,23 +388,23 @@
                 $stats = [
                     [
                         'target' => 950,
-                        'suffix' => '',
+                        'suffix' => '+',
                         'prefix' => '',
-                        'label' => 'Empowering practices with 950+ expert remote hires with VMA.',
+                        'label' => 'Empowering practices with 950+ expert remote hires.',
                         'color' => '#10B981', // Emerald Green
                     ],
                     [
                         'target' => 42,
                         'suffix' => 'M',
                         'prefix' => '$',
-                        'label' => 'Edge has saved clients $50M+ in staffing costs - and counting.',
+                        'label' => '$42M+ in overhead reclaimed for our partners.',
                         'color' => 'var(--primary)', // Dynamic Primary
                     ],
                     [
                         'target' => 500,
-                        'suffix' => '',
+                        'suffix' => '+',
                         'prefix' => '',
-                        'label' => 'Over 500 businesses trust Edge with their remote staffing needs.',
+                        'label' => '478+ organizations rely on our staffing solutions.',
                         'color' => '#3B82F6', // Blue
                     ]
                 ];
@@ -494,27 +465,27 @@
             @php
                 $features = [
                     [
-                        'title' => 'Top-Tier Talent',
+                        'title' => 'Certified Talent',
                         'desc' => 'With a strict selection process, our team is rigorously vetted and ready to excel. Hire virtual medical assistants who bring professional expertise to your practice from day one.'
                     ],
                     [
-                        'title' => 'Risk-Free Hiring',
+                        'title' => 'Hire with Confidence',
                         'desc' => 'No hidden fees, no long-term commitments. You only pay when you’ve found the right fit. We make finding a reliable medical transcription company partner simple and stress-free.'
                     ],
                     [
-                        'title' => 'Payroll & Benefits',
+                        'title' => 'HR Management',
                         'desc' => 'From recruitment to payroll, we manage the administrative details. This allows you to focus on growth while we provide affordable medical transcription services and support.'
                     ],
                     [
-                        'title' => 'Pre-Vetted & Trained',
+                        'title' => 'Ready to Work',
                         'desc' => 'Work with specialists from our exclusive talent pipeline. Our staff is pre-vetted to provide high-quality medical transcription services for clinics with zero learning curve.'
                     ],
                     [
-                        'title' => 'Compliance You Trust',
+                        'title' => 'Trusted Compliance',
                         'desc' => 'We maintain full compliance with HIPAA and global data security standards. Rest easy knowing your transcription services for doctors are handled with total privacy and security.'
                     ],
                     [
-                        'title' => 'Cost-Effective Hiring',
+                        'title' => 'Affordable Hiring',
                         'desc' => 'Reduce your overhead significantly. Outsource medical transcription services and staffing at up to 70% less than the cost of typical in-house administrative hires.'
                     ]
                 ];
@@ -564,7 +535,7 @@
            <h2 class="text-3xl md:text-5xl font-extrabold tracking-[-1.5px] text-gray-800 leading-[1.05] mb-6 word-spacing-[6px]">
               Consult. Match. Onboard. <br>
                 <span class="text-primary font-extrabold tracking-[-1.5px] word-spacing-[6px]">
-                   All in 7 days.
+                   All in 5 days.
                 </span>
             </h2>
             <p class="text-black text-[15px]">The fastest path from consult to hire. Your first consultation on the first day.</p>
@@ -575,8 +546,8 @@
             @php
                 $steps = [
                     ['num' => '1', 'title' => 'Tell us what you need', 'desc' => 'Book a Demo to share your practice’s specific goals and EHR platforms. VMA  identifies the perfect matches for your clinic so you can hire virtual medical assistants with total confidence. ', 'day' => 'Day 1'],
-                    ['num' => '2', 'title' => 'Interview & Select', 'desc' => 'Review pre-vetted candidates and interview on your schedule. Whether you need reliable medical transcription company support or RCM experts, there are no fees until you find the perfect fit. ', 'day' => 'Days 2-5'],
-                    ['num' => '3', 'title' => 'They start. We handle the rest.', 'desc' => 'They begin, and we manage the equipment, payroll, and HIPAA compliance. You get affordable medical transcription services and a dedicated Success Manager to ensure a fully managed experience. ', 'day' => 'Day 7']
+                    ['num' => '2', 'title' => 'Interview & Select', 'desc' => 'Review pre-vetted candidates and interview on your schedule. Whether you need reliable medical transcription company support or RCM experts, there are no fees until you find the perfect fit. ', 'day' => 'Days 2-3'],
+                    ['num' => '3', 'title' => 'They start. We handle the rest.', 'desc' => 'They begin, and we manage the equipment, payroll, and HIPAA compliance. You get affordable medical transcription services and a dedicated Success Manager to ensure a fully managed experience. ', 'day' => 'Day 4-5']
                 ];
             @endphp
 
@@ -637,13 +608,13 @@
                     <tbody class="divide-y divide-gray-50">
                         @php
                             $rows = [
-                                ['label' => 'Certified on Epic / athena / eCW', 'edge' => 'check', 'agency' => 'cross'],
-                                ['label' => 'ICD-10 / CPT coding trained', 'edge' => 'check', 'agency' => 'dash'],
-                                ['label' => 'Full-time, dedicated to one practice', 'edge' => 'check', 'agency' => 'dash'],
-                                ['label' => 'HIPAA + BAA + SOC 2 Type II', 'edge' => 'check', 'agency' => 'cross'],
-                                ['label' => 'Secure campus + managed equipment', 'edge' => 'check', 'agency' => 'cross'],
-                                ['label' => 'Payroll, HR, benefits included', 'edge' => 'check', 'agency' => 'cross'],
-                                ['label' => '97%+ retention rate', 'edge' => 'check', 'agency' => 'cross'],
+                                ['label' => 'Certified on Epic / athena / eCW', 'VMA' => 'check', 'agency' => 'cross'],
+                                ['label' => 'ICD-10 / CPT coding trained', 'VMA' => 'check', 'agency' => 'dash'],
+                                ['label' => 'Full-time, dedicated to one practice', 'VMA' => 'check', 'agency' => 'dash'],
+                                ['label' => 'HIPAA + BAA + SOC 2 Type II', 'VMA' => 'check', 'agency' => 'cross'],
+                                ['label' => 'Secure campus + managed equipment', 'VMA' => 'check', 'agency' => 'cross'],
+                                ['label' => 'Payroll, HR, benefits included', 'VMA' => 'check', 'agency' => 'cross'],
+                                ['label' => '97%+ retention rate', 'VMA' => 'check', 'agency' => 'cross'],
                             ];
                         @endphp
 
@@ -694,25 +665,25 @@
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 mb-10">
             <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             <span class="text-white/90 text-[13px] font-medium tracking-wide">
-                Only a few onboarding slots left.
+                Limited spots available this month
             </span>
         </div>
 
         <!-- Main Heading -->
         <h2 class="text-white text-[42px] md:text-[46px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize">
-            Meet your new team member by  <br>
-            <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">next week.</span>
+             Hire your next Healthcare Team in  <br>
+            <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent"> just 5 days</span>
         </h2>
 
         <!-- Subheading -->
         <p class="text-white text-[13px] md:text-[16px] leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-            Book a Consultation. Meet your perfect match at zero cost, zero risk and total transparency. Free Preview with no pre-hire contract.
+            Connect with remote medical professionals and get your team up.
         </p>
 
         <!-- CTA Button -->
         <div class="mb-6">
             <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
-                Book a Demo 
+                Secure Your Spot
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -723,11 +694,11 @@
         <div class="max-w-3xl mx-auto flex flex-wrap justify-center items-center gap-x-4 gap-y-4">
             @php
                 $benefits = [
-                    'Pay only when you hire.',
-                    'No long-term contract lock-in.',
-                    'Guaranteed talent replacement included.',
-                    'See a quick, live demo.',
-                    'Flexible service, cancel anytime.'
+                    'Pay only when you hire',
+                    'No long-term contract lock-in',
+                    'Guaranteed replacement',
+                    'Fast 15-min demo',
+                    'Cancel Anytime'
                 ];
             @endphp
 

@@ -19,7 +19,7 @@
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] md:text-[11px] font-bold border tracking-wider uppercase mb-7 text-primary"
              style="background-color: color-mix(in srgb, var(--primary-color) 6%, transparent); border-color: color-mix(in srgb, var(--primary-color) 20%, transparent);">
             <span class="w-1.5 h-1.5 rounded-full bg-primary" style="box-shadow: 0 0 8px var(--primary-color);"></span>
-            Why Edge
+            Why VMA
         </div>
 
         <!-- Main Headline (White background friendly typography) -->
@@ -36,14 +36,15 @@
         <!-- Action Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 mb-16 w-full justify-center">
             <!-- Solid CTA Button -->
-            <button class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group font-sans"
-                    style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
+            <a href="/contact" class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 group font-sans"
+            style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
                 Book a Demo <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </button>
+            </a>
+
             <!-- Secondary Outline Button -->
-            <button class="bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/80 font-bold py-3.5 px-8 rounded-lg shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 font-sans">
+            <a href="/about-us" class="bg-white hover:bg-slate-50 text-slate-800 border border-slate-200/80 font-bold py-3.5 px-8 rounded-lg shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center justify-center font-sans">
                 Explore the Platform
-            </button>
+            </a>
         </div>
 
         <!-- Bottom Features Bar (Light Theme colors) -->
@@ -183,12 +184,12 @@
         <!-- Main Headline -->
         <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans">
             Teams scale confidently with <br class="hidden sm:inline">
-            Edge
+            VMA
         </h2>
 
         <!-- Italic Subtitle Quote -->
         <p class="text-slate-500 text-center text-sm md:text-base max-w-xl mx-auto italic leading-relaxed mb-16 font-sans">
-            "You cannot run a successful practice without consistent employees. Edge has stabilized that aspect for us."
+            You cannot run a successful practice without consistent employees. VMA has stabilized that aspect for us.
         </p>
 
         <!-- 4-Card Responsive Grid -->
@@ -200,7 +201,7 @@
                     97%
                 </span>
                 <span class="text-[13px] md:text-sm leading-relaxed text-slate-500 font-sans max-w-[180px]">
-                    Retention rate of Edge Talent
+                    Retention rate of VMA Talent
                 </span>
             </div>
 
@@ -259,26 +260,27 @@
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-white leading-[1.15] tracking-tight max-w-3xl mb-6 font-sans">
+        <h2 class="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-white leading-[1.15] tracking-tight max-w-3xl mb-6 font-sans capitalize">
             You shouldn't have to figure<br>
             it out alone.
         </h2>
 
         <!-- Subtitle Paragraph -->
         <p class="text-slate-400 text-sm md:text-[15px] leading-relaxed text-center max-w-2xl mb-10 font-sans">
-            Every Edge customer gets a dedicated Relationship Manager — an industry expert who knows your business, knows your team, and has navigated your exact challenges across dozens of companies like yours. One person. Always in your corner. On both sides of the relationship.
+            Every VMA customer gets a dedicated Relationship Manager — an industry expert who understands your business, knows your team, and has navigated your exact challenges across dozens of companies like yours. One person. Always in your corner. On both sides of the relationship.
         </p>
 
         <!-- Action Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 mb-16 w-full justify-center">
             <!-- Dynamic solid background and hover shadow -->
-            <button class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group font-sans"
-                    style="box-shadow: 0 4px 20px color-mix(in srgb, var(--primary-color) 25%, transparent);">
+            <a href="/contact" class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 group font-sans"
+            style="box-shadow: 0 4px 20px color-mix(in srgb, var(--primary-color) 25%, transparent);">
                 Book a Demo <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </button>
-            <button class="bg-white hover:bg-slate-100 text-[#0f172a] font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.1)] font-sans">
+            </a>
+            
+            <a href="/how-it-works" class="bg-white hover:bg-slate-100 text-[#0f172a] font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.1)] inline-flex items-center justify-center font-sans">
                 See What RMs Do
-            </button>
+            </a>
         </div>
 
         <!-- Bottom Features Bar -->
@@ -363,7 +365,7 @@
 
             <!-- Paragraph -->
             <p class="text-white/70 text-[14px] max-w-3xl leading-relaxed mb-10 font-sans">
-                Our Physician Billing Service account manager isn’t just your billing contact. They serve as the single point of contact for both your practice and our billing team, a bridge between both sides. When there’s a concern, they already have context from both perspectives. When there’s a discrepancy, they resolve it. When there’s an opportunity, they coordinate and optimize the revenue cycle.
+                Our Physician Billing Service account manager isn't just your billing contact. They serve as the single point of contact for both your practice and our billing team, a bridge between both sides. When there's a concern, they already have context from both perspectives. When there's a discrepancy, they resolve it. When there's an opportunity, they coordinate and optimize the revenue cycle.
             </p>
 
             <!-- Bottom Comparison Grid -->
@@ -497,7 +499,7 @@
                 One simple plan. <span class="text-[var(--primary)]">Everything covered.</span>
             </h2>
             <p class="text-slate-500 text-md max-w-2xl mx-auto leading-relaxed">
-                VMA provides complete affordable hospital billing support services designed to help healthcare facilities improve operational efficiency with reliable infrastructure and trained professionals.
+                VMA provides complete, affordable hospital billing support services designed to help healthcare facilities improve operational efficiency with reliable infrastructure and trained professionals.
             </p>
         </div>
 
@@ -505,56 +507,56 @@
             @php
                 $fees = [
                     [
-                        'title' => 'Hospital Onboarding',
+                        'title' => 'Hospital onboarding & team setup',
                         'desc' => 'Fully managed onboarding for your dedicated hospital billing support team.',
                         'included' => true,
                         // Add-user / Onboarding icon
                         'icon' => 'M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z',
                     ],
                     [
-                        'title' => 'Workflow Delivery',
+                        'title' => 'Structured workflow implementation',
                         'desc' => 'Structured workflows to ensure consistent delivery and operational efficiency.',
                         'included' => true,
                         // Workflow branching process tree icon
                         'icon' => 'M4 4h5v4H4V4zm11 0h5v4h-5V4zm-11 11h5v4H4v-4zm11 0h5v4h-5v-4zM9 6h6m-3 0v9M6 8v7m12-7v7',
                     ],
                     [
-                        'title' => 'Security Compliance',
+                        'title' => 'HIPAA-compliant operational processes',
                         'desc' => 'HIPAA-ready processes for secure hospital billing and administrative operations.',
                         'included' => true,
                         // Shield-check icon
                         'icon' => 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
                     ],
                     [
-                        'title' => 'Operational Support',
+                        'title' => 'End-to-end billing support',
                         'desc' => 'Simple agreements and ongoing support for smooth hospital billing operations.',
                         'included' => true,
                         // Support headset icon
                         'icon' => 'M18.436 17H19a2 2 0 002-2v-3a2 2 0 00-2-2h-.564M5.564 10H5a2 2 0 00-2 2v3a2 2 0 002 2h.564M12 21a9.003 9.003 0 009-9v-1a9 9 0 00-18 0v1a9.003 9.003 0 009 9z',
                     ],
                     [
-                        'title' => 'Claims Administration',
+                        'title' => 'Claims submission & administration',
                         'desc' => 'Accurate and timely hospital claim submissions to ensure faster reimbursements.',
                         'included' => true,
                         // Claims document sheet icon
                         'icon' => 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
                     ],
                     [
-                        'title' => 'Coverage Verification',
+                        'title' => 'Eligibility & coverage verification',
                         'desc' => 'Efficient eligibility checks and coverage verification for smooth billing operations.',
                         'included' => true,
                         // Eye / Verification scan icon
                         'icon' => 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z',
                     ],
                     [
-                        'title' => 'Revenue Optimization',
+                        'title' => 'Denial management & revenue optimization',
                         'desc' => 'Proactive claim tracking, denial resolution, and payment follow-ups to maximize revenue.',
                         'included' => true,
                         // Rising trend chart icon
                         'icon' => 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
                     ],
                     [
-                        'title' => 'Financial Reporting',
+                        'title' => 'Financial reporting & transparency',
                         'desc' => 'HIPAA-compliant billing processes with detailed financial reporting and operational transparency.',
                         'included' => true,
                         // Financial bar-graph report document icon
@@ -570,7 +572,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="{{ $fee['icon'] }}"></path>
                     </svg>
                 </div>
-                <h3 class="text-[18px] font-bold text-slate-900 mb-2">{{ $fee['title'] }}</h3>
+                <h3 class="text-[18px] font-bold text-slate-900 mb-2 capitalize">{{ $fee['title'] }}</h3>
                 <p class="text-sm text-slate-500 leading-relaxed mb-6">{{ $fee['desc'] }}</p>
                 <span class="mt-auto inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold border border-emerald-100">
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -599,7 +601,7 @@
 
         <!-- Subtitle Paragraph -->
         <p class="text-slate-500 text-center text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-10 font-sans">
-            Continuously protecting your data from day one and on an ongoing basis. No breaches, no worries — just reliable protection.
+            Continuously protecting your data from day one and onward. No breaches, no worries — just reliable protection.
         </p>
 
         <!-- Compliance Badges Flex Row -->
@@ -695,7 +697,7 @@
                     </li>
                     <li class="flex items-start gap-3 text-[13.5px] md:text-[14px] leading-relaxed text-slate-500 font-sans">
                         <span class="text-primary font-black mt-1.5">•</span>
-                        Biometric access controls at all Edge campuses
+                        Biometric access controls at all VMA campuses
                     </li>
                 </ul>
             </div>
@@ -754,16 +756,16 @@
                     Fuel your business fire.
                 </span>
             </h2>
-            <p class="text-gray-500 text-[15px]">A quick chat to a fully equipped new remote hiring</p>
+            <p class="text-gray-500 text-[15px]"> A quick consultation to a fully equipped remote hiring setup</p>
         </div>
 
         <!-- Grid -->
         <div class="grid md:grid-cols-3 gap-10">
             @php
                 $steps = [
-                    ['num' => '1', 'title' => ' Let’s talk about your needs', 'desc' => 'Start with a demo to share roles and the technology. VMA hunts for the perfect certified candidates.', 'day' => 'Day 1'],
-                    ['num' => '2', 'title' => 'Meet your top matches', 'desc' => 'Evaluate pre-vetted pros in your schedule. Donot pay a cent until you find the right fit.', 'day' => 'Days 2-5'],
-                    ['num' => '3', 'title' => 'Welcome them aboard', 'desc' => 'Focus on the work, not the admin. Hardware and payroll handled, a manager to keep things running.', 'day' => 'Day 7']
+                    ['num' => '1', 'title' => ' Let’s talk about your needs', 'desc' => 'Start with a demo to share roles and requirements. VMA sources the perfect certified candidates.', 'day' => 'Day 1'],
+                    ['num' => '2', 'title' => 'Meet your top matches', 'desc' => 'Evaluate pre-vetted professionals on your schedule. Do not pay a cent until you find the right fit.', 'day' => 'Days 2-5'],
+                    ['num' => '3', 'title' => 'Welcome them aboard', 'desc' => 'Focus on the work, not the admin. Hardware and payroll handled, with a manager ensuring smooth operations.', 'day' => 'Day 7']
                 ];
             @endphp
 
@@ -812,7 +814,7 @@
 
         <!-- Subheading -->
         <p class="text-white/80 text-[13px] md:text-[16px] leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-            Book a demo to see matched, pre-vetted urgent care support professionals tailored to your clinic’s needs.
+            Book a Demo to see matched, pre-vetted candidates tailored to your business needs.
 
             <br class="hidden md:block">
             No overheads. No commitments. No risk.
@@ -820,7 +822,7 @@
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
                 Secure Your Spot
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -833,7 +835,7 @@
             @php
                 $benefits = [
                     'Pay only when you hire',
-                    'No long-term lock-in',
+                    'No long-term commitment',
                     'Free replacement if needed',
                     'Quick, easy demo',
                     'Cancel anytime'

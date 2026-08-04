@@ -56,16 +56,17 @@
         <!-- Action Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 mb-14 w-full justify-center">
             <!-- Primär knapp med dynamisk bakgrundsfärg och matchande skugga -->
-            <button class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group font-sans"
-                    style="box-shadow: 0 4px 20px color-mix(in srgb, var(--primary-color) 25%, transparent);">
+            <a href="/contact" class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 group font-sans"
+            style="box-shadow: 0 4px 20px color-mix(in srgb, var(--primary-color) 25%, transparent);">
                 Book A Demo <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </button>
+            </a>
+
             <!-- Sekundär knapp med svag färgtonad skugga vid hovring -->
-            <button class="bg-white hover:bg-slate-100 text-[#0f172a] font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 border border-transparent font-sans"
-                    onmouseenter="this.style.boxShadow='0 6px 20px ' + color-mix(in srgb, var(--primary-color) 12%, transparent)"
-                    onmouseleave="this.style.boxShadow='none'">
+            <a href="/how-it-works" class="bg-white hover:bg-slate-100 text-[#0f172a] font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 border border-transparent inline-flex items-center justify-center font-sans"
+            onmouseenter="this.style.boxShadow='0 6px 20px ' + color-mix(in srgb, var(--primary-color) 12%, transparent)"
+            onmouseleave="this.style.boxShadow='none'">
                 Discover the VMA Difference
-            </button>
+            </a>
         </div>
 
         <!-- Features Bar / Trust Footer -->
@@ -142,7 +143,7 @@
                         </div>
                         <!-- Bottom portion -->
                         <div class="bg-white px-6 py-5 flex items-center justify-center text-center">
-                            <p class="text-[13px] leading-normal text-slate-500 font-medium">Talent covered by NDA & IP</p>
+                            <p class="text-[13px] leading-normal text-slate-500 font-medium">Talent protected by NDA & IP agreements</p>
                         </div>
                     </div>
 
@@ -177,7 +178,7 @@
         </div>
 
         <!-- Heading -->
-        <h2 class="text-3xl md:text-4xl lg:text-[42px] font-extrabold text-center text-[#0F172A] leading-tight tracking-tight max-w-3xl">
+        <h2 class="text-3xl md:text-4xl lg:text-[42px] font-extrabold text-center text-[#0F172A] leading-tight tracking-tight max-w-3xl capitalize">
             When businesses think of offshore hiring,  <br class="hidden sm:inline">
             <span class="text-primary">these are usually the concerns.</span>
         </h2>
@@ -307,18 +308,18 @@
                 
                 <!-- How Edge Is Different Pill Badge -->
                 <div class="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-[10px] md:text-[11px] font-bold border border-white/10 bg-white/5 tracking-wider uppercase mb-7 text-primary">
-                    How Edge Is Different
+                    How VMA Is Different
                 </div>
 
                 <!-- Main Heading -->
-                <h2 class="text-2xl sm:text-3xl md:text-[36px] font-extrabold text-white leading-[1.25] tracking-tight mb-5 font-sans">
-                    Edge isn't a freelancer marketplace.<br class="hidden sm:inline">
-                    Edge isn't a BPO. Edge is an employer.
+                <h2 class="text-2xl sm:text-3xl md:text-[36px] font-extrabold text-white leading-[1.25] tracking-tight mb-5 font-sans capitalize">
+                    VMA isn't a freelancer marketplace or BPO.<br class="hidden sm:inline">
+                    VMA is a workforce partner within compliance.
                 </h2>
 
                 <!-- Main Description Paragraph -->
                 <p class="text-[13.5px] leading-[1.65] font-sans text-slate-300">
-                    Edge is a fully compliant employer of record. That means your talent are real employees — under real employment law, with real contracts, real benefits, and real legal protections. Edge is the legal employer. You have zero employer liability, zero co-employment risk, and full legal coverage.
+                    VMA operates through a fully compliant employment framework. Your professionals work under legitimate employment structures supported by enforceable contracts, benefits, HR oversight, and legal protections. VMA manages employment administration and compliance, allowing you to focus on growth with confidence.
                 </p>
             </div>
 
@@ -333,9 +334,9 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Real Employment Contracts</h3>
+                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Real Employment Agreements</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-400 font-sans">
-                            Every hire signs a comprehensive employment agreement covering role scope, compensation, working hours, termination procedures, and dispute resolution — compliant with local labor law in every jurisdiction Edge operates.
+                            Every professional signs a comprehensive employment agreement covering responsibilities, compensation, working hours, confidentiality obligations, termination procedures, and dispute resolution requirements in accordance with applicable labor regulations.
                         </p>
                     </div>
                 </div>
@@ -348,9 +349,9 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Binding NDAs</h3>
+                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Enforceable NDAs</h3>
                         <p class="edge-feature-desc text-[12.5px] leading-relaxed text-slate-400 font-sans">
-                            Every hire signs a binding NDA covering your proprietary information, client data, trade secrets, and business processes. Survives termination. Enforceable under local employment law.
+                            All team members execute legally binding confidentiality agreements protecting proprietary information, client data, business processes, and trade secrets throughout and beyond employment.
                         </p>
                     </div>
                 </div>
@@ -363,9 +364,9 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Full IP Assignment</h3>
+                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Complete IP Assignment</h3>
                         <p class="edge-feature-desc text-[12.5px] leading-relaxed text-slate-400 font-sans">
-                            All intellectual property created by your Edge hire is automatically assigned to you. Clear, enforceable IP assignment clauses in every contract — not the weak work-for-hire language freelancer platforms use.
+                            All work product, intellectual property, documentation, processes, and deliverables created by VMA professionals are contractually assigned to your organization.
                         </p>
                     </div>
                 </div>
@@ -378,9 +379,9 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Zero Employer Liability</h3>
+                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Compliance-Focused Employment Structure</h3>
                         <p class="edge-feature-desc text-[12.5px] leading-relaxed text-slate-400 font-sans">
-                            Edge is the legal employer. You carry zero employer liability, zero co-employment risk, and zero exposure to local labor law claims. Taxes, benefits, termination — all on Edge.
+                            VMA manages employment administration, payroll obligations, benefits coordination, and workforce compliance requirements, significantly reducing administrative burden and legal complexity.
                         </p>
                     </div>
                 </div>
@@ -393,9 +394,9 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Non-Compete & Non-Solicit</h3>
+                        <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Non-Solicitation Protection</h3>
                         <p class="edge-feature-desc text-[12.5px] leading-relaxed text-slate-400 font-sans">
-                            Protection against talent solicitation and competitive hiring. Non-compete and non-solicit clauses tailored to each jurisdiction's enforceability standards.
+                            Protect your workforce investments through contractual non-solicitation and protective employment provisions designed around local legal requirements.
                         </p>
                     </div>
                 </div>
@@ -410,7 +411,7 @@
                     <div>
                         <h3 class="font-bold text-white text-[15px] mb-2 tracking-tight">Audit-Ready Documentation</h3>
                         <p class="edge-feature-desc text-[12.5px] leading-relaxed text-slate-400 font-sans">
-                            Complete contract archives, amendment tracking, and compliance documentation available on demand for your audits and regulatory reviews.
+                            Employment records, contract archives, compliance documentation, amendments, and workforce records are maintained and available whenever needed.
                         </p>
                     </div>
                 </div>
@@ -432,14 +433,14 @@
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.15] tracking-tight mb-5 font-sans">
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.15] tracking-tight mb-5 font-sans capitalize">
             Built for organizations where<br>
             <span class="text-primary">security and compliance matter.</span>
         </h2>
 
         <!-- Subtitle Paragraph -->
         <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-500 text-center max-w-[640px] mb-12">
-            Healthcare, dental, accounting, insurance, legal, and financial organizations handle sensitive information every day. VMA integrates security and compliance into every layer of its operating model.
+           Healthcare, dental, accounting, insurance, legal, and financial organizations handle sensitive information every day. VMA integrates security and compliance into every layer of its operating model.
         </p>
 
         <!-- Compliance Banner Card (Färgmixad mjuk bakgrund och kantlinje) -->
@@ -452,7 +453,7 @@
             </div>
             
             <h3 class="text-base sm:text-lg font-bold text-[#0F172A] mb-3 tracking-tight">
-                Enterprise Security Infrastructure
+               Enterprise Security Infrastructure
             </h3>
             <p class="text-[13px] leading-relaxed text-slate-500 max-w-[820px]">
                 VMA's network architecture, device management standards, access controls, and secure connectivity framework are designed to support enterprise security requirements, including HIPAA and other data protection obligations where applicable.
@@ -544,14 +545,14 @@
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans">
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans capitalize">
             Compliance extends beyond contracts and technology.<br>
             <span class="text-primary">It's also about people management.</span>
         </h2>
 
         <!-- Subtitle Paragraph -->
         <p class="text-[13.5px] md:text-[14px] leading-relaxed text-slate-500 text-center max-w-[680px] mb-16 font-sans">
-            VMA provides structured HR oversight for every professional from onboarding through offboarding ensuring consistency, accountability, and documentation at every stage.
+            VMA provides structured HR oversight for every professional from onboarding through offboarding  ensuring consistency, accountability, and documentation at every stage.
         </p>
 
         <!-- 3x2 Grid (Responsiv layout med hovringseffekt kopplad till primärfärg) -->
@@ -656,7 +657,7 @@
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans">
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans capitalize">
             Not all global workforce solutions operate the same way.<br>
             <span class="text-primary">VMA creates difference</span>
         </h2>
@@ -875,7 +876,6 @@
                     </h3>
                     <p class="text-[13px] md:text-[13.5px] leading-relaxed text-slate-500 font-sans">
                         VMA implements security controls aligned with recognized frameworks such as SOC 2, ISO 27001, HIPAA, and other industry standards. Secure connectivity, controlled access, and documented security procedures help protect sensitive information.
-                    </p>
                 </div>
             </div>
 
@@ -950,7 +950,7 @@
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
                 Secure Your Spot
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />

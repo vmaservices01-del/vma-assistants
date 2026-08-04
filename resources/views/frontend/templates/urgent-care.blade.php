@@ -20,8 +20,8 @@
 
             <!-- Heading -->
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight text-[#0F172A] mb-6 font-gnarly capitalize">
-                Let urgent care teams  <br>
-                focus on patients, <span class="text-[#7C3AED]">not paperwork.</span>
+                Expert Remote Support for Faster,  <br>
+                Smarter Urgent <span class="text-[#7C3AED]">Care Operations</span>
             </h1>
 
             <!-- Description -->
@@ -29,10 +29,17 @@
                 VMA supports urgent care clinics with fast, reliable clinical documentation, patient intake coordination, insurance verification, and real-time administrative support. VMA improves patient experience while ensuring your operations run smoothly.
             </p>
 
-            <!-- Buttons -->
-             <div class="flex flex-col sm:flex-row gap-3 mb-10">
-                <button class="bg-primary transition-all duration-300 hover:opacity-80 text-white font-bold py-3.5 px-6 rounded-lg shadow-md">Get Started Today →</button>
-                <button class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-900 font-bold py-3.5 px-6 rounded-lg transition-all">Learn More</button>
+            <div class="flex flex-col sm:flex-row items-left justify-left gap-4 mb-16">
+    
+                <a href="/contact" class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20 decoration-transparent">
+                    Get Started Today
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+
+                <a href="/how-it-works" class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg flex items-center justify-center decoration-transparent">
+                    See How it Works
+                </a>
+                
             </div>
 
             <!-- Trust Footer -->
@@ -133,72 +140,97 @@
     <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-violet-50/50 to-transparent -z-10"></div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 py-20 text-center">
+<section class="max-w-6xl mx-auto px-6 py-20 text-center antialiased">
     <!-- Badge -->
     <div class="inline-flex px-3 py-1 mb-6 text-[11px] font-bold text-primary uppercase tracking-widest bg-indigo-50/50 rounded-full border border-indigo-100">
-       URGENT CARE SUPPORT SOLUTIONS FOR HEALTHCARE TEAMS
+        URGENT CARE SUPPORT SOLUTIONS FOR HEALTHCARE TEAMS
     </div>
 
     <!-- Title & Desc -->
     <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tighter mb-4 capitalize">
-        Reliable Support built for Urgent Care Environments
+       Reliable Support built for Urgent Care Environments
     </h2>
     <p class="text-gray-500 mb-10 max-w-lg mx-auto leading-relaxed">
-        VMA professionals scale medical operations with experience in EHR systems, ICD-10, and CPT processes to support your workflow. 
+         VMA urgent care specialists streamline patient intake, clinical documentation, insurance verification, triage support coordination, and billing workflows to improve speed, accuracy, and operational efficiency in fast-paced care settings. 
     </p>
 
-    <!-- Browse Button -->
-    <button class="mb-16 border-2 border-gray-200 hover:border-gray-300 px-6 py-3 rounded-xl font-semibold transition-all">
-       Explore Urgent Care Services →
-    </button>
-
     <!-- Grid: 3 Columns -->
-    <div class="grid md:grid-cols-3 gap-6 text-left">
+    <div class="grid md:grid-cols-3 gap-6 text-left" id="services-grid">
         @php
             $roles = [
                 [
-                    'title' => 'Healthcare Assistant',
-                    'desc' => 'Handles day-to-day operational tasks to help healthcare practices run more smoothly.',
-                    'url' => '/roles/healthcare-assistant',
-                    'icon' => 'M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9Z M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2 M12 11v4 M10 13h4' // Medical kit / Briefcase
+                    'title' => 'Front Desk Expert', 
+                    'desc' => 'Manages initial patient intake, verifies registration data, and coordinates clinic front-office scheduling.', 
+                    'url' => '/services/front-desk-expert',
+                    'icon' => 'M 2 18 h 20 M 12 4 v 4 M 12 8 a 8 8 0 0 0 -8 8 h 16 a 8 8 0 0 0 -8 -8 z' // Concierge Service Bell
                 ],
                 [
-                    'title' => 'Healthcare Coordinator',
-                    'desc' => 'Assists with patient communication, scheduling, and operational support for healthcare teams.',
-                    'url' => '/roles/healthcare-coordinator',
-                    'icon' => 'M8 2v4 M16 2v4 M3 10h18 M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z M9 16l2 2 4-4' // Calendar scheduler with checkmark
+                    'title' => 'Virtual Medical Scribes', 
+                    'desc' => 'Accurately documents patient encounters, updates EHR charts in real-time, and assists during live consultations.', 
+                    'url' => '/services/virtual-medical-scribing',
+                    'icon' => 'M 12 20 h 9 M 16.5 3.5 a 2.121 2.121 0 0 1 3 3 L 7 19 l -4 1 l 1 -4 L 16.5 3.5 z' // Pencil writing/Scribing
                 ],
                 [
-                    'title' => 'HIPAA Compliance Support',
-                    'desc' => 'Helps maintain secure documentation processes aligned with healthcare compliance standards.',
-                    'url' => '/roles/hipaa-compliance-support',
-                    'icon' => 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 11l2 2 4-4' // Shield with checkmark
+                    'title' => 'Virtual Medical Receptionist', 
+                    'desc' => 'Handles inbound patient calls, manages complex calendar scheduling, and answers general clinic inquiries.', 
+                    'url' => '/services/medical-receptionist',
+                    'icon' => 'M 22 16.92 v 3 a 2 2 0 0 1 -2.18 2 a 19.79 19.79 0 0 1 -8.63 -3.07 a 19.5 19.5 0 0 1 -6 -6 a 19.79 19.79 0 0 1 -3.07 -8.67 A 2 2 0 0 1 4.11 2 h 3 a 2 2 0 0 1 2 1.72 a 12.06 12.06 0 0 0 .57 2.4 a 2 2 0 0 1 -.45 2.11 L 8.09 9.91 a 16 16 0 0 0 6 6 l 1.27 -1.27 a 2 2 0 0 1 2.11 -.45 a 12.06 12.06 0 0 0 2.4 .57 A 2 2 0 0 1 22 16.92 z' // Phone Receiver
                 ],
                 [
-                    'title' => 'Remote Patient Support',
-                    'desc' => 'Provides administrative assistance and communication support for patient care operations.',
-                    'url' => '/roles/remote-patient-support',
-                    'icon' => 'M3 18v-6a9 9 0 0 1 18 0v6 M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3 M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3' // Headset/Support
+                    'title' => 'Remote Patient Monitoring', 
+                    'desc' => 'Tracks physiological data from home devices, alerts providers of vital changes, and ensures patient compliance.', 
+                    'url' => '/services/remote-patient-monitoring',
+                    'icon' => 'M 22 12 h -4 l -3 9 L 9 3 l -3 9 H 2' // EKG Pulse line
                 ],
                 [
-                    'title' => 'Medical Records Specialist',
-                    'desc' => 'Organizes, reviews, and maintains patient files with accuracy and confidentiality.',
-                    'url' => '/roles/medical-records-specialist',
-                    'icon' => 'M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z M2 10h20 M12 12v4 M10 14h4' // Medical Folder with cross
+                    'title' => 'Virtual Chronic Care Management', 
+                    'desc' => 'Coordinates continuous monthly outreach, tracks care plans, and monitors progress for patients with chronic illnesses.', 
+                    'url' => '/services/virtual-chronic-care-management',
+                    'icon' => 'M 20.84 4.61 a 5.5 5.5 0 0 0 -7.78 0 L 12 5.67 l -1.06 -1.06 a 5.5 5.5 0 0 0 -7.78 7.78 l 1.06 1.06 L 12 21.23 l 7.78 -7.78 1.06 -1.06 a 5.5 5.5 0 0 0 0 -7.78 z' // Heart Shape
                 ],
                 [
-                    'title' => 'Prior Authorized Assistant',
-                    'desc' => 'Supports authorization workflows and documentation for faster patient processing.',
-                    'url' => '/roles/prior-authorization-assistant',
-                    'icon' => 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6 M9 15l2 2 4-4' // Authorized/Approved document with checkmark
+                    'title' => 'Provider and Payer Credentialing', 
+                    'desc' => 'Manages documentation for provider enrollments, licensing, and insurance network contract maintenance.', 
+                    'url' => '/services/provider-and-payers-credentialing',
+                    'icon' => 'M 16 4 h 2 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 6 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 h 2 M 9 2 h 6 M 9 14 l 2 2 l 4 -4' // Clipboard Check
+                ],
+                [
+                    'title' => 'Pre Authorization Service', 
+                    'desc' => 'Submits prior authorizations to insurance payers, coordinates medical necessity appeals, and prevents denials.', 
+                    'url' => '/services/pre-authorization-services',
+                    'icon' => 'M 14.5 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 7.5 L 14.5 2 z M 14 2 v 5 h 5 M 10 13 a 3 3 0 1 0 0 -6 a 3 3 0 0 0 0 6 z M 19 19 l -3.5 -3.5' // File Search / Audit Document
+                ],
+                [
+                    'title' => 'Medical Billing and Coding', 
+                    'desc' => 'Translates medical records into ICD-10 and CPT codes, submits claims, and maximizes reimbursement velocity.', 
+                    'url' => '/services/medical-billing-and-coding',
+                    'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 8 13 l -2 2 l 2 2 M 16 13 l 2 -2 l -2 -2 M 13 12 l -2 6' // File Code (< >)
+                ],
+                [
+                    'title' => 'Eligibility and Benefits Verifications', 
+                    'desc' => 'Validates patient coverage, co-pays, and deductibles with insurance portals prior to scheduled appointments.', 
+                    'url' => '/services/eligibility-and-benefits-verification',
+                    'icon' => 'M 12 22 s 8 -4 8 -10 V 5 l -8 -3 l -8 3 v 7 c 0 6 8 10 8 10 z M 9 11 l 2 2 l 4 -4' // Shield Check
+                ],
+                [
+                    'title' => 'Account Receivable Service', 
+                    'desc' => 'Audits outstanding claims, manages secondary billing submissions, and negotiates recovery of aged accounts.', 
+                    'url' => '/services/account-receivable-services',
+                    'icon' => 'M 22 11 V 3 h -8 M 22 3 L 12 13 l -4 -4 L 2 17' // Trending Up Chart
+                ],
+                [
+                    'title' => 'Virtual Administrative Service', 
+                    'desc' => 'Delivers comprehensive email management, database records organization, and daily operational support.', 
+                    'url' => '/services/virtual-administrative-assistant',
+                    'icon' => 'M 22 19 a 2 2 0 0 1 -2 2 H 4 a 2 2 0 0 1 -2 -2 V 5 a 2 2 0 0 1 2 -2 h 5 l 2 3 h 7 a 2 2 0 0 1 2 2 z' // Folder/Database Organizer
                 ]
             ];
         @endphp
 
         @foreach($roles as $role)
-            <!-- Parent Card (the "group") -->
+            <!-- Parent Card (Adds class "hidden" to items starting from index 6) -->
             <div style="--primary: {{ $page->primary_color ?? '#4f46e5' }};" 
-                 class="relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm transition-all overflow-hidden hover:shadow-lg group flex flex-col justify-between hover:-translate-y-1">
+                 class="service-card relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm transition-all overflow-hidden hover:shadow-lg group flex flex-col justify-between hover:-translate-y-1 {{ $loop->index >= 6 ? 'hidden' : '' }}">
                 
                 <!-- Hover Active Indicator (Dynamic BG) -->
                 <div class="absolute top-0 left-0 right-0 h-0.5 bg-transparent group-hover:bg-[var(--primary)] transition-colors duration-300 rounded-t-3xl"></div>
@@ -219,144 +251,132 @@
 
                 <!-- Button (Dynamic Text Color) -->
                 <a href="{{ $role['url'] }}" 
-                   class="inline-flex items-center font-bold text-sm transition-all duration-300 hover:opacity-80 text-[var(--primary)]">
+                   class="inline-flex items-center font-bold text-sm transition-all duration-300 hover:opacity-80 text-[var(--primary)] decoration-transparent">
                     Learn More 
                     <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
                 </a>
             </div>
         @endforeach
     </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-12">
+        <button id="view-more-services-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+            View More Services
+        </button>
+    </div>
 </section>
 
-<section class="px-6 py-20 bg-gray-50 antialiased">
-    <div class="max-w-6xl mx-auto">
+<!-- Progressive Loader Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const viewMoreBtn = document.getElementById('view-more-services-btn');
+        const increment = 3; // Reveals 3 more cards on each click (keeps a balanced 3-column layout)
+
+        if (viewMoreBtn) {
+            viewMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden service cards
+                const hiddenCards = document.querySelectorAll('.service-card.hidden');
+
+                // Reveal the next batch
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
+
+                // Hide the button if no more hidden cards remain
+                if (document.querySelectorAll('.service-card.hidden').length === 0) {
+                    viewMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
+   
+<!-- EMR -->
+<section class="w-full mx-auto px-6 py-20 bg-gray-50 antialiased">
+    <div class="max-w-7xl mx-auto">
         
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20">
                 EHR Ready Talent
             </span>
-            <h2 class="text-[#111827] text-[26px] md:text-[36px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6 capitalize">
-               Certified in the EHR systems your urgent care  <span class="text-[var(--primary)]">already uses</span>
+            <h2 class="text-[#111827] text-[30px] md:text-[42px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
+               Certified in the EHR <span class="text-[var(--primary)]">systems your urgent care already uses</span>
             </h2>
             <p class="text-black text-[14px] md:text-[16px] leading-relaxed max-w-2xl mx-auto font-normal">
                 Stop wasting time on training delays. VMA’s 4-week intensive program prepares vetted urgent care support professionals trained in high-volume patient handling, documentation accuracy, and rapid clinical workflows. We integrate seamlessly so your clinic never slows down.
             </p>
         </div>
 
-        <!-- EHR Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            @php
-                $ehrList = [
-                    [
-                        'title' => 'Epic',
-                        'desc' => 'Charting, Orders, Emergency Intake, InBasket',
-                        'icon' => 'clipboard-document-list'
-                    ],
-                    [
-                        'title' => 'athenahealth',
-                        'desc' => 'Urgent care workflows, billing, patient communication',
-                        'icon' => 'heart'
-                    ],
-                    [
-                        'title' => 'eClinicalWorks',
-                        'desc' => 'Scheduling, clinical documentation, billing support',
-                        'icon' => 'calendar-days'
-                    ],
-                    [
-                        'title' => 'CareCloud',
-                        'desc' => 'Revenue cycle, telehealth, practice management',
-                        'icon' => 'cloud'
-                    ],
-                    [
-                        'title' => 'Tebra (Kareo)',
-                        'desc' => 'Billing, patient engagement, scheduling',
-                        'icon' => 'currency-dollar'
-                    ],
-                    [
-                        'title' => 'RingCentral',
-                        'desc' => 'Call handling, triage coordination, communications',
-                        'icon' => 'phone'
-                    ],
-                    [
-                        'title' => 'Availity / NaviNet',
-                        'desc' => 'Eligibility checks, authorizations, claims processing',
-                        'icon' => 'shield-check'
-                    ],
-                    [
-                        'title' => 'Phreesia',
-                        'desc' => 'Patient intake, digital check-in, analytics',
-                        'icon' => 'user-plus'
-                    ],
-                ];
-            @endphp
+        @php
+            $ehrList = [
+                // EHRs / Practice Management (1-15)
+                ['title' => 'ICA Notes', 'desc' => 'Behavioral health specific charting, clinical notes, and specialized therapy templates.', 'icon' => 'building'],
+                ['title' => 'Advanced MD', 'desc' => 'Cloud-based clinical charting, practice management, and automated medical billing.', 'icon' => 'building'],
+                ['title' => 'NextGen', 'desc' => 'Unified clinical workflows, electronic prescribing, and integrated patient portal access.', 'icon' => 'building'],
+                ['title' => 'Progno CIS', 'desc' => 'Customizable clinical documentation, telehealth modules, and patient communication logs.', 'icon' => 'building'],
+                ['title' => 'CareCloud', 'desc' => 'Modern cloud charting, appointment booking, and patient engagement dashboards.', 'icon' => 'building'],
+                ['title' => 'Epic', 'desc' => 'Enterprise charting, Order Entry, InBasket message routing, and Haiku mobile clinical tools.', 'icon' => 'building'],
+                ['title' => 'AllScripts', 'desc' => 'Clinical documentation, active problem lists, e-prescribing, and chart reviews.', 'icon' => 'building'],
+                ['title' => 'Kareo', 'desc' => 'Independent clinic clinical charting, billing codes, and patient communications.', 'icon' => 'building'],
+                ['title' => 'Athena Health', 'desc' => 'Unified cloud-native EHR, patient scheduling, and automated RCM billing cycles.', 'icon' => 'building'],
+                ['title' => 'Cerner', 'desc' => 'Hospital-grade inpatient clinical charting, database queries, and medication administration.', 'icon' => 'building'],
+                ['title' => 'Medisoft Clinical', 'desc' => 'EHR charting integrated directly with specialized independent clinic billing managers.', 'icon' => 'building'],
+                ['title' => 'Office Ally', 'desc' => 'High-volume insurance eligibility verification, clearinghouse submissions, and billing portals.', 'icon' => 'lock'],
+                ['title' => 'eClinicalWorks', 'desc' => 'Healow patient portal management, clinical charting, and structured encounter templates.', 'icon' => 'building'],
+                ['title' => 'Amazing Charts', 'desc' => 'Clinician-focused, rapid encounter documenting, lab tracking, and e-prescriptions.', 'icon' => 'chart'],
+                ['title' => 'Practice Fusion', 'desc' => 'Streamlined cloud medical records, appointment tracking, and lab integration.', 'icon' => 'building'],
 
+                // Clinical, Specialty & Hospital Systems (16-20)
+                ['title' => 'Altera', 'desc' => 'Scalable enterprise electronic health records, inpatient charting, and clinic management.', 'icon' => 'building'],
+                ['title' => 'CollaborateMD', 'desc' => 'High-speed medical billing claims, billing diagnostics, and practice scheduling.', 'icon' => 'lock'],
+                ['title' => 'eMDs', 'desc' => 'Comprehensive multi-specialty charting, billing, and direct laboratory interfaces.', 'icon' => 'building'],
+                ['title' => 'Evident', 'desc' => 'Community hospital clinical charting, emergency logs, and inpatient data entry.', 'icon' => 'building'],
+                ['title' => 'FreeMED', 'desc' => 'Flexible, open-source clinical records, custom databases, and treatment plan tracking.', 'icon' => 'building'],
+
+                // Clinical Systems & Tools (21-25)
+                ['title' => 'GE Healthcare', 'desc' => 'Advanced diagnostic imaging data integration, clinical scheduling, and charting.', 'icon' => 'chart'],
+                ['title' => 'Greenway Health', 'desc' => 'Prime Suite clinical charting, workflow tracking, and lab order routing.', 'icon' => 'building'],
+                ['title' => 'MEDITECH', 'desc' => 'Integrated hospital records database, bedside charting, and patient data entry.', 'icon' => 'building'],
+                ['title' => 'Medgen', 'desc' => 'Outpatient clinical documentation, structured SOAP notes, and reporting panels.', 'icon' => 'building'],
+                ['title' => 'MEDHOST', 'desc' => 'Emergency department tracking, inpatient clinical flow sheets, and financial records.', 'icon' => 'building'],
+
+                // Billing / Eligibility / Security Portals (26-30)
+                ['title' => 'Mitochon Systems', 'desc' => 'Cloud EMR, secure Health Information Exchange (HIE), and patient data tracking.', 'icon' => 'lock'],
+                ['title' => 'NextGen Healthcare', 'desc' => 'Specialized billing cycle management, insurance claims processing, and portal management.', 'icon' => 'lock'],
+                ['title' => 'NueMD', 'desc' => 'Secure insurance eligibility checks, billing claims tracking, and scheduling tools.', 'icon' => 'lock'],
+                ['title' => 'OpenEMR', 'desc' => 'Open-source patient charts, custom encounter forms, and integrated billing cycles.', 'icon' => 'chart'],
+                ['title' => 'OpenMRS', 'desc' => 'Global health metadata-driven records platform, patient tracking, and research charting.', 'icon' => 'chart'],
+
+                // Enterprise, Intake & Analytics (31-33)
+                ['title' => 'Oracle Health', 'desc' => 'Hospital database administration, system analytics, and clinical operations charting.', 'icon' => 'chart'],
+                ['title' => 'Webchart', 'desc' => 'Web-native clinical documentation, occupational health portals, and database search.', 'icon' => 'chart'],
+                ['title' => 'ZipChart EMR', 'desc' => 'Rapid, tablet-optimized clinical documentation, custom macros, and encounter logs.', 'icon' => 'chart'],
+            ];
+
+            // Shuffles the array randomly on each page render
+            shuffle($ehrList);
+        @endphp
+
+        <!-- EHR Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="ehr-grid">
             @foreach($ehrList as $ehr)
-                <div class="bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group">
+                <!-- Hide cards starting from index 8 initially -->
+                <div class="ehr-card bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group {{ $loop->index >= 8 ? 'hidden' : '' }}">
                     
                     <!-- Dynamic Icon Container -->
-                    <!-- Dynamic Icon Container -->
-                <div class="mb-6 text-[var(--primary)] transition-transform duration-300 group-hover:scale-110">
-
-                    @if($ehr['icon'] == 'clipboard-document-list')
-                        <!-- Epic -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a3 3 0 006 0M9 5a3 3 0 016 0M9 12h6M9 16h6" />
-                        </svg>
-
-                    @elseif($ehr['icon'] == 'heart')
-                        <!-- Athenahealth -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
-                        </svg>
-
-                    @elseif($ehr['icon'] == 'calendar-days')
-                        <!-- eClinicalWorks -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-
-                    @elseif($ehr['icon'] == 'cloud')
-                        <!-- CareCloud -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M3 15a4 4 0 014-4h1a5 5 0 019.9-1A4 4 0 0118 19H7a4 4 0 01-4-4z" />
-                        </svg>
-
-                    @elseif($ehr['icon'] == 'currency-dollar')
-                        <!-- Tebra / Kareo -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-10V6m0 12v2m9-8a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-
-                    @elseif($ehr['icon'] == 'phone')
-                        <!-- RingCentral -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-
-                    @elseif($ehr['icon'] == 'shield-check')
-                        <!-- Availity / NaviNet -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11 5.176-.71 9-5.409 9-11 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-
-                    @elseif($ehr['icon'] == 'user-plus')
-                        <!-- Phreesia -->
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M18 9v6m3-3h-6M12 7a4 4 0 110 8 4 4 0 010-8zm0 10c-4.418 0-8 1.79-8 4h16c0-2.21-3.582-4-8-4z" />
-                        </svg>
-
-                    @endif
-
-                </div>
+                    <div class="mb-6 text-[var(--primary)] transition-transform duration-300 group-hover:scale-110">
+                        @if($ehr['icon'] == 'building')
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                        @elseif($ehr['icon'] == 'phone')
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        @elseif($ehr['icon'] == 'lock')
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                        @else
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                        @endif
+                    </div>
 
                     <!-- Title -->
                     <h3 class="text-[#111827] text-[18px] font-bold mb-2 tracking-tight">{{ $ehr['title'] }}</h3>
@@ -369,17 +389,40 @@
             @endforeach
         </div>
 
-        <!-- Call to Action Button -->
-        <div class="mt-20 text-center">
-            <a href="#" 
-               class="inline-block px-12 py-4 rounded-2xl text-white font-bold text-[17px] shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
-               style="background-color: var(--primary);">
-                Learn More
-            </a>
+        <!-- Show More Button -->
+        <div class="text-center mt-12">
+            <button id="show-more-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+                Show More Platforms
+            </button>
         </div>
 
     </div>
 </section>
+
+<!-- Vanilla JS Progressive Loader -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const increment = 4; // Reveal 4 cards on each click
+
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden cards
+                const hiddenCards = document.querySelectorAll('.ehr-card.hidden');
+
+                // Reveal up to the next 4 cards
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
+
+                // If no more hidden cards exist, hide the button completely
+                if (document.querySelectorAll('.ehr-card.hidden').length === 0) {
+                    showMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
 
 <!-- SECTION 4: ONE FLAT FEE -->
 <section class="max-w-6xl mx-auto py-20 bg-white">
@@ -389,7 +432,7 @@
                 Your Plan Includes
             </span>
             <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-2 tracking-tight capitalize">
-                One simple plan. <span class="text-[var(--primary)]">Everything covered.</span>
+                Simple Pricing. <span class="text-[var(--primary)]">Complete Support.</span>
             </h2>
             <p class="text-slate-500 text-md max-w-2xl mx-auto leading-relaxed">
                 VMA provides complete affordable virtual assistant services designed specifically for urgent care providers with fast-paced, high-volume operational needs.
@@ -406,17 +449,17 @@
                     ],
                     [
                         'title' => 'Workflow Monitoring',
-                        'desc' => 'Structured quality checks to ensure accuracy, speed, and consistency in urgent care workflows.',
+                        'desc' => 'Structured quality checks to ensure accuracy, speed, and consistency in urgent care workflows',
                         'icon' => 'M3 12h3l3-9 4 18 3-10 3 1h3' // Activity / EKG Wave (Real-time tracking)
                     ],
                     [
-                        'title' => 'Claims Follow-Ups',
-                        'desc' => 'Proactive claim tracking, submission support, and denial resolution for faster reimbursement.',
+                        'title' => 'Data Protection',
+                        'desc' => ' HIPAA-ready processes designed for secure urgent care administrative operations',
                         'icon' => 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6 M12 11v6 M15 13H9.5a1.5 1.5 0 0 0 0 3h3a1.5 1.5 0 0 1 0 3H9' // Billing Invoice with Dollar symbol
                     ],                    
                     [
                         'title' => 'Service Agreements',
-                        'desc' => 'Simple agreements with continuous operational and client support.',
+                        'desc' => ' Simple agreements with continuous operational and client support',
                         'icon' => 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6 M8 12h8 M8 16h5 M16 15l3-3-2-2-3 3v2h2z' // Document contract with signature/pen
                     ],
                     [
@@ -426,17 +469,17 @@
                     ],
                     [
                         'title' => 'Front Desk Patient Handling',
-                        'desc' => 'Fast, accurate patient intake handling to reduce waiting times and improve patient flow.',
+                        'desc' => ' Fast, accurate patient intake handling to reduce waiting times and improve flow.',
                         'icon' => 'M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M16 11l2 2 4-4' // User check (Patient intake)
                     ],
                     [
                         'title' => 'Eligibility & Coverage Checks',
-                        'desc' => 'Real-time insurance verification for seamless patient processing.',
+                        'desc' => 'Real-time insurance verification for seamless patient processing',
                         'icon' => 'M21 4H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z M1 10h22 M4 15h2 M8 15h4' // Insurance/ID Card
                     ],
                     [
-                        'title' => 'Medical Record Support',
-                        'desc' => 'Accurate, timely documentation assistance for urgent care physicians.',
+                        'title' => 'Front Desk Patient Handling',
+                        'desc' => ' Fast, accurate patient intake handling to reduce waiting times and improve flow',
                         'icon' => 'M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2 M9 11l2 2 4-4 M8 16h8' // Clinical Clipboard Checklist
                     ],                    
                     [
@@ -553,12 +596,12 @@
     $challenges = [
         [
             'title' => 'Claim Delays Are Increasing',
-            'desc' => 'We identify root causes of delayed claims, correct recurring errors, and improve submission accuracy to ensure faster reimbursements. This helps reduce backlog and ensures a smoother revenue cycle with fewer interruptions.',
+            'desc' => 'We identify root causes of delayed claims, correct recurring errors, and improve submission accuracy to ensure faster reimbursements.  This helps reduce backlog and ensures a smoother revenue cycle with fewer interruptions.',
             'icon' => 'currency'
         ],
         [
             'title' => 'Patient Intake Is Overloaded',
-            'desc' => 'We streamline intake processes, reduce front-desk burden, and ensure faster patient flow during peak hours. Our support improves check-in speed and minimizes waiting times for patients.',
+            'desc' => 'We streamline intake processes, reduce front-desk burden, and ensure faster patient flow during peak hours.  Our support improves check-in speed and minimizes waiting times for patients.',
             'icon' => 'users'
         ],
         [
@@ -726,7 +769,7 @@
         </p>
 
         <!-- Dynamic Button -->
-        <a href="#" 
+        <a href="/contact" 
            class="inline-block px-10 py-4 rounded-2xl font-bold text-white shadow-lg transition-all hover:brightness-110 active:scale-95"
            style="background-color: var(--primary);">
             Get in Touch
@@ -748,21 +791,21 @@
 
         <!-- Main Heading -->
         <h2 class="text-white text-[42px] md:text-[46px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize">
-            Meet your next hire<br>
-            in <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">just 7 days</span>
+            Hire your next Remote Healthcare Team<br>
+            in <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">just 5 days</span>
         </h2>
 
         <!-- Subheading -->
         <p class="text-white/80 text-[13px] md:text-[16px] leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-            Book a demo to see matched, pre-vetted urgent care support professionals tailored to your clinic’s needs.
+            Connect with remote medical professionals and get your team up.
 
             <br class="hidden md:block">
-            No overheads. No commitments. No risk.
+            Fast. Flexible. Trusted.
         </p>
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
                 Secure Your Spot
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -775,7 +818,7 @@
             @php
                 $benefits = [
                     'Pay only when you hire',
-                    'No long-term lock-in',
+                    'No long-term commitment',
                     'Free replacement if needed',
                     'Quick, easy demo',
                     'Cancel anytime'

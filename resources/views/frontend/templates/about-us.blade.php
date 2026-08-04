@@ -30,29 +30,31 @@
         <!-- Top Pill Badge (Derived background/border/text opacity) -->
         <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-[var(--primary)]/5 text-[var(--primary)] rounded-full text-[10px] md:text-[11px] font-bold border border-[var(--primary)]/20 tracking-wider uppercase mb-7">
             <span class="w-1.5 h-1.5 rounded-full bg-[var(--primary)] shadow-[0_0_8px_var(--primary)]"></span>
-            Relationship Managers
+            RELATIONSHIP MANAGERS
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-white leading-[1.15] tracking-tight max-w-3xl mb-6 font-sans">
-            You shouldn't have to figure<br>
-            it out alone.
+        <h2 class="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-white leading-[1.15] tracking-tight max-w-3xl mb-6 font-sans capitalize">
+            You should never have to solve business<br>
+            challenges on your own.
         </h2>
 
         <!-- Subtitle Paragraph -->
         <p class="text-slate-400 text-sm md:text-[15px] leading-relaxed text-center max-w-2xl mb-10 font-sans">
-            Every Edge customer gets a dedicated Relationship Manager — an industry expert who knows your business, knows your team, and has navigated your exact challenges across dozens of companies like yours. One person. Always in your corner. On both sides of the relationship.
+            Every VMA client is supported by a dedicated Relationship Manager who understands your industry, your business goals, and your operational priorities. With years of experience assisting organizations across multiple sectors, they provide practical guidance, proactive communication, and dependable support. One trusted partner. Always available. Every step of your journey.
         </p>
 
-        <!-- Action Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 mb-16 w-full justify-center">
-            <!-- Dynamic solid background and hover background -->
-            <button class="bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white font-bold py-3.5 px-8 rounded-lg shadow-[0_4px_20px_rgba(12,165,148,0.2)] hover:shadow-[0_6px_24px_rgba(12,165,148,0.3)] transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group">
-                Book a Demo <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </button>
-            <button class="bg-white hover:bg-slate-100 text-[#0f172a] font-bold py-3.5 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.1)]">
-                See What RMs Do
-            </button>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+    
+            <a href="/contact" class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20 decoration-transparent">
+               Book a Consultation
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+
+            <a href="/how-it-works" class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg flex items-center justify-center decoration-transparent">
+                Meet Our Team
+            </a>
+            
         </div>
 
         <!-- Bottom Features Bar -->
@@ -69,22 +71,23 @@
                 <span class="hidden md:inline text-slate-800 mr-5">|</span>
                 
                 <span class="inline-flex items-center gap-2 md:pr-5">
-                    <span class="text-[var(--primary)] font-bold">✓</span> Serves both you & your talent
+                    <span class="text-[var(--primary)] font-bold">✓</span> Supporting both your business and your workforce
                 </span>
                 
                 <span class="hidden md:inline text-slate-800 mr-5">|</span>
                 
                 <span class="inline-flex items-center gap-2 md:pr-5">
-                    <span class="text-[var(--primary)] font-bold">✓</span> Phone & email — no tickets
+                    <span class="text-[var(--primary)] font-bold">✓</span>  Direct phone & email communication
                 </span>
                 
                 <span class="hidden md:inline text-slate-800">|</span>
+                
                 
             </div>
             
             <!-- Row 2: Centered underneath on desktop, stacked on mobile -->
             <div class="flex items-center gap-2 text-slate-400 text-[12.5px] font-medium leading-none tracking-wide">
-                <span class="text-[var(--primary)] font-bold">✓</span> Included in every engagement
+                <span class="text-[var(--primary)] font-bold">✓</span> Included with every engagement
             </div>
 
         </div>
@@ -181,20 +184,20 @@
             </div>
             
             <!-- Headline -->
-            <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-8 font-sans">
-                Built for regulated <br class="hidden sm:inline"> industries
+            <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-8 font-sans capitalize">
+                Built to simplify workforce management <br class="hidden sm:inline"> for growing businesses.
             </h2>
             
             <!-- Paragraph Group -->
             <div class="space-y-6 text-[14px] md:text-[15px] leading-relaxed text-slate-500 font-sans">
                 <p>
-                    In 2022, remote hiring was booming — but only for tech. Software companies had their pick of global talent platforms. Meanwhile, dental offices, medical practices, and insurance agencies were stuck in a local hiring crisis: <span class="font-bold text-[#0F172A]">unfilled positions, rising costs, and no real solutions.</span>
+                    When organizations began embracing remote operations, finding dependable talent became increasingly difficult. Many companies struggled with inconsistent hiring, limited support, and fragmented workforce solutions.
                 </p>
                 <p>
-                    Edge was founded to change that. We built the first complete hiring ecosystem specifically for medical, dental, and insurance — industries where <span class="font-bold text-[#0F172A]">HIPAA compliance, industry-specific training, and professional reliability</span> aren't nice-to-haves. They're non-negotiable.
+                    VMA was founded to solve those challenges by creating a complete workforce management ecosystem tailored for healthcare, finance, legal, customer service, technology, and professional services. Our approach combines operational excellence, compliance, and long-term partnership to help businesses build reliable remote teams with confidence.
                 </p>
                 <p>
-                    Today, over 500 businesses trust Edge to hire, train, equip, and manage their remote teams. For 97% of them, <span class="font-bold text-[#0F172A]">we were their first experience with remote staffing.</span> That trust is everything to us.
+                    Today, organizations across multiple industries rely on VMA to recruit, train, onboard, and manage exceptional professionals. For many clients, partnering with VMA has transformed the way they hire, scale, and retain talent. Their continued success is the foundation of ours.
                 </p>
             </div>
         </div>
@@ -211,9 +214,9 @@
             
             <!-- Quote Text -->
             <p class="text-[15px] md:text-[16px] leading-[1.65] text-slate-700 font-sans mb-8">
-                For <span class="font-extrabold text-[#0F172A]">97% of our customers, this is the first time they've ever hired remotely.</span>
-                <span class="italic text-slate-500">That trust is something we take seriously, and it's the core of everything we do. Edge was built to remove the barriers of global hiring while ensuring that businesses can operate with</span>
-                <span class="font-extrabold text-[#0F172A]">confidence.</span>
+                <span class="font-extrabold text-[#0F172A]">Partnering with VMA completely changed the way we build remote teams.</span>
+                <span class="italic text-slate-500">Their guidance, expertise, and commitment made every stage of hiring simple and stress-free.</span>
+                <span class="font-extrabold text-[#0F172A]">Having a knowledgeable team beside us has been invaluable.</span>
             </p>
             
             <!-- Divider Line -->
@@ -227,8 +230,8 @@
                 </div>
                 <!-- Identity -->
                 <div class="flex flex-col text-left font-sans">
-                    <span class="font-bold text-[#0F172A] text-sm md:text-base leading-none mb-1">Iffi Wahla</span>
-                    <span class="text-xs md:text-sm text-slate-400 font-medium leading-none">CEO & Founder, Edge</span>
+                    <span class="font-bold text-[#0F172A] text-sm md:text-base leading-none mb-1">Sarah Mitchell</span>
+                    <span class="text-xs md:text-sm text-slate-400 font-medium leading-none">Chief Executive Officer, BrightPath Solutions</span>
                 </div>
             </div>
             
@@ -242,18 +245,18 @@
         
         <!-- Top Pill Badge -->
         <div class="inline-flex items-center justify-center px-4 py-1.5 bg-[var(--primary-color)]/[0.06] text-primary rounded-full text-[10px] md:text-[11px] font-bold border border-primary/20 tracking-wider uppercase mb-8">
-            The Reality of Traditional Hiring
+            THE CHALLENGES OF TRADITIONAL HIRING
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans">
-            When you hire locally, every problem <br class="hidden sm:inline">
-            <span class="text-primary">is yours to solve alone.</span>
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans capitalize">
+            Hiring alone means managing <br class="hidden sm:inline">
+            <span class="text-primary">every challenge yourself.</span>
         </h2>
 
         <!-- Subtitle Description -->
         <p class="text-slate-500 text-center text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-16 font-sans">
-            Traditional hiring gives you an employee — but no support system. When the inevitable challenges come up, there's no one to call, no one who's seen this before, and no one whose job it is to help you through it.
+            Traditional hiring provides an employee but little ongoing support. When unexpected situations arise, businesses are often left handling recruitment, onboarding, training, and performance issues without experienced guidance.
         </p>
 
         <!-- Cards Grid Area -->
@@ -272,9 +275,9 @@
                         </svg>
                     </div>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight">Performance issues?</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight capitalize">Performance concerns?</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    You have to figure out if it's a training problem, a motivation problem, or a bad fit — by yourself. No advisor. No playbook. No second opinion.
+                    Identifying the root cause of declining productivity takes time and expertise. Without professional support, solving workplace challenges becomes difficult and costly.
                 </p>
             </div>
 
@@ -288,9 +291,9 @@
                         </svg>
                     </div>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight">Communication breakdown?</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight capitalize">Communication difficulties?</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    When there's friction between you and an employee, you're the manager, the mediator, and the HR department — all at once.
+                    Managing conversations between leadership, employees, and departments can quickly become overwhelming without an experienced advisor to facilitate solutions.
                 </p>
             </div>
 
@@ -304,9 +307,9 @@
                         </svg>
                     </div>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight">Ready to scale?</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight capitalize">Planning to grow?</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Need three more people? You're back to job boards, interviews, and onboarding from scratch. Nobody's helping you plan or execute.
+                    Hiring additional employees requires recruiting, interviewing, onboarding, compliance, and operational planning all demanding significant internal resources.
                 </p>
             </div>
 
@@ -320,9 +323,9 @@
                         </svg>
                     </div>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight">Talent needs training?</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight capitalize">Employee replacement?</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    You either train them yourself, find an external program, or hope they figure it out. There's no built-in training infrastructure.
+                    When a team member leaves, businesses frequently have to restart the hiring process, resulting in delays and unnecessary expenses.
                 </p>
             </div>
 
@@ -336,9 +339,9 @@
                         </svg>
                     </div>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight">Something goes wrong?</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight capitalize">Skills development</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Equipment fails, attendance drops, quality slips — you're the one scrambling to fix it, pulling you away from running your business.
+                    Internal training programs require dedicated resources, experienced trainers, and continuous improvement something many organizations lack.
                 </p>
             </div>
 
@@ -352,9 +355,9 @@
                         </svg>
                     </div>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight">Don't know what other practices do?</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight capitalize">Unexpected issues?</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    When you hit a challenge, you have no way to know how dozens of other businesses in your industry solved the same thing last month.
+                    Equipment failures, attendance concerns, operational disruptions, or compliance questions often require immediate support that businesses may not have internally.
                 </p>
             </div>
 
@@ -373,14 +376,14 @@
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans">
-            Traditional hiring gives you an employee.<br class="hidden sm:inline">
-            <span class="text-primary">Edge gives you a partner.</span>
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans capitalize">
+            Do you want worker or lasting workforce<br class="hidden sm:inline">
+            <span class="text-primary">partnerships, by VMA.</span>
         </h2>
 
         <!-- Subtitle Paragraph -->
         <p class="text-[13.5px] md:text-[14px] leading-relaxed text-slate-500 text-center max-w-[680px] mb-14 font-sans">
-            When something goes wrong, who do you call? With Edge, the answer is always the same: your Relationship Manager.
+            Whenever challenges arise, you deserve more than a staffing provider you deserve an experienced partner committed to your long-term success.
         </p>
 
         <!-- Responsive Table Container Wrapper -->
@@ -396,9 +399,9 @@
                         <!-- Column 1: Feature Row Headers -->
                         <th class="p-5 text-sm font-semibold text-slate-400 font-sans"></th>
                         
-                        <!-- Column 2: EDGE Highlighted Header (Matches var(--primary-color) translucent tint) -->
+                        <!-- Column 2: VMA Highlighted Header (Matches var(--primary-color) translucent tint) -->
                         <th class="p-5 text-xs font-extrabold uppercase tracking-widest text-primary bg-[var(--primary-color)]/[0.03] font-sans">
-                            Edge
+                            VMA
                         </th>
                         
                         <!-- Column 3: Traditional Hiring Header -->
@@ -411,56 +414,67 @@
                     
                     <!-- Row 1: Point of contact -->
                     <tr>
-                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans">Point of contact</td>
+                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans">Primary Contact</td>
                         <td class="p-5 text-[13.5px] font-semibold text-primary bg-[var(--primary-color)]/[0.03] font-sans">
                             <span class="text-primary font-black mr-2">✓</span> Dedicated RM
                         </td>
                         <td class="p-5 text-[13.5px] text-slate-500 font-sans">
-                            <span class="text-red-400 font-bold mr-2">✕</span> You are it
+                            <span class="text-red-400 font-bold mr-2">✕</span> General recruiter
                         </td>
                     </tr>
 
                     <!-- Row 2: Serves both sides -->
                     <tr>
-                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans">Serves both sides</td>
+                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans capitalize">Business & employee support</td>
                         <td class="p-5 text-[13.5px] font-semibold text-primary bg-[var(--primary-color)]/[0.03] font-sans">
-                            <span class="text-primary font-black mr-2">✓</span> Customer & talent
+                            <span class="text-primary font-black mr-2">✓</span> Supports both
                         </td>
                         <td class="p-5 text-[13.5px] text-slate-500 font-sans">
-                            <span class="text-red-400 font-bold mr-2">✕</span> N/A
+                            <span class="text-red-400 font-bold mr-2">✕</span> Limited involvement
                         </td>
                     </tr>
 
                     <!-- Row 3: Industry expertise -->
                     <tr>
-                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans">Industry expertise</td>
+                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans capitalize">Industry expertise</td>
                         <td class="p-5 text-[13.5px] font-semibold text-primary bg-[var(--primary-color)]/[0.03] font-sans">
-                            <span class="text-primary font-black mr-2">✓</span> Matched to your industry
+                            <span class="text-primary font-black mr-2">✓</span> Specialists matched to your sector
                         </td>
                         <td class="p-5 text-[13.5px] text-slate-500 font-sans">
-                            <span class="text-red-400 font-bold mr-2">✕</span> None
+                            <span class="text-red-400 font-bold mr-2">✕</span> General knowledge
                         </td>
                     </tr>
 
                     <!-- Row 4: Replacement support -->
                     <tr>
-                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans">Replacement support</td>
+                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans capitalize">Replacement support</td>
                         <td class="p-5 text-[13.5px] font-semibold text-primary bg-[var(--primary-color)]/[0.03] font-sans">
-                            <span class="text-primary font-black mr-2">✓</span> Full guarantee, $0
+                            <span class="text-primary font-black mr-2">✓</span> Included when applicable
                         </td>
                         <td class="p-5 text-[13.5px] text-slate-500 font-sans">
-                            <span class="text-red-400 font-bold mr-2">✕</span> You start over
+                            <span class="text-red-400 font-bold mr-2">✕</span> Usually starts over
                         </td>
                     </tr>
 
                     <!-- Row 5: How you reach them -->
                     <tr>
-                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans">How you reach them</td>
+                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans">Communication</td>
                         <td class="p-5 text-[13.5px] font-semibold text-primary bg-[var(--primary-color)]/[0.03] font-sans">
-                            <span class="text-primary font-black mr-2">✓</span> Phone & email
+                            <span class="text-primary font-black mr-2">✓</span> Direct phone & email
                         </td>
                         <td class="p-5 text-[13.5px] text-slate-500 font-sans">
-                            <span class="text-amber-500 font-extrabold mr-2">—</span> N/A
+                            <span class="text-amber-500 font-extrabold mr-2">—</span>Limited contact
+                        </td>
+                    </tr>
+
+                     <!-- Row 5: How you reach them -->
+                    <tr>
+                        <td class="p-5 text-[13.5px] font-bold text-[#0F172A] font-sans capitalize">Strategic guidance</td>
+                        <td class="p-5 text-[13.5px] font-semibold text-primary bg-[var(--primary-color)]/[0.03] font-sans">
+                            <span class="text-primary font-black mr-2">✓</span> Ongoing workforce advice
+                        </td>
+                        <td class="p-5 text-[13.5px] text-slate-500 font-sans">
+                            <span class="text-amber-500 font-extrabold mr-2">—</span>Rarely available
                         </td>
                     </tr>
 
@@ -480,9 +494,9 @@
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-16 font-sans">
-            From idea to<br>
-            <span class="text-primary">500+ businesses</span>
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-16 font-sans capitalize">
+            From a vision to hundreds of successful<br>
+            <span class="text-primary">partnerships</span>
         </h2>
 
         <!-- Vertical Timeline Area -->
@@ -495,7 +509,7 @@
                 <div class="flex flex-col items-center relative">
                     <!-- Circle (Purple / Primary variant) -->
                     <div class="flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-full text-white text-xs md:text-sm font-bold flex-shrink-0 bg-indigo-600 shadow-[0_0_12px_rgba(79,70,229,0.2)] z-10 font-sans">
-                        22
+                        20
                     </div>
                     <!-- Connector line (only visible if not the last group item) -->
                     <div class="absolute top-10 md:top-11 bottom-0 w-[2px] bg-slate-100 -mb-8 z-0 group-last:hidden"></div>
@@ -503,13 +517,13 @@
                 <!-- Right side: Content Card -->
                 <div class="flex-1 bg-white rounded-[24px] border border-slate-200/60 p-6 md:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.015)] hover:border-slate-300 transition-colors duration-300">
                     <span class="text-[10px] md:text-xs font-bold tracking-wider text-slate-400 uppercase mb-2 block font-sans">
-                        2022 — FOUNDED
+                        2020 — THE BEGINNING
                     </span>
                     <h3 class="text-[16px] md:text-lg font-bold text-[#0F172A] mb-3 tracking-tight font-sans">
-                        Edge launches in Mountain View, CA
+                        VMA is established
                     </h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        Founded to solve the remote hiring gap for medical, dental, and insurance industries. First campus opens. First customers onboarded.
+                        Founded with a mission to simplify workforce management through reliable remote staffing, professional training, and long-term client partnerships.
                     </p>
                 </div>
             </div>
@@ -520,20 +534,20 @@
                 <div class="flex flex-col items-center relative">
                     <!-- Circle (Vibrant Blue / Dynamic Primary) -->
                     <div class="flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-full text-white text-xs md:text-sm font-bold flex-shrink-0 bg-blue-600 shadow-[0_0_12px_rgba(37,99,235,0.2)] z-10 font-sans">
-                        23
+                        21
                     </div>
                     <div class="absolute top-10 md:top-11 bottom-0 w-[2px] bg-slate-100 -mb-8 z-0 group-last:hidden"></div>
                 </div>
                 <!-- Right side: Content Card -->
                 <div class="flex-1 bg-white rounded-[24px] border border-slate-200/60 p-6 md:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.015)] hover:border-slate-300 transition-colors duration-300">
                     <span class="text-[10px] md:text-xs font-bold tracking-wider text-slate-400 uppercase mb-2 block font-sans">
-                        2023 — PRODUCT-MARKET FIT
+                        2021 — EXPANSION
                     </span>
                     <h3 class="text-[16px] md:text-lg font-bold text-[#0F172A] mb-3 tracking-tight font-sans">
-                        100+ businesses trust Edge
+                        Businesses begin choosing VMA
                     </h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        Edge Edu training program launches. SOC 2 Type II certification achieved. Talent marketplace expands across all three verticals.
+                        Growing client success leads to expanded recruitment capabilities, enhanced onboarding systems, and stronger operational processes.
                     </p>
                 </div>
             </div>
@@ -544,20 +558,20 @@
                 <div class="flex flex-col items-center relative">
                     <!-- Circle (Vibrant Green) -->
                     <div class="flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-full text-white text-xs md:text-sm font-bold flex-shrink-0 bg-emerald-600 shadow-[0_0_12px_rgba(16,185,129,0.2)] z-10 font-sans">
-                        24
+                        23
                     </div>
                     <div class="absolute top-10 md:top-11 bottom-0 w-[2px] bg-slate-100 -mb-8 z-0 group-last:hidden"></div>
                 </div>
                 <!-- Right side: Content Card -->
                 <div class="flex-1 bg-white rounded-[24px] border border-slate-200/60 p-6 md:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.015)] hover:border-slate-300 transition-colors duration-300">
                     <span class="text-[10px] md:text-xs font-bold tracking-wider text-slate-400 uppercase mb-2 block font-sans">
-                        2024 — SCALE
+                       2023 — GROWTH
                     </span>
                     <h3 class="text-[16px] md:text-lg font-bold text-[#0F172A] mb-3 tracking-tight font-sans">
-                        500+ businesses, 1,000+ professionals
+                        Hundreds of organizations supported
                     </h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        Multiple campus locations operating. HIPAA, ISO 27001, GDPR compliance achieved. Bring Your Own Talent (BYOT) program launches. 97% retention rate.
+                        VMA expands its workforce network, strengthens compliance standards, and introduces advanced workforce management solutions for multiple industries.
                     </p>
                 </div>
             </div>
@@ -568,20 +582,20 @@
                 <div class="flex flex-col items-center relative">
                     <!-- Circle (Amber/Orange) -->
                     <div class="flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-full text-white text-xs md:text-sm font-bold flex-shrink-0 bg-amber-600 shadow-[0_0_12px_rgba(217,119,6,0.2)] z-10 font-sans">
-                        25
+                        26
                     </div>
                     <div class="absolute top-10 md:top-11 bottom-0 w-[2px] bg-slate-100 -mb-8 z-0 group-last:hidden"></div>
                 </div>
                 <!-- Right side: Content Card -->
                 <div class="flex-1 bg-white rounded-[24px] border border-slate-200/60 p-6 md:p-8 text-left shadow-[0_4px_20px_rgba(0,0,0,0.015)] hover:border-slate-300 transition-colors duration-300 font-sans">
                     <span class="text-[10px] md:text-xs font-bold tracking-wider text-slate-400 uppercase mb-2 block">
-                        2025 — WHAT'S NEXT
+                        2026 — THE FUTURE
                     </span>
                     <h3 class="text-[16px] md:text-lg font-bold text-[#0F172A] mb-3 tracking-tight">
-                        Building the future of high-trust hiring
+                        Building tomorrow's workforce solutions
                     </h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        Expanding campus infrastructure, deepening industry training, and continuing to build the most trusted remote hiring ecosystem in the world.
+                       Continuing to invest in technology, professional development, and scalable workforce services that help organizations grow with confidence.
                     </p>
                 </div>
             </div>
@@ -596,18 +610,18 @@
         
         <!-- Top Pill Badge -->
         <div class="inline-flex items-center justify-center px-4 py-1.5 bg-[var(--primary-color)]/[0.06] text-primary rounded-full text-[10px] md:text-[11px] font-bold border border-primary/20 tracking-wider uppercase mb-6 font-sans">
-            The Complete Ecosystem
+            THE COMPLETE SOLUTION
         </div>
 
         <!-- Main Headline -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans">
-            Not a staffing agency.<br>
-            <span class="text-primary">An operating system for remote hiring.</span>
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans capitalize">
+            Beyond only recruitment. A Solution for<br>
+            <span class="text-primary">Remote Hiring in Medical businesses.</span>
         </h2>
 
         <!-- Subtitle Description -->
         <p class="text-slate-500 text-center text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-16 font-sans">
-            Every piece of infrastructure a business needs to hire, manage, and retain remote professionals — built into one platform.
+            Everything businesses need to recruit, manage, develop, and retain exceptional remote professionals delivered through one trusted partner.
         </p>
 
         <!-- 8-Card Grid Layout -->
@@ -620,9 +634,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Talent Network</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Talent Acquisition</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Thousands of pre-vetted, industry-trained professionals across dental, medical, and insurance — matched in 7 days.
+                    Access highly qualified professionals who are carefully screened, trained, and matched to your business requirements.
                 </p>
             </div>
 
@@ -633,9 +647,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479L12 21l-6.824-3.943a12.083 12.083 0 01.665-6.479L12 14z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Edge Edu</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Professional Training</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Proprietary 4-week training program. Platform certifications, industry fundamentals, HIPAA compliance, soft skills.
+                    Comprehensive onboarding programs, technical learning, compliance education, and continuous professional development.
                 </p>
             </div>
 
@@ -659,9 +673,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20h6l-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Equipment & IT</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Secure Operations</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Laptop, dual monitors, VPN, MDM, endpoint encryption — provisioned, shipped, and managed by Edge IT.
+                    Reliable infrastructure, secure systems, protected work environments, and dependable operational support.
                 </p>
             </div>
 
@@ -672,9 +686,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Payroll & Benefits</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Technology & Equipment</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Salary processing, health insurance, PTO, tax compliance, currency management — fully handled.
+                    Professionally managed devices, secure connectivity, software configuration, and ongoing technical assistance.
                 </p>
             </div>
 
@@ -685,9 +699,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7V4m0 0a2 2 0 10-4 0v3m4-3a2 2 0 114 0v3M12 3v18M18 7l3 9a5.002 5.002 0 006.001 0M18 7l-3 9M18 7V4m0 0a2 2 0 10-4 0v3m4-3a2 2 0 114 0v3"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Legal & Compliance</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Payroll & Administration</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Employment contracts, NDA, IP assignment, BAA, HIPAA, SOC 2, ISO 27001 — all managed.
+                    Salary processing, attendance management, tax coordination, benefits administration, and accurate payroll services.
                 </p>
             </div>
 
@@ -698,9 +712,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">HR & People Ops</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Legal & Regulatory Compliance</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Onboarding, performance reviews, conflict resolution, offboarding — a full HR department for your hire.
+                    Employment documentation, policy management, regulatory compliance, contractual support, and risk mitigation.
                 </p>
             </div>
 
@@ -711,9 +725,22 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Edge Platform</h3>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Human Resources</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                    Time tracking, productivity dashboards, communication tools, performance analytics — full visibility.
+                    Employee engagement, performance management, conflict resolution, recruitment coordination, and workforce development.
+                </p>
+            </div>
+
+            <!-- Card 8: Edge Platform -->
+            <div class="bg-white rounded-[24px] border border-slate-200/60 p-6 md:p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-md hover:border-primary/25 transition-all duration-300">
+                <div class="text-primary mb-5">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                </div>
+                <h3 class="font-bold text-[#0F172A] text-[15px] mb-3 tracking-tight font-sans">Workforce Platform</h3>
+                <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
+                    Real-time reporting, productivity dashboards, communication tools, workforce insights, and operational analytics.
                 </p>
             </div>
 
@@ -728,26 +755,25 @@
                 
                 <!-- Left Side: Center-Aligned Text Column on all devices -->
                 <div class="flex flex-col items-center text-center flex-1 w-full">
-                    <h3 class="text-lg sm:text-xl md:text-[16px] font-bold text-[#0F172A] tracking-tight mb-2.5 font-sans leading-snug">
-                        Why 500+ businesses chose Edge as their first remote staffing partner
+                    <h3 class="text-lg sm:text-xl md:text-[16px] font-bold text-[#0F172A] tracking-tight mb-2.5 font-sans leading-snug capitalize">
+                        Ready to build a stronger workforce with VMA?
                     </h3>
                     <p class="text-[13px] md:text-[13.5px] text-slate-500 font-medium font-sans">
-                        Book a Demo. We'll show you exactly how the ecosystem works.
+                        Book a consultation today and discover how our workforce management ecosystem helps businesses recruit, support, and retain exceptional remote professionals.
                     </p>
                 </div>
 
                 <!-- Right Side: CTA Button and Helper Text -->
                 <div class="flex flex-col sm:flex-row items-center gap-5 sm:gap-6 w-full lg:w-auto justify-center lg:justify-end">
                     <!-- CTA Button -->
-                    <button class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-7 rounded-[14px] shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all flex items-center justify-center gap-2.5 whitespace-nowrap text-sm w-full sm:w-auto font-sans"
-                            style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
-                        Book a Demo 
-                        <!-- Ultra-clean Inline SVG Chevron -->
-                        <svg class="w-3 h-3 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                    
+                    <a href="/contact" class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-7 rounded-[14px] shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all inline-flex items-center justify-center gap-2.5 whitespace-nowrap text-sm w-full sm:w-auto font-sans"
+                        style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
+                            Book a Consultation  
+                            <!-- Ultra-clean Inline SVG Chevron -->
+                            <svg class="w-3 h-3 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                    </a>                    
                     <!-- Helper Info -->
                     <div class="text-[11px] md:text-[12px] text-slate-400 text-center sm:text-left leading-normal whitespace-nowrap font-medium font-sans">
                         No payment until you hire.<br>No contract.
@@ -772,23 +798,22 @@
         </div>
 
         <!-- Main Heading -->
-        <h2 class="text-white text-[42px] md:text-[46px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize">
-            Meet your next hire<br>
-            in <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">just 7 days</span>
+        <h2 class="text-white text-[42px] md:text-[46px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize capitalize">
+            Meet Your Next Hire <br>
+            in <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">Just 7 Days</span>
         </h2>
 
         <!-- Subheading -->
         <p class="text-white/80 text-[13px] md:text-[16px] leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-             Book a Demo to see matched, pre-vetted candidates for your needs.
-
+             Book a Demo to see matched, pre-vetted candidates tailored to your business needs.
             <br class="hidden md:block">
             No overheads. No commitments. No risk.
         </p>
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
-                Secure Your Spot
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+                Book a Consultation
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -800,7 +825,7 @@
             @php
                 $benefits = [
                     'Pay only when you hire',
-                    'No long-term lock-in',
+                    'No long-term commitment',
                     'Free replacement if needed',
                     'Quick, easy demo',
                     'Cancel anytime'

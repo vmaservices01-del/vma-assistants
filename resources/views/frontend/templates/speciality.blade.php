@@ -48,8 +48,9 @@
         </p>
 
         <!-- Centered Interactive Button -->
+        <!-- Centered Interactive Button -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button class="relative group overflow-hidden px-10 py-4 bg-[var(--primary)] text-white font-bold rounded-2xl transition-all shadow-2xl shadow-[var(--primary)]/40 flex items-center justify-center gap-3 active:scale-95 border border-[var(--primary)]/20">
+            <a href="/contact" class="relative group overflow-hidden px-10 py-4 bg-[var(--primary)] text-white font-bold rounded-2xl transition-all shadow-2xl shadow-[var(--primary)]/40 flex items-center justify-center gap-3 active:scale-95 border border-[var(--primary)]/20 decoration-transparent no-underline">
                 <!-- Hover Glow -->
                 <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                 
@@ -57,7 +58,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 relative group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-            </button>
+            </a>
         </div>
 
     </div>
@@ -65,106 +66,113 @@
 
 @php
     $specialties = [
+        // ROW 1
         [
             'title' => 'Internal Medicine',
             'desc' => 'Comprehensive acute and chronic disease management for complex adult patient care.',
-            'icon' => 'M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.3.3 0 1 0 .2.3 M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4 M20 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4 M14 12h-4' // Stethoscope
+            'icon' => 'M 4.8 2.3 A 0.3 0.3 0 1 0 5 2 H 4 a 2 2 0 0 0 -2 2 v 5 a 6 6 0 0 0 6 6 v 0 a 6 6 0 0 0 6 -6 V 4 a 2 2 0 0 0 -2 -2 h -1 a 0.3 0.3 0 1 0 0.2 0.3 M 8 15 v 1 a 6 6 0 0 0 6 6 v 0 a 6 6 0 0 0 6 -6 v -4 M 20 12 a 2 2 0 1 0 0 -4 2 2 0 0 0 0 4 M 14 12 h -4' // Stethoscope
         ],
         [
             'title' => 'Cardiology',
             'desc' => 'Expert cardiovascular care with patient management, procedure scheduling, and specialist follow-up.',
-            'icon' => 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z' // Heart
+            'icon' => 'M 21 8.25 c 0 -2.485 -2.099 -4.5 -4.688 -4.5 c -1.935 0 -3.597 1.126 -4.312 2.733 c -.715 -1.607 -2.377 -2.733 -4.313 -2.733 C 5.1 3.75 3 5.765 3 8.25 c 0 7.22 9 12 9 12 s 9 -4.78 9 -12 z' // Heart
         ],
         [
             'title' => 'Oncology',
             'desc' => 'Specialized cancer care coordination with chemotherapy scheduling and comprehensive patient education.',
-            'icon' => 'M12 12c-2.333-3.667-4-5-4-7a4 4 0 1 1 8 0c0 2-1.667 3.333-4 7z M12 12l-5 8 M12 12l5 8' // Cancer Ribbon
+            'icon' => 'M 12 12 c -2.333 -3.667 -4 -5 -4 -7 a 4 4 0 1 1 8 0 c 0 2 -1.667 3.333 -4 7 z M 12 12 l -5 8 M 12 12 l 5 8' // Cancer Ribbon
         ],
         [
             'title' => 'Orthopedic Surgery',
             'desc' => 'Expert musculoskeletal care with surgical scheduling, post-operative management, and rehabilitation guidance.',
-            'icon' => 'M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5l7-7Z' // Bone
+            'icon' => 'M 17 10 c .7 -.7 1.69 0 2.5 0 a 2.5 2.5 0 1 0 0 -5 a .5 .5 0 0 1 -.5 -.5 a 2.5 2.5 0 1 0 -5 0 c 0 .81 .7 1.8 0 2.5 l -7 7 c -.7 .7 -1.69 0 -2.5 0 a 2.5 2.5 0 0 0 0 5 c .28 0 .5 .22 .5 .5 a 2.5 2.5 0 1 0 5 0 c 0 -.81 -.7 -1.8 0 -2.5 l 7 -7 Z' // Bone
         ],
         [
             'title' => 'Physical Medicine & Rehabilitation',
             'desc' => 'Comprehensive physical therapy coordination and rehabilitation planning for optimal functional recovery.',
-            'icon' => 'M17.596 12.768a2 2 0 1 0 2.829-2.829l-3.535-3.536a2 2 0 1 0-2.829 2.829 M6.404 11.232a2 2 0 1 0-2.829 2.829l3.535 3.536a2 2 0 1 0 2.829-2.829 M8.525 15.475l6.95-6.95' // Dumbbell
+            'icon' => 'M 17.596 12.768 a 2 2 0 1 0 2.829 -2.829 l -3.535 -3.536 a 2 2 0 1 0 -2.829 2.829 M 6.404 11.232 a 2 2 0 1 0 -2.829 2.829 l 3.535 3.536 a 2 2 0 1 0 2.829 -2.829 M 8.525 15.475 l 6.95 -6.95' // Dumbbell
         ],
+
+        // ROW 2
         [
             'title' => 'Pediatrics',
             'desc' => 'Specialized pediatric care including vaccination schedules, development tracking, and family coordination.',
-            'icon' => 'M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z' // Smiley Face
+            'icon' => 'M 14.828 14.828 a 4 4 0 0 1 -5.656 0 M 9 10 h .01 M 15 10 h .01 M 21 12 a 9 9 0 1 1 -18 0 a 9 9 0 0 1 18 0 z' // Smiley Face
         ],
         [
             'title' => 'Physical Therapy',
             'desc' => 'Dedicated therapy scheduling, patient progress tracking, and customized treatment plan implementation.',
-            'icon' => 'M13.5 3a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 11l-3-2-2 2-2-1.5V11L11 9l2 2v6h2v-6z' // Active/Exercise figure
+            'icon' => 'M 13.5 3 a 1.5 1.5 0 1 1 -3 0 a 1.5 1.5 0 0 1 3 0 z M 15 11 l -3 -2 -2 2 -2 -1.5 V 11 L 11 9 l 2 2 v 6 h 2 v -6 z' // Exercise figure
         ],
         [
             'title' => 'Primary Care',
             'desc' => 'Full-service family medicine support including preventive care, chronic disease, and wellness.',
-            'icon' => 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2' // Medical Clipboard
+            'icon' => 'M 9 5 H 7 a 2 2 0 0 0 -2 2 v 12 a 2 2 0 0 0 2 2 h 10 a 2 2 0 0 0 2 -2 V 7 a 2 2 0 0 0 -2 -2 h -2 M 9 5 a 2 2 0 0 0 2 2 h 2 a 2 2 0 0 0 2 -2 M 9 5 a 2 2 0 0 1 2 -2 h 2 a 2 2 0 0 1 2 2' // Medical Clipboard
         ],
         [
             'title' => 'Cardiology',
             'desc' => 'Advanced cardiovascular support with diagnostic testing, medication management, and patient education.',
-            'icon' => 'M22 12h-4l-3 9L9 3l-3 9H2' // EKG Pulse/Activity
+            'icon' => 'M 22 12 h -4 l -3 9 L 9 3 l -3 9 H 2' // EKG Pulse
         ],
         [
             'title' => 'Pain Management',
             'desc' => 'Specialized acute and chronic pain management with coordinated multi-modal treatment approaches.',
-            'icon' => 'M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z' // Flame (representing pain/warmth therapy)
+            'icon' => 'M 8.5 14.5 A 2.5 2.5 0 0 0 11 12 c 0 -1.38 -.5 -2 -1 -3 c -1.072 -2.143 -.224 -4.054 2 -6 c .5 2.5 2 4.9 4 6.5 c 2 1.6 3 3.5 3 5.5 a 7 7 0 1 1 -14 0 c 0 -1.153 .433 -2.294 1 -3 a 2.5 2.5 0 0 0 2.5 2.5 z' // Flame
         ],
+
+        // ROW 3
         [
             'title' => 'Urology',
             'desc' => 'Specialized urological care including condition management, procedure scheduling, and patient follow-up.',
-            'icon' => 'M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z' // Droplet (urinary/hydration tracking)
+            'icon' => 'M 12 22 a 7 7 0 0 0 7 -7 c 0 -4.3 -7 -13 -7 -13 S 5 10.7 5 15 a 7 7 0 0 0 7 7 z' // Droplet
         ],
         [
             'title' => 'Dermatology',
             'desc' => 'Expert skin condition support with procedure coordination and dermatological treatment planning.',
-            'icon' => 'M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.937A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063A2 2 0 0 0 14.063 15.5L12.481 21.635a.5.5 0 0 1-.962 0L9.937 15.5z M20 3v4 M18 5h4 M5 17v4 M3 19h4' // Sparkles (for clear, healthy skin)
+            'icon' => 'M 9.937 15.5 A 2 2 0 0 0 8.5 14.063 l -6.135 -1.582 a .5 .5 0 0 1 0 -.962 L 8.5 9.937 A 2 2 0 0 0 9.937 8.5 l 1.582 -6.135 a .5 .5 0 0 1 .962 0 L 14.063 8.5 A 2 2 0 0 0 15.5 9.937 l 6.135 1.582 a .5 .5 0 0 1 0 .962 L 15.5 14.063 A 2 2 0 0 0 14.063 15.5 L 12.481 21.635 a .5 .5 0 0 1 -.962 0 L 9.937 15.5 z M 20 3 v 4 M 18 5 h 4 M 5 17 v 4 M 3 19 h 4' // Sparkles
         ],
         [
             'title' => 'Behavioral Health',
             'desc' => 'Compassionate mental health support with psychiatric coordination, therapy scheduling, and wellness programs.',
-            'icon' => 'M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z' // Chat bubble with conversation dots
+            'icon' => 'M 8 10 h .01 M 12 10 h .01 M 16 10 h .01 M 9 16 H 5 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 h 14 a 2 2 0 0 1 2 2 v 8 a 2 2 0 0 1 -2 2 h -5 l -5 5 v -5 z' // Chat bubble
         ],
         [
             'title' => 'Gastroenterology',
             'desc' => 'Specialized GI care including endoscopy scheduling, digestive health management, and coordination.',
-            'icon' => 'M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 8a7 7 0 0 1-7.17 9.9M19 2c-2.26 4.33-5.27 7.14-8 10' // Organic Leaf (Digestion & Metabolic health)
+            'icon' => 'M 11 20 A 7 7 0 0 1 9.8 6.1 C 15.5 5 17 4.48 19 2 c 1 2 2 3.5 1 8 a 7 7 0 0 1 -7.17 9.9 M 19 2 c -2.26 4.33 -5.27 7.14 -8 10' // Digestive / Leaf
         ],
         [
             'title' => 'Urgent Care',
             'desc' => 'Rapid-response support for urgent situations, emergency coordination, and acute care management.',
-            'icon' => 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M12 7v10 M7 12h10' // Medical Shield with Cross
+            'icon' => 'M 12 22 s 8 -4 8 -10 V 5 l -8 -3 -8 3 v 7 c 0 6 8 10 8 10 z M 12 7 v 10 M 7 12 h 10' // Medical Shield
         ],
+
+        // ROW 4
         [
             'title' => 'Wound Care',
             'desc' => 'Specialized wound management including treatment planning, dressing coordination, and progress monitoring.',
-            'icon' => 'M18 6a3 3 0 0 0-4.24 0l-7.78 7.78a3 3 0 0 0 0 4.24l2 2a3 3 0 0 0 4.24 0l7.78-7.78a3 3 0 0 0 0-4.24l-2-2z M9.5 14.5l5-5' // Band-aid/Plaster
+            'icon' => 'M 18 6 a 3 3 0 0 0 -4.24 0 l -7.78 7.78 a 3 3 0 0 0 0 4.24 l 2 2 a 3 3 0 0 0 4.24 0 l 7.78 -7.78 a 3 3 0 0 0 0 -4.24 l -2 -2 z M 9.5 14.5 l 5 -5' // Band-aid
         ],
         [
             'title' => 'Psychiatry',
             'desc' => 'Expert psychiatric care with medication coordination, mental health assessments, and wellness monitoring.',
-            'icon' => 'M12 18V5 M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4 M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5 M17.997 5.125a4 4 0 0 1 2.526 5.77 M18 18a4 4 0 0 0 2-7.464 M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517 M6 18a4 4 0 0 1-2-7.464 M6.003 5.125a4 4 0 0 0-2.526 5.77' // Brain hemispheres
+            'icon' => 'M 12 18 V 5 M 15 13 a 4.17 4.17 0 0 1 -3 -4 a 4.17 4.17 0 0 1 -3 4 M 17.598 6.5 A 3 3 0 1 0 12 5 a 3 3 0 1 0 -5.598 1.5 M 17.997 5.125 a 4 4 0 0 1 2.526 5.77 M 18 18 a 4 4 0 0 0 2 -7.464 M 19.967 17.483 A 4 4 0 1 1 12 18 a 4 4 0 1 1 -7.967 -.517 M 6 18 a 4 4 0 0 1 -2 -7.464 M 6.003 5.125 a 4 4 0 0 0 -2.526 5.77' // Brain
         ],
         [
             'title' => 'Dentistry',
             'desc' => 'Comprehensive dental support with appointment scheduling, treatment planning, and patient education.',
-            'icon' => 'M12 6c-1-1.5-3-2-5-2-2 0-3.5 1.5-3.5 3.5 0 2 1 4.5 2.5 6.5L7 19c-.5 1-.5 2 0 2.5s1 .5 1.5-.5L11 16l1-1.5 1 1.5 2.5 5c.5 1 1 1 1.5.5s.5-1.5 0-2.5l-1-5c1.5-2 2.5-4.5 2.5-6.5 0-2-1.5-3-3.5-3-2 0-4 .5-5 2z' // Anatomical Tooth molar
+            'icon' => 'M 12 6 c -1 -1.5 -3 -2 -5 -2 c -2 0 -3.5 1.5 -3.5 3.5 c 0 2 1 4.5 2.5 6.5 L 7 19 c -.5 1 -.5 2 0 2.5 s 1 .5 1.5 -.5 L 11 16 l 1 -1.5 l 1 1.5 l 2.5 5 c .5 1 1 1 1.5 .5 s .5 -1.5 0 -2.5 l -1 -5 c 1.5 -2 2.5 -4.5 2.5 -6.5 c 0 -2 -1.5 -3 -3.5 -3 c -2 0 -4 .5 -5 2 z' // Tooth
         ],
         [
             'title' => 'Radiology',
             'desc' => 'Diagnostic imaging support including test scheduling, result coordination, and interpretation assistance.',
-            'icon' => 'M3 7V5a2 2 0 0 1 2-2h2 M17 3h2a2 2 0 0 1 2 2v2 M21 17v2a2 2 0 0 1-2 2h-2 M7 21H5a2 2 0 0 1-2-2v-2 M8 12h8 M12 8v8' // Scan Frame with medical cross target
+            'icon' => 'M 3 7 V 5 a 2 2 0 0 1 2 -2 h 2 M 17 3 h 2 a 2 2 0 0 1 2 2 v 2 M 21 17 v 2 a 2 2 0 0 1 -2 2 h -2 M 7 21 H 5 a 2 2 0 0 1 -2 -2 v -2 M 8 12 h 8 M 12 8 v 8' // Scan Target
         ],
         [
             'title' => 'General Surgery',
             'desc' => 'Comprehensive surgical support with pre-operative preparation, procedure scheduling, and post-operative care.',
-            'icon' => 'M6 20a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z M18 20a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z M8.2 16.2L15 4 M15.8 16.2L9 4 M12 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z' // Surgical Scissors
-        ],
+            'icon' => 'M 6 20 a 2.5 2.5 0 1 0 0 -5 a 2.5 2.5 0 0 0 0 5 z M 18 20 a 2.5 2.5 0 1 0 0 -5 a 2.5 2.5 0 0 0 0 5 z M 8.2 16.2 L 15 4 M 15.8 16.2 L 9 4 M 12 11 a 1 1 0 1 0 0 -2 a 1 1 0 0 0 0 2 z' // Surgical Scissors
+        ]
     ];
 @endphp
 
@@ -214,6 +222,138 @@
     </div>
 </section>
 
+<!-- EMR -->
+<section class="w-full mx-auto px-6 py-20 bg-gray-50 antialiased">
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20">
+                EMR Ready Talent
+            </span>
+            <h2 class="text-[#111827] text-[30px] md:text-[42px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
+               Certified in the EMR <span class="text-[var(--primary)]">You Already Use</span>
+            </h2>
+            <p class="text-black text-[14px] md:text-[16px] leading-relaxed max-w-2xl mx-auto font-normal">
+                Stop wasting time on software training. VMA 4-week intensive training program provides vetted and certified assistants in high-volume documentation and complex billing cycles. We hit the ground running so your clinic never misses a beat.
+            </p>
+        </div>
+
+        @php
+            $ehrList = [
+                // EHRs / Practice Management (1-15)
+                ['title' => 'ICA Notes', 'desc' => 'Behavioral health specific charting, clinical notes, and specialized therapy templates.', 'icon' => 'building'],
+                ['title' => 'Advanced MD', 'desc' => 'Cloud-based clinical charting, practice management, and automated medical billing.', 'icon' => 'building'],
+                ['title' => 'NextGen', 'desc' => 'Unified clinical workflows, electronic prescribing, and integrated patient portal access.', 'icon' => 'building'],
+                ['title' => 'Progno CIS', 'desc' => 'Customizable clinical documentation, telehealth modules, and patient communication logs.', 'icon' => 'building'],
+                ['title' => 'CareCloud', 'desc' => 'Modern cloud charting, appointment booking, and patient engagement dashboards.', 'icon' => 'building'],
+                ['title' => 'Epic', 'desc' => 'Enterprise charting, Order Entry, InBasket message routing, and Haiku mobile clinical tools.', 'icon' => 'building'],
+                ['title' => 'AllScripts', 'desc' => 'Clinical documentation, active problem lists, e-prescribing, and chart reviews.', 'icon' => 'building'],
+                ['title' => 'Kareo', 'desc' => 'Independent clinic clinical charting, billing codes, and patient communications.', 'icon' => 'building'],
+                ['title' => 'Athena Health', 'desc' => 'Unified cloud-native EHR, patient scheduling, and automated RCM billing cycles.', 'icon' => 'building'],
+                ['title' => 'Cerner', 'desc' => 'Hospital-grade inpatient clinical charting, database queries, and medication administration.', 'icon' => 'building'],
+                ['title' => 'Medisoft Clinical', 'desc' => 'EHR charting integrated directly with specialized independent clinic billing managers.', 'icon' => 'building'],
+                ['title' => 'Office Ally', 'desc' => 'High-volume insurance eligibility verification, clearinghouse submissions, and billing portals.', 'icon' => 'lock'],
+                ['title' => 'eClinicalWorks', 'desc' => 'Healow patient portal management, clinical charting, and structured encounter templates.', 'icon' => 'building'],
+                ['title' => 'Amazing Charts', 'desc' => 'Clinician-focused, rapid encounter documenting, lab tracking, and e-prescriptions.', 'icon' => 'chart'],
+                ['title' => 'Practice Fusion', 'desc' => 'Streamlined cloud medical records, appointment tracking, and lab integration.', 'icon' => 'building'],
+
+                // Clinical, Specialty & Hospital Systems (16-20)
+                ['title' => 'Altera', 'desc' => 'Scalable enterprise electronic health records, inpatient charting, and clinic management.', 'icon' => 'building'],
+                ['title' => 'CollaborateMD', 'desc' => 'High-speed medical billing claims, billing diagnostics, and practice scheduling.', 'icon' => 'lock'],
+                ['title' => 'eMDs', 'desc' => 'Comprehensive multi-specialty charting, billing, and direct laboratory interfaces.', 'icon' => 'building'],
+                ['title' => 'Evident', 'desc' => 'Community hospital clinical charting, emergency logs, and inpatient data entry.', 'icon' => 'building'],
+                ['title' => 'FreeMED', 'desc' => 'Flexible, open-source clinical records, custom databases, and treatment plan tracking.', 'icon' => 'building'],
+
+                // Clinical Systems & Tools (21-25)
+                ['title' => 'GE Healthcare', 'desc' => 'Advanced diagnostic imaging data integration, clinical scheduling, and charting.', 'icon' => 'chart'],
+                ['title' => 'Greenway Health', 'desc' => 'Prime Suite clinical charting, workflow tracking, and lab order routing.', 'icon' => 'building'],
+                ['title' => 'MEDITECH', 'desc' => 'Integrated hospital records database, bedside charting, and patient data entry.', 'icon' => 'building'],
+                ['title' => 'Medgen', 'desc' => 'Outpatient clinical documentation, structured SOAP notes, and reporting panels.', 'icon' => 'building'],
+                ['title' => 'MEDHOST', 'desc' => 'Emergency department tracking, inpatient clinical flow sheets, and financial records.', 'icon' => 'building'],
+
+                // Billing / Eligibility / Security Portals (26-30)
+                ['title' => 'Mitochon Systems', 'desc' => 'Cloud EMR, secure Health Information Exchange (HIE), and patient data tracking.', 'icon' => 'lock'],
+                ['title' => 'NextGen Healthcare', 'desc' => 'Specialized billing cycle management, insurance claims processing, and portal management.', 'icon' => 'lock'],
+                ['title' => 'NueMD', 'desc' => 'Secure insurance eligibility checks, billing claims tracking, and scheduling tools.', 'icon' => 'lock'],
+                ['title' => 'OpenEMR', 'desc' => 'Open-source patient charts, custom encounter forms, and integrated billing cycles.', 'icon' => 'chart'],
+                ['title' => 'OpenMRS', 'desc' => 'Global health metadata-driven records platform, patient tracking, and research charting.', 'icon' => 'chart'],
+
+                // Enterprise, Intake & Analytics (31-33)
+                ['title' => 'Oracle Health', 'desc' => 'Hospital database administration, system analytics, and clinical operations charting.', 'icon' => 'chart'],
+                ['title' => 'Webchart', 'desc' => 'Web-native clinical documentation, occupational health portals, and database search.', 'icon' => 'chart'],
+                ['title' => 'ZipChart EMR', 'desc' => 'Rapid, tablet-optimized clinical documentation, custom macros, and encounter logs.', 'icon' => 'chart'],
+            ];
+
+            // Shuffles the array randomly on each page render
+            shuffle($ehrList);
+        @endphp
+
+        <!-- EHR Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="ehr-grid">
+            @foreach($ehrList as $ehr)
+                <!-- Hide cards starting from index 8 initially -->
+                <div class="ehr-card bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group {{ $loop->index >= 8 ? 'hidden' : '' }}">
+                    
+                    <!-- Dynamic Icon Container -->
+                    <div class="mb-6 text-[var(--primary)] transition-transform duration-300 group-hover:scale-110">
+                        @if($ehr['icon'] == 'building')
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                        @elseif($ehr['icon'] == 'phone')
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        @elseif($ehr['icon'] == 'lock')
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                        @else
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                        @endif
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-[#111827] text-[18px] font-bold mb-2 tracking-tight">{{ $ehr['title'] }}</h3>
+                    
+                    <!-- Description -->
+                    <p class="text-black text-[12px] leading-relaxed font-normal">
+                        {{ $ehr['desc'] }}
+                    </p>
+                </div>
+            @endforeach
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-12">
+            <button id="show-more-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+                Show More Platforms
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Vanilla JS Progressive Loader -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const increment = 4; // Reveal 4 cards on each click
+
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden cards
+                const hiddenCards = document.querySelectorAll('.ehr-card.hidden');
+
+                // Reveal up to the next 4 cards
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
+
+                // If no more hidden cards exist, hide the button completely
+                if (document.querySelectorAll('.ehr-card.hidden').length === 0) {
+                    showMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
+
 <section class="max-w-7xl mx-auto px-6 py-20">
     
     <!-- Banner Container -->
@@ -229,11 +369,11 @@
         <div class="relative z-10 w-full lg:w-3/5 p-10 md:p-16 lg:pl-20 text-center lg:text-left">
             <h2 class="text-[26px] md:text-[36px] font-medium text-white leading-[1.2] mb-10 font-sans capitalize">
                 Discover what our <br class="hidden sm:block"> 
-                <span class="font-gnarly font-bold">See How Our Healthcare Virtual Assistant </span> <br class="hidden sm:block"> 
+                <span class="font-gnarly font-bold">See How Our Healthcare Virtual Assistant Transforms </span> <br class="hidden sm:block"> 
                 Transforms <span class="italic font-light"> Your Practice</span>
             </h2>
 
-            <a href="#" class="inline-flex items-center gap-2 px-10 py-4 bg-white text-[var(--primary)] font-bold rounded-full shadow-xl shadow-black/10 hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 group">
+            <a href="/contact" class="inline-flex items-center gap-2 px-10 py-4 bg-white text-[var(--primary)] font-bold rounded-full shadow-xl shadow-black/10 hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 group">
                 Get Started Today
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -262,7 +402,7 @@
             'avatar' => asset('storage/media/avatar1.webp')
         ],
         [
-            'quote' => 'The virtual assistants provided by Edge are top-tier. They integrated seamlessly into our workflow and the cost-to-value ratio is unbeatable for our growing clinic.',
+            'quote' => 'Dealing our discrimination room cases used to consume weeks. With VMA All Healthcare Assistant support, we reduced documentation time significantly. They have transformed our operational workflow and improved our overall clinic efficiency. Truly a game changer for us.',
             'author' => 'Dr. Jenny Fen',
             'role' => 'Medical Director, Healthcare Solutions',
             'image' => asset('storage/media/promo.webp'),
@@ -449,7 +589,7 @@
                         Schedule A Discovery Call
                     </h2>
                     <p class="text-slate-500 text-[16px] mb-10">
-                        Let’s connect for a quick chat to understand your practice’s needs and see how we can support you. 
+                        Let’s connect for a quick chat to understand your practice’s needs and see how we can support you.
                     </p>
 
                     @if(session('success'))
@@ -610,7 +750,7 @@
         <!-- Main Heading -->
         <h2 class="text-white text-[26px] md:text-[36px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize">
            Meet your next hire <br>
-            is <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">7 days away</span>
+            in <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">Just 7 days</span>
         </h2>
 
         <!-- Subheading -->
@@ -621,7 +761,7 @@
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
                 Book a Demo 
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -633,10 +773,10 @@
         <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-4">
             @php
                 $benefits = [
-                    'No payment until you hire',
-                    'No contract lock-in',
-                    'Replacement guarantee',
-                    'Quick demo',
+                    'Pay only when you hire',
+                    'No long-term commitment',
+                    'Free replacement if needed',
+                    'Quick, easy demo',
                     'Cancel anytime'
                 ];
             @endphp

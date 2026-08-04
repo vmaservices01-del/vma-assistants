@@ -35,27 +35,29 @@
 
         <!-- Headline -->
         <h2 class="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-white leading-[1.15] tracking-tight max-w-3xl mb-6 font-sans capitalize">
-            Your data never leaves<br>
-            a building <span class="text-primary">we control</span>
+            Your information stays inside<br>
+            <span class="text-primary">environments we manage and secure</span>
         </h2>
 
         <!-- Subtitle Description -->
         <p class="text-slate-400 text-sm md:text-[15px] leading-relaxed text-center max-w-2xl mb-10 font-sans">
-            Edge talent operates exclusively from secured campuses — biometric entry, managed devices, encrypted networks, and 24/7 monitoring. A controlled environment, built from the ground up for data security.
+            VMA professionals operate exclusively from protected delivery centers featuring biometric access controls, managed endpoints, encrypted infrastructure, and continuous security monitoring. Every layer is intentionally designed to safeguard your business, your systems, and your data.
         </p>
-
         <!-- Action Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 mb-20 w-full justify-center">
-            <button class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group font-sans"
-                    style="box-shadow: 0 4px 20px color-mix(in srgb, var(--primary-color) 25%, transparent);">
-                Book a Security Walkthrough <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </button>
-            <button class="border border-slate-800 bg-[#060c18]/20 hover:bg-slate-900/40 text-slate-200 font-bold py-3.5 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 font-sans">
-                See All 6 Security Layers
+            <!-- Button 1: URL Link -->
+            <a href="/contact" class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 group font-sans"
+            style="box-shadow: 0 4px 20px color-mix(in srgb, var(--primary-color) 25%, transparent);">
+                Book a Security Tour <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </a>
+
+            <!-- Button 2: Anchor Link (Scroll to Section or Page) -->
+            <a href="/trust-and-security" class="border border-slate-800 bg-[#060c18]/20 hover:bg-slate-900/40 text-slate-200 font-bold py-3.5 px-8 rounded-lg transition-all duration-300 inline-flex items-center justify-center gap-2 font-sans">
+                Explore All 6 Security Layers
                 <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                 </svg>
-            </button>
+            </a>
         </div>
 
         <!-- Metrics Grid -->
@@ -67,7 +69,7 @@
                     500<span class="text-primary font-bold">+</span>
                 </span>
                 <span class="text-[11px] md:text-xs text-slate-400 tracking-wide font-medium font-sans">
-                    Businesses trust Edge
+                    Companies Trust VMA
                 </span>
             </div>
 
@@ -77,7 +79,7 @@
                     0
                 </span>
                 <span class="text-[11px] md:text-xs text-slate-400 tracking-wide font-medium font-sans">
-                    Security breaches
+                    Reported Security Incidents
                 </span>
             </div>
 
@@ -87,7 +89,7 @@
                     6
                 </span>
                 <span class="text-[11px] md:text-xs text-slate-400 tracking-wide font-medium font-sans">
-                    Layers of security
+                     Security Layers
                 </span>
             </div>
 
@@ -97,7 +99,7 @@
                     24/7
                 </span>
                 <span class="text-[11px] md:text-xs text-slate-400 tracking-wide font-medium font-sans">
-                    SOC monitoring
+                    Security Monitoring
                 </span>
             </div>
 
@@ -112,18 +114,18 @@
         <!-- Top Pill Badge (Matches the clean green style from the image) -->
         <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 bg-[#f0fdf4] text-[#059669] rounded-full text-[10px] md:text-[11px] font-bold border border-[#dcfce7] tracking-wider uppercase mb-6 font-sans">
             <span class="font-bold text-[12px] leading-none">✓</span>
-            Built for first-time remote staffing buyers
+            DESIGNED FOR FIRST-TIME REMOTE HIRING COMPANIES
         </div>
 
         <!-- Main Headline (With dynamic primary color highlight) -->
-        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-[#0F172A] leading-[1.25] tracking-tight mb-5 font-sans">
-            We know this is new for you.<br class="hidden sm:inline">
-            <span class="text-primary">That's exactly why we built this.</span>
+        <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-[#0F172A] leading-[1.25] tracking-tight mb-5 font-sans capitalize">
+             New to remote staffing? <br class="hidden sm:inline">
+            <span class="text-primary">That's why we built VMA this way</span>
         </h2>
 
         <!-- Subtitle Paragraph -->
         <p class="text-slate-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed font-sans">
-            Most of our customers had never used a remote staffing company before Edge. We designed six layers of security so you don't have to take our word for it — you can see exactly how your data is protected at every level.
+            Many of the companies we work with had never hired offshore talent before partnering with VMA. Security was their biggest concern. That's why we created six integrated layers of protection—so you can clearly understand how your data, systems, and operations remain protected at every stage.
         </p>
 
     </div>
@@ -153,14 +155,14 @@
             </div>
 
             <!-- Headline -->
-            <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans">
-                Not a home office.<br>
-                <span class="text-primary">A secured campus.</span>
+            <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans capitalize">
+                Not working from home.<br>
+                <span class="text-primary">Working from a protected facility</span>
             </h2>
 
             <!-- Subtitle Description -->
             <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-500 mb-10 max-w-2xl font-sans">
-                Every Edge professional works from a managed, company-controlled campus — not a home office, coworking space, or coffee shop. Physical security is the foundation everything else is built on.
+                Every VMA professional operates from a company-managed delivery center—not from a home office, shared workspace, or public location. Physical security serves as the first line of defense for every client engagement.
             </p>
 
             <!-- Vertical Card Stack -->
@@ -177,14 +179,14 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Biometric Access Control</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Biometric Facility Access</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Fingerprint and facial recognition required to enter the facility. No tailgating — one person, one scan, one entry.
+                            Fingerprint and facial authentication are required before entering operational areas. Access is restricted to authorized personnel only, ensuring complete accountability for every entry and exit.
                         </p>
                         <!-- Green Pill Tag -->
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0fdf4] text-[#059669] text-[10.5px] font-bold border border-[#dcfce7] font-sans">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
-                            Every entry logged
+                             Access activity recorded
                         </span>
                     </div>
                 </div>
@@ -199,13 +201,13 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">24/7 CCTV Surveillance</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">24/7 Video Surveillance</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Every entrance, workspace, and common area monitored around the clock. Footage stored securely for audit compliance.
+                            Entrances, workstations, and shared areas are continuously monitored. Security footage is retained and managed according to compliance and audit requirements.
                         </p>
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0fdf4] text-[#059669] text-[10.5px] font-bold border border-[#dcfce7] font-sans">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
-                            24/7 recording
+                            Continuous monitoring
                         </span>
                     </div>
                 </div>
@@ -220,13 +222,13 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Secured Perimeter</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Controlled Campus Security</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Gated facility with security guards, visitor logs, and restricted zones. No unauthorized access to workstations.
+                            Security guards, visitor verification procedures, and restricted-access zones help prevent unauthorized entry into operational workspaces.
                         </p>
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0fdf4] text-[#059669] text-[10.5px] font-bold border border-[#dcfce7] font-sans">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
-                            Manned 24/7
+                            Staffed around the clock
                         </span>
                     </div>
                 </div>
@@ -241,13 +243,13 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Redundant Infrastructure</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Business Continuity Infrastructure</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Backup power generators, redundant fiber internet, uninterrupted power supply on every workstation. Zero-downtime environment for your operations.
+                           Backup generators, redundant internet connections, and workstation-level power protection help maintain uninterrupted operations for client teams.
                         </p>
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0fdf4] text-[#059669] text-[10.5px] font-bold border border-[#dcfce7] font-sans">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
-                            99.9% uptime
+                            High availability environment
                         </span>
                     </div>
                 </div>
@@ -319,13 +321,13 @@
 
             <!-- Headline -->
             <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-black leading-[1.15] tracking-tight mb-6 font-sans text-left">
-                Every hire is vetted, <br>
-                verified, and <span class="text-primary">legally bound</span>
+               Verified professionals. <br>
+               <span class="text-primary">Protected engagement.</span>
             </h2>
 
             <!-- Subtitle Description -->
             <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-400 mb-10 max-w-2xl text-left font-sans">
-                Before any Edge professional touches your systems, they pass through a rigorous screening process — identity verification, criminal background checks, and legally binding contracts in their country of origin.
+                Before gaining access to any client systems, every VMA professional completes a comprehensive screening process that includes identity verification, background assessments, and legally binding employment agreements.
             </p>
 
             <!-- Vertical Card Stack -->
@@ -341,14 +343,14 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Government-Issued Identity Verification</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Identity Verification</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Photo ID verified against government databases. No aliases, no fakes. We know exactly who is working for you.
+                            Government-issued identification is validated through established verification processes to confirm the identity of every team member.
                         </p>
                         <!-- Green Pill Tag -->
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0fdf4] text-[#059669] text-[10.5px] font-bold border border-[#dcfce7] font-sans">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
-                            Verified before day one
+                             Completed before onboarding
                         </span>
                     </div>
                 </div>
@@ -363,13 +365,13 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Criminal Background Checks</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Background Screening</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Comprehensive criminal record screening in the talent's country of origin. Disqualifying offenses prevent hiring.
+                            Candidates undergo background evaluations based on local regulations and hiring standards before joining the organization.
                         </p>
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0fdf4] text-[#059669] text-[10.5px] font-bold border border-[#dcfce7] font-sans">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
-                            Background cleared
+                            Security cleared
                         </span>
                     </div>
                 </div>
@@ -384,15 +386,15 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">NDA, IP & Non-Compete Agreements</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Confidentiality & IP Agreements</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Every hire signs an NDA, IP assignment, and non-compete — legally binding in their jurisdiction. Your data and trade secrets are contractually protected.
+                            All professionals sign confidentiality agreements, intellectual property assignments, and employment contracts designed to protect client information.
                         </p>
                         <!-- Blue/Purple Pill Tag (Matches dynamic primary color mix) -->
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10.5px] font-bold border font-sans text-primary"
                               style="background-color: color-mix(in srgb, var(--primary-color) 5%, transparent); border-color: color-mix(in srgb, var(--primary-color) 15%, transparent);">
                             <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                            Legally enforceable
+                            Contractually protected
                         </span>
                     </div>
                 </div>
@@ -407,15 +409,15 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Mandatory Security Awareness Training</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Security Awareness Training</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            HIPAA training, phishing simulations, cyber hygiene protocols, and ongoing security refreshers. Not optional — required for continued employment.
+                           Cybersecurity education, phishing awareness exercises, privacy training, and security refreshers are mandatory for all personnel.
                         </p>
                         <!-- Blue/Purple Pill Tag -->
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10.5px] font-bold border font-sans text-primary"
                               style="background-color: color-mix(in srgb, var(--primary-color) 5%, transparent); border-color: color-mix(in srgb, var(--primary-color) 15%, transparent);">
                             <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                            Ongoing training
+                             Ongoing certification
                         </span>
                     </div>
                 </div>
@@ -434,28 +436,29 @@
                 <!-- Left Side: Center-Aligned Text Column on all devices -->
                 <div class="flex flex-col items-center text-center flex-1 w-full">
                     <h3 class="text-lg sm:text-xl md:text-[16px] font-bold text-[#0F172A] tracking-tight mb-2.5 font-sans leading-snug">
-                        Why 500+ businesses chose Edge as their first remote staffing partner
+                        Why 500+ companies selected VMA as their remote staffing partner
                     </h3>
                     <p class="text-[13px] md:text-[13.5px] text-slate-500 font-medium font-sans">
-                        Book a Demo. We'll show you exactly how the ecosystem works.
+                        Schedule a demo and see how our security ecosystem works
                     </p>
                 </div>
 
                 <!-- Right Side: CTA Button and Helper Text -->
                 <div class="flex flex-col sm:flex-row items-center gap-5 sm:gap-6 w-full lg:w-auto justify-center lg:justify-end">
                     <!-- CTA Button -->
-                    <button class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-7 rounded-[14px] shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all flex items-center justify-center gap-2.5 whitespace-nowrap text-sm w-full sm:w-auto font-sans"
-                            style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
+                    <a href="/contact" class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-7 rounded-[14px] shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all inline-flex items-center justify-center gap-2.5 whitespace-nowrap text-sm w-full sm:w-auto font-sans"
+                        style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
                         Book a Demo 
                         <!-- Ultra-clean Inline SVG Chevron -->
                         <svg class="w-3 h-3 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                         </svg>
-                    </button>
+                    </a>
                     
                     <!-- Helper Info -->
                     <div class="text-[11px] md:text-[12px] text-slate-400 text-center sm:text-left leading-normal whitespace-nowrap font-medium font-sans">
-                        No payment until you hire.<br>No contract.
+                        No upfront commitment. <br>No long-term contract.
+
                     </div>
                 </div>
 
@@ -487,13 +490,13 @@
 
             <!-- Headline -->
             <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans text-left">
-                Company devices only.<br>
-                <span class="text-primary">No personal laptops.<br>Ever.</span>
+                Managed devices only. <br>
+                <span class="text-primary">No personal equipment allowed.</span>
             </h2>
 
             <!-- Subtitle Description -->
             <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-500 mb-10 max-w-2xl text-left font-sans">
-                Every Edge professional works on a company-provisioned, company-managed device. No BYOD. No personal hardware touching your systems. Full endpoint control from procurement to secure disposal.
+                Every VMA professional works on company-issued and company-managed hardware. Personal devices are not permitted for client work, allowing complete control over endpoint security from deployment through retirement.
             </p>
 
             <!-- Vertical Card Stack -->
@@ -510,9 +513,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Company-Provisioned Hardware</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Company-Managed Hardware</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Enterprise-grade laptop, dual monitors, headset, webcam — all asset-tagged and tracked. Personal devices never touch your systems.
+                           Enterprise laptops, monitors, webcams, and accessories are provisioned, tracked, and maintained through centralized asset management procedures.
                         </p>
                     </div>
                 </div>
@@ -527,9 +530,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Full Disk Encryption</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Full Device Encryption</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            AES-256 encryption on every device. If a laptop is lost or stolen, your data is unreadable without the decryption key.
+                            Industry-standard encryption protects all stored information, ensuring data remains inaccessible if hardware is lost, stolen, or compromised.
                         </p>
                     </div>
                 </div>
@@ -547,7 +550,7 @@
                     <div class="flex-1 flex flex-col items-start text-left">
                         <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Mobile Device Management (MDM)</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Remote wipe capability, software enforcement, USB port lockdown, app whitelisting. Edge controls what's on every device.
+                           Centralized management enables remote wipe capabilities, application controls, policy enforcement, and device monitoring.
                         </p>
                     </div>
                 </div>
@@ -562,9 +565,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">EDR & Anti-Malware</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Endpoint Protection</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Endpoint Detection and Response (EDR) with real-time threat monitoring. CIS benchmark hardening on every machine.
+                            Advanced endpoint detection and threat monitoring solutions help identify suspicious behavior and security risks in real time.
                         </p>
                     </div>
                 </div>
@@ -638,13 +641,13 @@
 
             <!-- Headline -->
             <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans text-left">
-                Zero-trust architecture.<br>
-                <span class="text-primary">Every connection<br>verified.</span>
+                Every connection authenticated.<br>
+                <span class="text-primary">Every session protected.</span>
             </h2>
 
             <!-- Subtitle Description -->
             <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-500 mb-10 max-w-2xl text-left font-sans">
-                Every packet in and out of Edge campuses goes through enterprise-grade network security. Zero-trust VPN, web filtering, tiered firewalls, and intrusion detection — no shortcuts.
+                Network traffic within VMA facilities passes through multiple layers of enterprise security controls, including encrypted communications, advanced monitoring, and strict access policies.
             </p>
 
             <!-- Vertical Card Stack -->
@@ -661,9 +664,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Zero-Trust VPN</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Secure VPN Connectivity</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            All traffic routed through encrypted VPN tunnels. No split tunneling. Every connection re-authenticated. Trust nothing, verify everything.
+                           Client-related traffic is transmitted through encrypted channels designed to protect sensitive information and user sessions.
                         </p>
                     </div>
                 </div>
@@ -678,9 +681,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Tiered Network Firewalls</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Multi-Layer Firewall Protection</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Host-based and network-level firewalls. IDS/IPS (Intrusion Detection and Prevention) actively monitoring for anomalies.
+                            Network and host-based security controls continuously monitor and filter traffic to reduce exposure to threats.
                         </p>
                     </div>
                 </div>
@@ -695,9 +698,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Web Filtering & DNS Security</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">DNS & Web Security Controls</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Category-based web filtering blocks unauthorized sites. DNS-layer protection prevents phishing and C2 communications.
+                            Security filtering helps block malicious websites, phishing attempts, and unauthorized destinations before they become risks.
                         </p>
                     </div>
                 </div>
@@ -711,9 +714,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">EDR & Anti-Malware</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Threat Detection Monitoring</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Endpoint Detection and Response (EDR) with real-time threat monitoring. CIS benchmark hardening on every machine.
+                            Security systems monitor network activity continuously to identify anomalies and respond to suspicious behavior.
                         </p>
                     </div>
                 </div>
@@ -747,14 +750,14 @@
 
             <!-- Headline -->
             <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans text-left">
-                Encrypted at rest.<br>
-                Encrypted in transit.<br>
+                Protected while stored.<br>
+                Protected while shared<br>
                 <span class="text-primary">Always.</span>
             </h2>
 
             <!-- Subtitle Description -->
             <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-500 mb-10 max-w-2xl text-left font-sans">
-                Patient data, policyholder records, financial information — whatever your team handles, it's protected by enterprise encryption, DLP, and secure tenant segregation.
+                Whether your team handles healthcare information, financial records, customer data, or proprietary business information, VMA applies layered controls to help keep that information secure.
             </p>
 
             <!-- Vertical Card Stack -->
@@ -771,9 +774,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Encryption at Rest & in Transit</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Data Encryption</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            AES-256 for stored data. TLS 1.3 for data in transit. No unencrypted data anywhere in the Edge ecosystem.
+                            Information is protected through strong encryption standards both while stored and while moving across networks.
                         </p>
                     </div>
                 </div>
@@ -788,9 +791,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Data Loss Prevention (DLP)</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Data Loss Prevention</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Policies that prevent unauthorized data transfers, USB exports, screen captures, and email forwarding of sensitive information.
+                            Security controls help prevent unauthorized transfers, downloads, exports, screenshots, and sharing of sensitive information.
                         </p>
                     </div>
                 </div>
@@ -805,9 +808,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Secure Tenant Segregation</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Client Environment Separation</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Your data is isolated from other clients. Multi-environment architecture with production environment completely separated.
+                            Logical segregation ensures client environments remain isolated and protected from unauthorized access.
                         </p>
                     </div>
                 </div>
@@ -822,9 +825,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Managed Backups & Disaster Recovery</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Backup & Recovery Management</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Recurring backups with verification. Business continuity and disaster recovery plans tested regularly. AWS cloud infrastructure.
+                           Regular backups, validation procedures, and disaster recovery planning help support business continuity objectives.
                         </p>
                     </div>
                 </div>
@@ -896,13 +899,13 @@
 
             <!-- Headline -->
             <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans text-left">
-                24/7 Security Operations Center.<br>
-                <span class="text-primary">We never sleep.</span>
+                Continuous security monitoring.<br>
+                <span class="text-primary"> Immediate response capability</span>
             </h2>
 
             <!-- Subtitle Description -->
             <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-500 mb-10 max-w-2xl text-left font-sans">
-                Edge runs a Security Operations Center with SIEM, real-time alerting, and incident response — so threats are detected and neutralized before they reach your data.
+                VMA maintains around-the-clock security monitoring supported by logging, alerting, and incident response procedures designed to identify and address threats before they impact client operations.
             </p>
 
             <!-- Vertical Card Stack -->
@@ -918,9 +921,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">SIEM — Security Event Monitoring</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Security Event Monitoring</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Security Information and Events Management system aggregates logs from every device, network, and application. Anomalies trigger instant alerts.
+                            Logs from devices, systems, and networks are collected and analyzed to identify unusual activity and generate alerts
                         </p>
                     </div>
                 </div>
@@ -934,9 +937,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Incident Response Plan</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Incident Response Procedures</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Documented IR plan with defined escalation paths, containment procedures, and communication protocols. Tested quarterly.
+                            Documented response workflows establish escalation paths, containment measures, and communication procedures for security events.
                         </p>
                     </div>
                 </div>
@@ -950,9 +953,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Enhanced Logging & Metrics</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Comprehensive Audit Logging</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                            Every access, file transfer, login, and system event logged and retained. Full audit trail available for your compliance needs.
+                            Access attempts, system activity, and security events are recorded to provide visibility and compliance support.
                         </p>
                     </div>
                 </div>
@@ -966,9 +969,9 @@
                         </svg>
                     </div>
                     <div class="flex-1 flex flex-col items-start text-left">
-                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">VAPT & Pen Testing</h3>
+                        <h3 class="font-bold text-[#0F172A] text-[15px] mb-2 tracking-tight font-sans">Security Testing Programs</h3>
                         <p class="text-[12.5px] leading-relaxed text-slate-500 mb-3 font-sans">
-                            Vulnerability Assessment and Penetration Testing programs. Web Application Firewall (WAF). Responsible disclosure with partners.
+                            Regular vulnerability assessments, penetration testing, and application security reviews help strengthen overall security posture.
                         </p>
                     </div>
                 </div>
@@ -989,18 +992,18 @@
             <!-- Top Pill Badge (Dynamic background/border/text) -->
             <div class="inline-flex items-center justify-center px-4 py-1.5 rounded-full text-[10px] md:text-[11px] font-bold border tracking-wider uppercase mb-6 w-fit font-sans text-primary"
                  style="background-color: color-mix(in srgb, var(--primary-color) 6%, transparent); border-color: color-mix(in srgb, var(--primary-color) 20%, transparent);">
-                Built for first-time remote staffing buyers
+                DESIGNED FOR FIRST-TIME REMOTE HIRING COMPANIES
             </div>
 
             <!-- Headline -->
-            <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans">
-                We know this is new for you.<br>
-                <span class="text-primary">That's exactly why we built this.</span>
+            <h2 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0F172A] leading-[1.15] tracking-tight mb-6 font-sans capitalize">
+                We understand the concerns. <br>
+                <span class="text-primary">We've built answers into the process.</span>
             </h2>
 
             <!-- Subtitle Description -->
             <p class="text-[14px] md:text-[15px] leading-relaxed text-slate-500 max-w-2xl font-sans">
-                Most of our 500+ customers were first-time remote staffing buyers. Here's what they told us mattered most — and how we addressed every concern before they even had to ask.
+                Most of our clients were new to remote staffing when they partnered with VMA. These are the questions they asked most frequently—and the safeguards we put in place to address them.
             </p>
         </div>
         
@@ -1016,9 +1019,9 @@
                     </svg>
                 </div>
                 <div class="flex-1 flex flex-col items-start text-left">
-                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">"How do I know they won't steal data?"</h3>
+                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">How do I know my data is protected?</h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        NDA + IP assignment signed before day one. Company-managed devices with DLP. No USB ports, no personal email, no file exports. Full audit trail.
+                       Confidentiality agreements, managed devices, monitoring controls, and restricted data transfer policies work together to help protect sensitive information.
                     </p>
                 </div>
             </div>
@@ -1031,9 +1034,9 @@
                     </svg>
                 </div>
                 <div class="flex-1 flex flex-col items-start text-left">
-                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">"What if they just disappear?"</h3>
+                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">What happens if someone leaves unexpectedly?</h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        They work from a physical campus. We know exactly where they are. 97% retention rate. And if someone does leave, we provide a replacement — fast.
+                        Our structured workforce management process helps ensure continuity, and replacement support is available whenever required.
                     </p>
                 </div>
             </div>
@@ -1046,9 +1049,9 @@
                     </svg>
                 </div>
                 <div class="flex-1 flex flex-col items-start text-left">
-                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">"Is this even HIPAA compliant?"</h3>
+                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Can VMA support regulated industries?</h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        Yes. We sign a BAA before any talent touches your systems. SOC 2 Type II audited. ePHI handling policies enforced across every campus.
+                        Yes. Our compliance and security framework is designed to support organizations operating within strict regulatory environments.
                     </p>
                 </div>
             </div>
@@ -1061,9 +1064,9 @@
                     </svg>
                 </div>
                 <div class="flex-1 flex flex-col items-start text-left">
-                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">"What if they're working for someone else too?"</h3>
+                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">Can team members work for multiple companies?</h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        Full-time, dedicated to your business only. Non-compete and exclusivity clauses in every employment contract. Campus check-in verifies physical presence.
+                        No. Professionals are assigned to dedicated client engagements under clearly defined employment terms and expectations.
                     </p>
                 </div>
             </div>
@@ -1076,9 +1079,9 @@
                     </svg>
                 </div>
                 <div class="flex-1 flex flex-col items-start text-left">
-                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">"How do I know who they really are?"</h3>
+                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">How do you verify employee identity?</h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        Government-issued identity verification, criminal background check, and biometric campus entry. We verify before you ever meet them.
+                        Identity validation, screening procedures, and controlled facility access help ensure accountability across the workforce.
                     </p>
                 </div>
             </div>
@@ -1091,9 +1094,9 @@
                     </svg>
                 </div>
                 <div class="flex-1 flex flex-col items-start text-left">
-                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">"What happens if something goes wrong?"</h3>
+                    <h3 class="font-bold text-[#0F172A] text-[15px] mb-1.5 tracking-tight font-sans">What happens if a security incident occurs?</h3>
                     <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans">
-                        24/7 SOC monitoring, documented incident response plan, your dedicated Success Manager on speed dial. We handle it — you stay focused on your business.
+                        Security monitoring, response procedures, and dedicated support teams work together to investigate and resolve issues quickly.
                     </p>
                 </div>
             </div>
@@ -1114,12 +1117,12 @@
 
         <!-- Main Headline -->
         <h2 class="text-3xl sm:text-4xl md:text-[40px] font-extrabold text-center text-[#0F172A] leading-[1.2] tracking-tight mb-5 font-sans">
-            Transparency you can <span class="text-primary">read for yourself</span>
+            Transparency you can <span class="text-primary">review yourself</span>
         </h2>
 
         <!-- Subtitle Description -->
         <p class="text-slate-500 text-center text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-16 font-sans">
-            Every policy that governs how Edge protects your data is published and available for your compliance team to review.
+            The policies governing how VMA secures systems, devices, and information are documented and available for review by your security and compliance teams.
         </p>
 
         <!-- 6-Card Grid Layout (3 columns on desktop, 2 on tablet, 1 on mobile) -->
@@ -1134,7 +1137,7 @@
                 </div>
                 <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Acceptable Use Policy</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans mb-5">
-                    Defines responsible use of Edge systems and services, minimizing compliance risks.
+                    Defines appropriate use of systems, devices, and technology resources.
                 </p>
                 <a href="#" class="text-xs md:text-xs font-extrabold text-primary inline-flex items-center gap-1.5 hover:opacity-85 mt-auto font-sans uppercase tracking-wider">
                     Read policy <span class="font-bold text-[11px]">&gt;</span>
@@ -1148,9 +1151,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 7a2 2 0 012 2m-1.5 6l-5.1 5.1a1.5 1.5 0 01-1.06.44H7A1.5 1.5 0 015.5 19v-1.84a1.5 1.5 0 01.44-1.06L11 11m-1-1a5 5 0 117.07 7.07l-1.41-1.41"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Access Control Policy</h3>
+                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Access Management Policy</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans mb-5">
-                    Restricts access to authorized users. Role-based controls ensure least-privilege access.
+                    Defines how access is granted, reviewed, and controlled.
                 </p>
                 <a href="#" class="text-xs md:text-xs font-extrabold text-primary inline-flex items-center gap-1.5 hover:opacity-85 mt-auto font-sans uppercase tracking-wider">
                     Read policy <span class="font-bold text-[11px]">&gt;</span>
@@ -1164,9 +1167,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20h6l-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Asset Management Policy</h3>
+                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Asset Lifecycle Policy</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans mb-5">
-                    Governs hardware lifecycle from procurement to secure disposal.
+                    Establishes procedures for device procurement, management, and disposal.
                 </p>
                 <a href="#" class="text-xs md:text-xs font-extrabold text-primary inline-flex items-center gap-1.5 hover:opacity-85 mt-auto font-sans uppercase tracking-wider">
                     Read policy <span class="font-bold text-[11px]">&gt;</span>
@@ -1180,9 +1183,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Backup Policy</h3>
+                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Backup & Recovery Policy</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans mb-5">
-                    Ensures business continuity through secure and verified data backups.
+                    Defines how information is backed up, protected, and restored.
                 </p>
                 <a href="#" class="text-xs md:text-xs font-extrabold text-primary inline-flex items-center gap-1.5 hover:opacity-85 mt-auto font-sans uppercase tracking-wider">
                     Read policy <span class="font-bold text-[11px]">&gt;</span>
@@ -1196,9 +1199,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Technological Controls Policy</h3>
+                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Technology Security Policy</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans mb-5">
-                    Safeguards user devices and data per ISO 27001:2022 standards.
+                    Outlines technical safeguards aligned with recognized security standards.
                 </p>
                 <a href="#" class="text-xs md:text-xs font-extrabold text-primary inline-flex items-center gap-1.5 hover:opacity-85 mt-auto font-sans uppercase tracking-wider">
                     Read policy <span class="font-bold text-[11px]">&gt;</span>
@@ -1212,9 +1215,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Usage Terms</h3>
+                <h3 class="font-bold text-[#0F172A] text-[16px] mb-3 tracking-tight font-sans">Terms of Use</h3>
                 <p class="text-[12.5px] leading-relaxed text-slate-500 font-sans mb-5">
-                    Guidelines for using Edge services, ensuring compliance and mutual protection.
+                    Explains service responsibilities, obligations, and mutual protections.
                 </p>
                 <a href="#" class="text-xs md:text-xs font-extrabold text-primary inline-flex items-center gap-1.5 hover:opacity-85 mt-auto font-sans uppercase tracking-wider">
                     Read policy <span class="font-bold text-[11px]">&gt;</span>
@@ -1233,28 +1236,28 @@
                     <!-- Left Side: Center-Aligned Text Column on all devices -->
                     <div class="flex flex-col items-center text-center flex-1 w-full">
                         <h3 class="text-lg sm:text-xl md:text-[16px] font-bold text-[#0F172A] tracking-tight mb-2.5 font-sans leading-snug">
-                            Why 500+ businesses chose Edge as their first remote staffing partner
+                            Why 500+ companies selected VMA as their remote staffing partner
                         </h3>
                         <p class="text-[13px] md:text-[13.5px] text-slate-500 font-medium font-sans">
-                            Book a Demo. We'll show you exactly how the ecosystem works.
+                            Book a demo and discover how our people, processes, and security framework work together.
                         </p>
                     </div>
 
                     <!-- Right Side: CTA Button and Helper Text -->
                     <div class="flex flex-col sm:flex-row items-center gap-5 sm:gap-6 w-full lg:w-auto justify-center lg:justify-end">
                         <!-- CTA Button -->
-                        <button class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-7 rounded-[14px] shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all flex items-center justify-center gap-2.5 whitespace-nowrap text-sm w-full sm:w-auto font-sans"
-                                style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
+                         <a href="/contact" class="bg-primary hover:opacity-95 text-white font-bold py-3.5 px-7 rounded-[14px] shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all inline-flex items-center justify-center gap-2.5 whitespace-nowrap text-sm w-full sm:w-auto font-sans"
+                            style="shadow: 0 4px 14px color-mix(in srgb, var(--primary-color) 25%, transparent);">
                             Book a Demo 
                             <!-- Ultra-clean Inline SVG Chevron -->
                             <svg class="w-3 h-3 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                             </svg>
-                        </button>
+                        </a>
                         
                         <!-- Helper Info -->
                         <div class="text-[11px] md:text-[12px] text-slate-400 text-center sm:text-left leading-normal whitespace-nowrap font-medium font-sans">
-                            No payment until you hire.<br>No contract.
+                            No payment until you hire.<br>No long-term contract.
                         </div>
                     </div>
 
@@ -1277,13 +1280,13 @@
 
         <!-- Main Heading -->
         <h2 class="text-white text-[42px] md:text-[46px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize">
-            Meet your next hire<br>
+            Meet Your Next Hire <br>
             in <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">just 7 days</span>
         </h2>
 
         <!-- Subheading -->
         <p class="text-white/80 text-[13px] md:text-[16px] leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-            Book a demo to see matched, pre-vetted urgent care support professionals tailored to your clinic’s needs.
+            Book a Demo to see matched, pre-vetted candidates tailored to your business needs.
 
             <br class="hidden md:block">
             No overheads. No commitments. No risk.
@@ -1291,7 +1294,7 @@
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
                 Secure Your Spot
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -1304,7 +1307,7 @@
             @php
                 $benefits = [
                     'Pay only when you hire',
-                    'No long-term lock-in',
+                    'No long-term commitment',
                     'Free replacement if needed',
                     'Quick, easy demo',
                     'Cancel anytime'

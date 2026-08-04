@@ -24,12 +24,12 @@
     <div class="relative z-10 max-w-4xl mx-auto text-center">
         <!-- Dynamic Badge -->
         <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20 animate-fade-in">
-            ✦ TRUSTED BY HEALTHCARE TEAMS
+            TRUSTED BY HEALTHCARE TEAMS
         </span>
 
         <h1 class="text-2xl md:text-3xl lg:text-5xl max-w-2xl  mx-auto font-extrabold text-white leading-[1.1] tracking-tight mb-8 text-balance">
-            Streamline Eligibility Verification  <br class="hidden md:block"> 
-            <span class="text-white">with Expert Support</span>
+            Hire Remote Eligibility & Benefits  <br class="hidden md:block"> 
+            <span class="text-white">Verification Specialists</span>
         </h1>
 
         <p class="max-w-2xl mx-auto text-lg text-slate-300 mb-12 text-[16px]">
@@ -37,13 +37,16 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <button class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20">
-                Verify Eligibility Now 
+    
+            <a href="#form" class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20 decoration-transparent">
+                Get Remote Team
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
-            </button>
-            <button class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg">
+            </a>
+
+            <a href="/contact" class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg flex items-center justify-center decoration-transparent">
                 View Pricing
-            </button>
+            </a>
+            
         </div>
 
         <!-- Trust Checklist Bar (Dark) -->
@@ -53,7 +56,14 @@
                     <div class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
                         <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <span class="text-sm font-medium text-slate-300 tracking-wide">No payment until you hire</span>
+                    <span class="text-sm font-medium text-slate-300 tracking-wide">No payment until onboarding</span>
+                </div>
+                <div class="hidden md:block w-px h-4 bg-white/10"></div>
+                <div class="flex items-center gap-2.5">
+                    <div class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                        <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <span class="text-sm font-medium text-slate-300 tracking-wide">HIPAA compliant verification workflows</span>
                 </div>
                 <div class="hidden md:block w-px h-4 bg-white/10"></div>
                 <div class="flex items-center gap-2.5">
@@ -67,7 +77,7 @@
                     <div class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
                         <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <span class="text-sm font-medium text-slate-300 tracking-wide">HIPAA compliant verification workflows</span>
+                    <span class="text-sm font-medium text-slate-300 tracking-wide">Trusted by clinics, hospitals, and specialty practices</span>
                 </div>
             </div>
         </div>
@@ -75,26 +85,39 @@
 </section>
 
 <!-- SECTION 2: LOGO TICKER -->
-<section class="max-w-6xl mx-auto py-14 bg-white border-b border-slate-50">
+<section class="py-12 bg-white" id="next-section">
+    <!-- Header Text -->
     <div class="text-center mb-10">
-        <h2 class="text-xs font-bold text-[13px] leading-relaxed text-gray-400 tracking-[0.2em] uppercase">
-            Trusted by 1,000+ Healthcare & Insurance Organizations
+        <h2 class="text-xs font-bold text-[13px] leading-relaxed text-gray-400 tracking-[0.2em] uppercase capitalize">
+            TRUSTED BY HEALTHCARE PROVIDERS AND MEDICAL ORGANIZATIONS
         </h2>
     </div>
+
+    <!-- Container - Width limited so only 5 fit at once -->
     <div class="group w-full max-w-[1200px] mx-auto overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        
         <ul class="flex items-center animate-infinite-scroll">
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Northwest_Dental.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/DHR-Health.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Navaderm.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/Allied_Physicians.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Simmerer_Insurance.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <!-- Duplicate for loop -->
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Northwest_Dental.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/DHR-Health.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Navaderm.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/Allied_Physicians.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Simmerer_Insurance.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
+            <!-- Set items to 1/5th width (20% each) to ensure 5 show at once -->
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/D0IWUCKlfIN2B7ru7kkDF36htzoi3kJjiyD0Gn2X.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/WAc7RiBMw34XQirhMT373U9xfekN8W5KXsxZBpCr.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/BrLQUqJbpIWzf83XIopM6zKU1dUxravZWY94zpjn.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/TcR3QfnKhnHAJyAq3NOlDuy7Sq1oj4G0owO50DLR.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/Cs9xaywMjCMdqJELzjw7rWuu2nbEUvAMjKsuYkLc.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/rNJ6gBO6TrKIwDqcMgHJaWrAN4UBWBMK7scB0Bxg.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+
+            <!-- Set items to 1/5th width (20% each) to ensure 5 show at once -->
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/D0IWUCKlfIN2B7ru7kkDF36htzoi3kJjiyD0Gn2X.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/WAc7RiBMw34XQirhMT373U9xfekN8W5KXsxZBpCr.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/BrLQUqJbpIWzf83XIopM6zKU1dUxravZWY94zpjn.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/TcR3QfnKhnHAJyAq3NOlDuy7Sq1oj4G0owO50DLR.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/Cs9xaywMjCMdqJELzjw7rWuu2nbEUvAMjKsuYkLc.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/rNJ6gBO6TrKIwDqcMgHJaWrAN4UBWBMK7scB0Bxg.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
         </ul>
+    </div>
+
+    <!-- Subtext -->
+    <div class="text-center mt-10 px-6">
+        <p class="text-gray-500 text-[15px] leading-relaxed max-w-lg mx-auto">Built for efficiency, accuracy, and speed to help you deliver better care without the administrative burden.</p>
     </div>
 </section>
 
@@ -105,9 +128,9 @@
             <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-6 border border-[var(--primary)]/20">
                 What We Offer
             </span>
-            <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-4 tracking-tight">What Does a Medical Billing & Coding Specialist Do?</h2>
+            <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-4 tracking-tight">What Does an Eligibility Verification Specialist Do?</h2>
             <p class="max-w-3xl mx-auto text-lg text-slate-900 mb-12 text-[16px]">
-                Role-trained professionals providing end-to-end medical billing services for healthcare providers, ensuring accuracy, compliance, and faster reimbursements.
+                Role-trained professionals providing accurate insurance verification and benefits confirmation to support efficient healthcare revenue cycles.
             </p>
         </div>
 
@@ -115,35 +138,35 @@
             @php 
                 $cards = [
                     [
-                        'title' => 'Medical Coding Accuracy',
-                        'desc' => 'Precise coding and procedures to ensure clean, billable claims using ICD-10, CPT, and HCPCS standards.',
-                        'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 8 13 l -2 2 l 2 2 M 16 13 l 2 -2 l -2 -2 M 13 12 l -2 6' // File Code (< >)
+                        'title' => 'Insurance Eligibility Checks',
+                        'desc' => 'Verify patient coverage details before appointments to ensure seamless care delivery.',
+                        'icon' => 'M 12 22 s 8 -4 8 -10 V 5 l -8 -3 l -8 3 v 7 c 0 6 8 10 8 10 z M 9 12 l 2 2 l 4 -4' // Shield Check
                     ],
                     [
-                        'title' => 'Claims Submission',
-                        'desc' => 'End-to-end claim creation, scrubbing, and submission to reduce errors and accelerate reimbursements.',
-                        'icon' => 'M 15 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 7 z M 14 2 v 4 a 1 1 0 0 0 1 1 h 4 M 9 15 h 6 M 12 18 l 3 -3 M 12 12 l 3 3' // File with Submit/Upload arrow
+                        'title' => 'Benefits Breakdown Analysis',
+                        'desc' => 'Identify copays, deductibles, co-insurance, and plan limitations clearly.',
+                        'icon' => 'M 18 20 V 10 M 12 20 V 4 M 6 20 v -6' // Bar Chart Analysis
                     ],
                     [
-                        'title' => 'Denial Management',
-                        'desc' => 'Identification, correction, and resubmission of denied or rejected claims to maximize collections.',
-                        'icon' => 'M 15 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 7 z M 14 2 v 4 a 1 1 0 0 0 1 1 h 4 M 12 9 v 4 M 12 17 h 0.01' // Document page with alert exclamation
+                        'title' => 'Real-Time Payer Communication',
+                        'desc' => 'Direct coordination with insurance providers for updated and accurate data.',
+                        'icon' => 'M 3 18 v -6 a 9 9 0 0 1 18 0 v 6 M 21 19 a 2 2 0 0 1 -2 2 h -1 a 2 2 0 0 1 -2 -2 v -3 a 2 2 0 0 1 2 -2 h 3 M 3 19 a 2 2 0 0 0 2 2 h 1 a 2 2 0 0 0 2 -2 v -3 a 2 2 0 0 0 -2 -2 H 3' // Headset / Communication
                     ],
                     [
-                        'title' => 'Insurance Follow-Ups',
-                        'desc' => 'Active coordination with payers to monitor claim status and expedite payment processing.',
-                        'icon' => 'M 3 18 v -6 a 9 9 0 0 1 18 0 v 6 M 21 19 a 2 2 0 0 1 -2 2 h -1 a 2 2 0 0 1 -2 -2 v -3 a 2 2 0 0 1 2 -2 h 3 M 3 19 a 2 2 0 0 0 2 2 h 1 a 2 2 0 0 0 2 -2 v -3 a 2 2 0 0 0 -2 -2 H 3' // Support Headset (communication)
+                        'title' => 'Pre-Authorization Support',
+                        'desc' => 'Assistance with identifying authorization requirements to avoid claim delays.',
+                        'icon' => 'M 16 4 h 2 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 6 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 h 2 M 9 2 h 6 a 1 1 0 0 1 1 1 v 2 a 1 1 0 0 1 -1 1 H 9 a 1 1 0 0 1 -1 -1 V 3 a 1 1 0 0 1 1 -1 z M 9 14 l 2 2 l 4 -4' // Clipboard Check
                     ],
                     [
-                        'title' => 'Patient Billing Support',
-                        'desc' => 'Clear patient statements, billing assistance, and payment coordination for a better patient experience.',
-                        'icon' => 'M 12 22 a 10 10 0 1 0 0 -20 a 10 10 0 0 0 0 20 z M 12 6 v 12 M 15 8 H 10 a 2 2 0 0 0 0 4 h 4 a 2 2 0 0 1 0 4 H 9' // Symmetrical Circle Dollar
+                        'title' => 'Documentation & Verification Logs',
+                        'desc' => 'Structured record-keeping for audits, billing accuracy, and compliance needs.',
+                        'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 16 13 H 8 M 16 17 H 8 M 10 9 H 8' // Document / Verification Log
                     ]
                 ];
             @endphp
 
             @foreach($cards as $card)
-            <div class="group bg-white p-5 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
+            <div class="group bg-white px-2 py-4 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
                 <div class="w-14 h-14 bg-[var(--primary)] rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-[var(--primary)]/20 group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ $card['icon'] }}"></path>
@@ -165,10 +188,10 @@
                 Your Plan Includes
             </span>
             <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-2 tracking-tight capitalize">
-                One Plan. <span class="text-[var(--primary)]">Everything covered.</span>
+                Simple Pricing.  <span class="text-[var(--primary)]">Complete Support.</span>
             </h2>
             <p class="text-slate-500 text-md max-w-2xl mx-auto leading-relaxed">
-               A complete medical billing and coding solution designed to improve revenue cycle efficiency, reduce errors, and support healthcare growth.
+               A complete eligibility and benefits verification solution designed to support healthcare providers with accuracy, speed, and compliance.
             </p>
         </div>
 
@@ -176,23 +199,23 @@
             @php 
                 $fees = [
                     [
-                        'title' => 'Dedicated Billing & Coding Team',
-                        'desc' => 'Fully managed onboarding for your certified billing and coding specialists.',
+                        'title' => 'Dedicated Verification Support',
+                        'desc' => 'Fully managed eligibility and benefits verification for your practice workflow',
                         'icon' => 'M 17 21 v -2 a 4 4 0 0 0 -4 -4 H 5 a 4 4 0 0 0 -4 4 v 2 M 9 11 a 4 4 0 1 0 0 -8 a 4 4 0 1 0 0 8 M 23 21 v -2 a 4 4 0 0 0 -3 -3.87 M 16 3.13 a 4 4 0 0 1 0 7.75' // Team of professionals (Users)
                     ],
                     [
-                        'title' => 'Revenue Cycle Optimization',
-                        'desc' => 'Structured workflows to improve claim acceptance rates, collections, and cash flow.',
+                        'title' => 'Real-Time Insurance Checks',
+                        'desc' => ' Instant verification to reduce front-desk delays and claim rejections',
                         'icon' => 'M 12 22 a 10 10 0 1 0 0 -20 a 10 10 0 0 0 0 20 z M 12 6 v 12 M 15 8 H 10 a 2 2 0 0 0 0 4 h 4 a 2 2 0 0 1 0 4 H 9' // Symmetrical Circle Dollar
                     ],
                     [
-                        'title' => 'Compliance & Security Assurance',
-                        'desc' => 'HIPAA-aligned billing and coding processes with strict patient data protection.',
+                        'title' => 'Compliance & Data Security',
+                        'desc' => ' HIPAA-aligned processes ensuring patient information is fully protected',
                         'icon' => 'M 19 11 H 5 a 2 2 0 0 0 -2 2 v 7 a 2 2 0 0 0 2 2 h 14 a 2 2 0 0 0 2 -2 v -7 a 2 2 0 0 0 -2 -2 z M 7 11 V 7 a 5 5 0 0 1 10 0 v 4' // Padlock
                     ],
                     [
-                        'title' => 'Full Billing Lifecycle Management',
-                        'desc' => 'Comprehensive support from medical coding and claim submission to payment posting and follow-up.',
+                        'title' => 'Workflow Coordination',
+                        'desc' => ' Seamless integration with your scheduling and billing systems',
                         'icon' => 'M 23 4 v 6 h -6 M 1 20 v -6 h 6 M 3.51 9 a 9 9 0 0 1 14.85 -3.36 L 23 10 M 20.49 15 a 9 9 0 0 1 -14.85 3.36 L 1 14' // Cycle/Sync loop (Lifecycle flow)
                     ]
                 ];
@@ -244,7 +267,7 @@
                     <p class="text-slate-500 text-[16px] leading-relaxed">
                         Administrative verification delays often lead to claim denials and revenue loss. Our eligibility and benefits verification services ensure every patient’s coverage is confirmed before they arrive, helping your practice operate smoothly and efficiently.
                     <p class="text-slate-500 text-[16px] leading-relaxed">
-                       With outsourced insurance eligibility verification services, your team gains speed, accuracy, and consistency without increasing overhead.
+                      With outsourced insurance eligibility verification services, your team gains speed, accuracy, and consistency without increasing overhead.
                 </div>
             </div>
 
@@ -298,72 +321,77 @@
     </div>
 </section>
 
-<section class="px-6 py-20 bg-gray-50 antialiased">
-    <div class="max-w-6xl mx-auto">
+<section class="max-w-6xl mx-auto px-6 py-20 bg-white antialiased">
+    <div class="max-w-7xl mx-auto">
         
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20">
-               REMOTE VERIFICATION SUPPORT SERVICES
+                REMOTE VERIFICATION SUPPORT SERVICES
             </span>
-            <h2 class="text-[#111827] text-[26px] md:text-[36px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
-                Verification Support Services 
- <span class="text-[var(--primary)]">You Run Every Day</span>
+            <h2 class="text-[#111827] text-[30px] md:text-[42px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
+               Verification Support Services <span class="text-[var(--primary)]">You Already Use</span>
             </h2>
             <p class="text-black text-[14px] md:text-[16px] leading-relaxed max-w-2xl mx-auto font-normal">
                Our eligibility verification specialists are trained to work seamlessly with your existing healthcare systems and billing platforms.
             </p>
         </div>
 
-        <!-- EHR Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-           @php
+        @php
             $ehrList = [
-                [
-                    'title' => 'Athenahealth',
-                    'desc' => 'Insurance eligibility and patient coordination',
-                    'icon' => 'building'
-                ],
-                [
-                    'title' => 'eClinicalWorks',
-                    'desc' => 'Coverage verification and documentation support',
-                    'icon' => 'building'
-                ],
-                [
-                    'title' => 'Kareo / Tebra',
-                    'desc' => 'Billing coordination and eligibility checks',
-                    'icon' => 'building'
-                ],
-                [
-                    'title' => 'Availity',
-                    'desc' => 'Real-time insurance eligibility verification',
-                    'icon' => 'lock'
-                ],
-                [
-                    'title' => 'NextGen',
-                    'desc' => 'Workflow and patient insurance validation',
-                    'icon' => 'building'
-                ],
-                [
-                    'title' => 'Epic Systems',
-                    'desc' => 'Coverage checks and administrative coordination',
-                    'icon' => 'building'
-                ],
-                [
-                    'title' => 'CareCloud',
-                    'desc' => 'Revenue cycle and eligibility support',
-                    'icon' => 'building'
-                ],
-                [
-                    'title' => 'RingCentral',
-                    'desc' => 'Communication and patient follow-up coordination',
-                    'icon' => 'phone'
-                ]
-            ];
-            @endphp
+                // EHRs / Practice Management (1-15)
+                ['title' => 'ICA Notes', 'desc' => 'Behavioral health specific charting, clinical notes, and specialized therapy templates.', 'icon' => 'building'],
+                ['title' => 'Advanced MD', 'desc' => 'Cloud-based clinical charting, practice management, and automated medical billing.', 'icon' => 'building'],
+                ['title' => 'NextGen', 'desc' => 'Unified clinical workflows, electronic prescribing, and integrated patient portal access.', 'icon' => 'building'],
+                ['title' => 'Progno CIS', 'desc' => 'Customizable clinical documentation, telehealth modules, and patient communication logs.', 'icon' => 'building'],
+                ['title' => 'CareCloud', 'desc' => 'Modern cloud charting, appointment booking, and patient engagement dashboards.', 'icon' => 'building'],
+                ['title' => 'Epic', 'desc' => 'Enterprise charting, Order Entry, InBasket message routing, and Haiku mobile clinical tools.', 'icon' => 'building'],
+                ['title' => 'AllScripts', 'desc' => 'Clinical documentation, active problem lists, e-prescribing, and chart reviews.', 'icon' => 'building'],
+                ['title' => 'Kareo', 'desc' => 'Independent clinic clinical charting, billing codes, and patient communications.', 'icon' => 'building'],
+                ['title' => 'Athena Health', 'desc' => 'Unified cloud-native EHR, patient scheduling, and automated RCM billing cycles.', 'icon' => 'building'],
+                ['title' => 'Cerner', 'desc' => 'Hospital-grade inpatient clinical charting, database queries, and medication administration.', 'icon' => 'building'],
+                ['title' => 'Medisoft Clinical', 'desc' => 'EHR charting integrated directly with specialized independent clinic billing managers.', 'icon' => 'building'],
+                ['title' => 'Office Ally', 'desc' => 'High-volume insurance eligibility verification, clearinghouse submissions, and billing portals.', 'icon' => 'lock'],
+                ['title' => 'eClinicalWorks', 'desc' => 'Healow patient portal management, clinical charting, and structured encounter templates.', 'icon' => 'building'],
+                ['title' => 'Amazing Charts', 'desc' => 'Clinician-focused, rapid encounter documenting, lab tracking, and e-prescriptions.', 'icon' => 'chart'],
+                ['title' => 'Practice Fusion', 'desc' => 'Streamlined cloud medical records, appointment tracking, and lab integration.', 'icon' => 'building'],
 
+                // Clinical, Specialty & Hospital Systems (16-20)
+                ['title' => 'Altera', 'desc' => 'Scalable enterprise electronic health records, inpatient charting, and clinic management.', 'icon' => 'building'],
+                ['title' => 'CollaborateMD', 'desc' => 'High-speed medical billing claims, billing diagnostics, and practice scheduling.', 'icon' => 'lock'],
+                ['title' => 'eMDs', 'desc' => 'Comprehensive multi-specialty charting, billing, and direct laboratory interfaces.', 'icon' => 'building'],
+                ['title' => 'Evident', 'desc' => 'Community hospital clinical charting, emergency logs, and inpatient data entry.', 'icon' => 'building'],
+                ['title' => 'FreeMED', 'desc' => 'Flexible, open-source clinical records, custom databases, and treatment plan tracking.', 'icon' => 'building'],
+
+                // Clinical Systems & Tools (21-25)
+                ['title' => 'GE Healthcare', 'desc' => 'Advanced diagnostic imaging data integration, clinical scheduling, and charting.', 'icon' => 'chart'],
+                ['title' => 'Greenway Health', 'desc' => 'Prime Suite clinical charting, workflow tracking, and lab order routing.', 'icon' => 'building'],
+                ['title' => 'MEDITECH', 'desc' => 'Integrated hospital records database, bedside charting, and patient data entry.', 'icon' => 'building'],
+                ['title' => 'Medgen', 'desc' => 'Outpatient clinical documentation, structured SOAP notes, and reporting panels.', 'icon' => 'building'],
+                ['title' => 'MEDHOST', 'desc' => 'Emergency department tracking, inpatient clinical flow sheets, and financial records.', 'icon' => 'building'],
+
+                // Billing / Eligibility / Security Portals (26-30)
+                ['title' => 'Mitochon Systems', 'desc' => 'Cloud EMR, secure Health Information Exchange (HIE), and patient data tracking.', 'icon' => 'lock'],
+                ['title' => 'NextGen Healthcare', 'desc' => 'Specialized billing cycle management, insurance claims processing, and portal management.', 'icon' => 'lock'],
+                ['title' => 'NueMD', 'desc' => 'Secure insurance eligibility checks, billing claims tracking, and scheduling tools.', 'icon' => 'lock'],
+                ['title' => 'OpenEMR', 'desc' => 'Open-source patient charts, custom encounter forms, and integrated billing cycles.', 'icon' => 'chart'],
+                ['title' => 'OpenMRS', 'desc' => 'Global health metadata-driven records platform, patient tracking, and research charting.', 'icon' => 'chart'],
+
+                // Enterprise, Intake & Analytics (31-33)
+                ['title' => 'Oracle Health', 'desc' => 'Hospital database administration, system analytics, and clinical operations charting.', 'icon' => 'chart'],
+                ['title' => 'Webchart', 'desc' => 'Web-native clinical documentation, occupational health portals, and database search.', 'icon' => 'chart'],
+                ['title' => 'ZipChart EMR', 'desc' => 'Rapid, tablet-optimized clinical documentation, custom macros, and encounter logs.', 'icon' => 'chart'],
+            ];
+
+            // Shuffles the array randomly on each page render
+            shuffle($ehrList);
+        @endphp
+
+        <!-- EHR Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="ehr-grid">
             @foreach($ehrList as $ehr)
-                <div class="bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group">
+                <!-- Hide cards starting from index 8 initially -->
+                <div class="ehr-card bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group {{ $loop->index >= 8 ? 'hidden' : '' }}">
                     
                     <!-- Dynamic Icon Container -->
                     <div class="mb-6 text-[var(--primary)] transition-transform duration-300 group-hover:scale-110">
@@ -389,17 +417,41 @@
             @endforeach
         </div>
 
-        <!-- Call to Action Button -->
-        <div class="mt-20 text-center">
-            <a href="#" 
-               class="inline-block px-12 py-4 rounded-2xl text-white font-bold text-[17px] shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
-               style="background-color: var(--primary);">
-                Learn More
-            </a>
+        <!-- Show More Button -->
+        <div class="text-center mt-12">
+            <button id="show-more-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+                Show More Platforms
+            </button>
         </div>
 
     </div>
 </section>
+
+<!-- Vanilla JS Progressive Loader -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const increment = 4; // Reveal 4 cards on each click
+
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden cards
+                const hiddenCards = document.querySelectorAll('.ehr-card.hidden');
+
+                // Reveal up to the next 4 cards
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
+
+                // If no more hidden cards exist, hide the button completely
+                if (document.querySelectorAll('.ehr-card.hidden').length === 0) {
+                    showMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
+
 
 <section class="py-20 px-6 bg-white antialiased">
     <div class="max-w-6xl mx-auto">
@@ -468,10 +520,10 @@
 
         <!-- Call to Action Button -->
         <div class="mt-20 text-center">
-            <a href="#" 
+            <a href="#form" 
                class="inline-block px-12 py-4 rounded-2xl text-white font-bold text-[17px] shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
                style="background-color: var(--primary);">
-                Hire Now
+                Get Started Today
             </a>
         </div>
 
@@ -484,7 +536,7 @@
     }
 </style>
 
-<section class="py-24 bg-white overflow-hidden">
+<section class="py-24 bg-white overflow-hidden" id="form">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
@@ -656,7 +708,7 @@
         <!-- Main Heading -->
         <h2 class="text-white text-[38px] md:text-[42px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize">
             Meet your dedicated verification specialist <br>
-            in as little as <span class="text-white">7 days</span>
+            in as little as <span class="text-white">5 days</span>
         </h2>
 
         <!-- Subheading -->
@@ -668,7 +720,7 @@
 
         <!-- CTA Button -->
         <div class="mb-8">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
                 Request a Demo
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -679,9 +731,9 @@
         <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-4">
             @php
                 $benefits = [
-                    'Pay only when you onboard',
+                    ' Pay only when you onboard',
                     'Free replacement if needed',
-                    'Fast onboarding within 7 days',
+                    'Fast onboarding within 5 days',
                     'Cancel anytime'
                 ];
             @endphp

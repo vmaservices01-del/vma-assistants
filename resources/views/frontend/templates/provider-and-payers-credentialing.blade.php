@@ -24,12 +24,12 @@
     <div class="relative z-10 max-w-4xl mx-auto text-center">
         <!-- Dynamic Badge -->
         <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20 animate-fade-in">
-            ✦ SIMPLIFY PROVIDER ENROLLMENT 
+            SIMPLIFY PROVIDER ENROLLMENT
         </span>
 
         <h1 class="text-2xl md:text-3xl lg:text-5xl max-w-2xl  mx-auto font-extrabold text-white leading-[1.1] capitalize tracking-tight mb-8 text-balance">
-            Expert Credentialing Support <br class="hidden md:block"> 
-            <span class="text-white">for Healthcare Providers</span>
+            Hire Remote Credentialing Experts <br class="hidden md:block"> 
+            <span class="text-white">For Your Practice</span>
         </h1>
 
         <p class="max-w-2xl mx-auto text-lg text-slate-300 mb-12 text-[16px]">
@@ -37,13 +37,16 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <button class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20">
-                 Start Credentialing Now
+    
+            <a href="#form" class="w-full sm:w-auto px-10 py-4 bg-[var(--primary)] hover:opacity-90 text-white font-bold rounded-xl transition-all shadow-lg shadow-[var(--primary)]/20 flex items-center justify-center gap-2 group border border-[var(--primary)]/20 decoration-transparent">
+                Start Credentialing Now
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
-            </button>
-            <button class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg">
+            </a>
+
+            <a href="/contact" class="w-full sm:w-auto px-10 py-4 bg-white text-[#0a1931] font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg flex items-center justify-center decoration-transparent">
                 View Pricing
-            </button>
+            </a>
+            
         </div>
 
         <!-- Trust Checklist Bar (Dark) -->
@@ -75,26 +78,39 @@
 </section>
 
 <!-- SECTION 2: LOGO TICKER -->
-<section class="max-w-6xl mx-auto py-14 bg-white border-b border-slate-50">
+<section class="py-12 bg-white" id="next-section">
+    <!-- Header Text -->
     <div class="text-center mb-10">
-        <h2 class="text-xs font-bold text-[13px] leading-relaxed text-gray-400 tracking-[0.2em] uppercase">
-            Trusted by clinics, hospitals, and healthcare groups
+        <h2 class="text-xs font-bold text-[13px] leading-relaxed text-gray-400 tracking-[0.2em] uppercase capitalize">
+            TRUSTED BY HEALTHCARE PROVIDERS AND MEDICAL ORGANIZATIONS
         </h2>
     </div>
+
+    <!-- Container - Width limited so only 5 fit at once -->
     <div class="group w-full max-w-[1200px] mx-auto overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        
         <ul class="flex items-center animate-infinite-scroll">
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Northwest_Dental.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/DHR-Health.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Navaderm.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/Allied_Physicians.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Simmerer_Insurance.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <!-- Duplicate for loop -->
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Northwest_Dental.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/DHR-Health.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Navaderm.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181012/Allied_Physicians.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
-            <li class="w-1/5 flex-shrink-0 px-8"><img src="https://edge-webapp.s3.amazonaws.com/wp-content/uploads/2025/02/17181011/Simmerer_Insurance.png" class="h-8 w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"></li>
+            <!-- Set items to 1/5th width (20% each) to ensure 5 show at once -->
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/D0IWUCKlfIN2B7ru7kkDF36htzoi3kJjiyD0Gn2X.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/WAc7RiBMw34XQirhMT373U9xfekN8W5KXsxZBpCr.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/BrLQUqJbpIWzf83XIopM6zKU1dUxravZWY94zpjn.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/TcR3QfnKhnHAJyAq3NOlDuy7Sq1oj4G0owO50DLR.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/Cs9xaywMjCMdqJELzjw7rWuu2nbEUvAMjKsuYkLc.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/rNJ6gBO6TrKIwDqcMgHJaWrAN4UBWBMK7scB0Bxg.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+
+            <!-- Set items to 1/5th width (20% each) to ensure 5 show at once -->
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/D0IWUCKlfIN2B7ru7kkDF36htzoi3kJjiyD0Gn2X.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/WAc7RiBMw34XQirhMT373U9xfekN8W5KXsxZBpCr.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/BrLQUqJbpIWzf83XIopM6zKU1dUxravZWY94zpjn.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/TcR3QfnKhnHAJyAq3NOlDuy7Sq1oj4G0owO50DLR.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/Cs9xaywMjCMdqJELzjw7rWuu2nbEUvAMjKsuYkLc.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
+            <li class="w-1/2 md:w-1/4 flex-shrink-0 px-8"><img src="{{ asset('storage/media/rNJ6gBO6TrKIwDqcMgHJaWrAN4UBWBMK7scB0Bxg.webp') }}" class="h-20 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" alt="Logo"></li>
         </ul>
+    </div>
+
+    <!-- Subtext -->
+    <div class="text-center mt-10 px-6">
+        <p class="text-gray-500 text-[15px] leading-relaxed max-w-lg mx-auto">Built for efficiency, accuracy, and speed to help you deliver better care without the administrative burden.</p>
     </div>
 </section>
 
@@ -116,31 +132,31 @@
                     [
                         'title' => 'Provider Enrollment',
                         'icon' => 'M 16 21 v -2 a 4 4 0 0 0 -4 -4 H 6 a 4 4 0 0 0 -4 4 v 2 M 9 3 a 4 4 0 1 0 0 8 a 4 4 0 1 0 0 -8 M 19 8 v 6 M 16 11 h 6', // User onboarding / Plus
-                        'desc' => 'Submission of complete enrollment applications to insurance networks for provider participation and payer registration.'
+                        'desc' => ' Submission of complete applications to insurance networks for provider participation.'
                     ],
 
                     [
-                        'title' => 'Credential Verification & Documentation',
+                        'title' => 'Credential Verification',
                         'icon' => 'M 12 22 s 8 -4 8 -10 V 5 l -8 -3 -8 3 v 7 c 0 6 8 10 8 10 z M 9 11 l 2 2 4 -4', // Verification Shield
-                        'desc' => 'Verification of licenses, certifications, work history, malpractice coverage, and supporting documentation.'
+                        'desc' => ' Validation of licenses, certifications, work history, and supporting records.'
                     ],
 
                     [
-                        'title' => 'CAQH Profile Setup & Maintenance',
+                        'title' => 'CAQH Profile Setup',
                         'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 12 11 a 2 2 0 1 0 0 -4 2 2 0 0 0 0 4 z M 8 17 c 0 -2 2 -3 4 -3 s 4 1 4 3', // CAQH Profile document file sheet
-                        'desc' => 'Accurate creation, updating, attestation, and ongoing management of CAQH provider profiles.'
+                        'desc' => 'Accurate creation, updates, and ongoing management of CAQH profiles.'
                     ],
 
                     [
-                        'title' => 'Application Tracking & Follow-Ups',
+                        'title' => 'Application Tracking',
                         'icon' => 'M 12 22 a 10 10 0 1 0 0 -20 a 10 10 0 0 0 0 20 z M 12 6 v 6 l 4 2', // Tracking Clock
-                        'desc' => 'Continuous monitoring of enrollment applications and proactive follow-ups with insurance payers until approval.'
+                        'desc' => ' Continuous monitoring of enrollment applications with insurance payers until approval.'
                     ],
 
                     [
-                        'title' => 'Re-Credentialing Support',
+                        'title' => 'Credentialing Support',
                         'icon' => 'M 9 5 H 7 a 2 2 0 0 0 -2 2 v 12 a 2 2 0 0 0 2 2 h 10 a 2 2 0 0 0 2 -2 V 7 a 2 2 0 0 0 -2 -2 h -2 M 9 5 a 2 2 0 0 0 2 2 h 2 a 2 2 0 0 0 2 -2 M 9 5 a 2 2 0 1 2 -2 h 2 a 2 2 0 1 2 2 M 9 14 l 2 2 4 -4', // Clipboard checklist (renewal tracking)
-                        'desc' => 'Timely re-credentialing and renewal management to help providers maintain active payer network participation.'
+                        'desc' => 'Timely renewal processes to ensure providers remain active within payer networks.'
                     ],
 
                 ];
@@ -169,10 +185,10 @@
                 Your Plan Includes
             </span>
             <h2 class="text-[26px] md:text-[36px] font-extrabold text-slate-900 mb-2 tracking-tight capitalize">
-                One complete front <span class="text-[var(--primary)]">desk system.</span>
+                Simple Pricing. <span class="text-[var(--primary)]">Full Credentialing Coverage.</span>
             </h2>
             <p class="text-slate-500 text-md max-w-2xl mx-auto leading-relaxed">
-                A structured virtual front desk solution designed to improve patient experience, reduce administrative pressure, and streamline clinic operations.
+                A streamlined provider and payer credentialing system designed to reduce delays, improve enrollment success, and support practice growth.
             </p>
         </div>
 
@@ -183,28 +199,28 @@
                     [
                         'title' => 'Dedicated Credentialing Specialists',
                         'icon' => 'M 17 21 v -2 a 4 4 0 0 0 -4 -4 H 5 a 4 4 0 0 0 -4 4 v 2 M 9 11 a 4 4 0 1 0 0 -8 a 4 4 0 1 0 0 8 M 23 21 v -2 a 4 4 0 0 0 -3 -3.87 M 16 3.13 a 4 4 0 0 1 0 7.75', // Team of professionals (Users)
-                        'desc' => 'Experienced professionals managing end-to-end provider enrollment and credentialing workflows.',
+                        'desc' => ' Experienced professionals handling end-to-end provider enrollment workflows',
                         'badge' => 'Included'
                     ],
 
                     [
                         'title' => 'Faster Insurance Network Enrollment',
                         'icon' => 'M 23 6 H 17 M 23 6 v 6 M 23 6 L 13.5 15.5 L 8.5 10.5 L 1 18', // Accelerated trend (upward arrow)
-                        'desc' => 'Optimized processes that reduce turnaround times and accelerate payer enrollment approvals.',
+                        'desc' => 'Optimized processes that reduce turnaround time for approvals',
                         'badge' => 'Included'
                     ],
 
                     [
                         'title' => 'Compliance & Data Security Controls',
                         'icon' => 'M 19 11 H 5 a 2 2 0 0 0 -2 2 v 7 a 2 2 0 0 0 2 2 h 14 a 2 2 0 0 0 2 -2 v -7 a 2 2 0 0 0 -2 -2 z M 7 11 V 7 a 5 5 0 0 1 10 0 v 4', // Padlock security
-                        'desc' => 'HIPAA-aligned credential management with secure handling of provider documentation and sensitive data.',
+                        'desc' => ' HIPAA-aligned credential handling with secure documentation management',
                         'badge' => 'Included'
                     ],
 
                     [
                         'title' => 'Ongoing Profile & Status Monitoring',
                         'icon' => 'M 12 22 a 10 10 0 1 0 0 -20 a 10 10 0 0 0 0 20 z M 12 6 v 6 l 4 2', // Monitoring Clock
-                        'desc' => 'Continuous tracking, follow-ups, and status updates across all payer enrollment applications.',
+                        'desc' => 'Continuous updates and tracking across all payer applications',
                         'badge' => 'Included'
                     ],
 
@@ -313,80 +329,77 @@
     </div>
 </section>
 
-<section class="px-6 py-20 bg-gray-50 antialiased">
-    <div class="max-w-6xl mx-auto">
+<section class="max-w-6xl mx-auto px-6 py-20 bg-white antialiased">
+    <div class="max-w-7xl mx-auto">
         
         <!-- Section Header -->
         <div class="text-center mb-16">
             <span class="inline-block px-5 py-2 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-[11px] font-bold uppercase tracking-[0.12em] mb-10 border border-[var(--primary)]/20">
                 PROVIDER ENROLLMENT SYSTEMS 
             </span>
-            <h2 class="text-[#111827] text-[26px] md:text-[36px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6 capitalize">
-                Provider Credentialing Networks <span class="text-[var(--primary)]"> We Support</span>
+            <h2 class="text-[#111827] text-[30px] md:text-[42px] font-[900] leading-[1.1] tracking-[-0.04em] mb-6">
+               Provider Credentialing Networks <span class="text-[var(--primary)]">We Support</span>
             </h2>
             <p class="text-black text-[14px] md:text-[16px] leading-relaxed max-w-2xl mx-auto font-normal">
                 Our credentialing specialists are experienced in handling multiple healthcare and payer systems used across the industry.
             </p>
         </div>
 
+        @php
+            $ehrList = [
+                // EHRs / Practice Management (1-15)
+                ['title' => 'ICA Notes', 'desc' => 'Behavioral health specific charting, clinical notes, and specialized therapy templates.', 'icon' => 'building'],
+                ['title' => 'Advanced MD', 'desc' => 'Cloud-based clinical charting, practice management, and automated medical billing.', 'icon' => 'building'],
+                ['title' => 'NextGen', 'desc' => 'Unified clinical workflows, electronic prescribing, and integrated patient portal access.', 'icon' => 'building'],
+                ['title' => 'Progno CIS', 'desc' => 'Customizable clinical documentation, telehealth modules, and patient communication logs.', 'icon' => 'building'],
+                ['title' => 'CareCloud', 'desc' => 'Modern cloud charting, appointment booking, and patient engagement dashboards.', 'icon' => 'building'],
+                ['title' => 'Epic', 'desc' => 'Enterprise charting, Order Entry, InBasket message routing, and Haiku mobile clinical tools.', 'icon' => 'building'],
+                ['title' => 'AllScripts', 'desc' => 'Clinical documentation, active problem lists, e-prescribing, and chart reviews.', 'icon' => 'building'],
+                ['title' => 'Kareo', 'desc' => 'Independent clinic clinical charting, billing codes, and patient communications.', 'icon' => 'building'],
+                ['title' => 'Athena Health', 'desc' => 'Unified cloud-native EHR, patient scheduling, and automated RCM billing cycles.', 'icon' => 'building'],
+                ['title' => 'Cerner', 'desc' => 'Hospital-grade inpatient clinical charting, database queries, and medication administration.', 'icon' => 'building'],
+                ['title' => 'Medisoft Clinical', 'desc' => 'EHR charting integrated directly with specialized independent clinic billing managers.', 'icon' => 'building'],
+                ['title' => 'Office Ally', 'desc' => 'High-volume insurance eligibility verification, clearinghouse submissions, and billing portals.', 'icon' => 'lock'],
+                ['title' => 'eClinicalWorks', 'desc' => 'Healow patient portal management, clinical charting, and structured encounter templates.', 'icon' => 'building'],
+                ['title' => 'Amazing Charts', 'desc' => 'Clinician-focused, rapid encounter documenting, lab tracking, and e-prescriptions.', 'icon' => 'chart'],
+                ['title' => 'Practice Fusion', 'desc' => 'Streamlined cloud medical records, appointment tracking, and lab integration.', 'icon' => 'building'],
+
+                // Clinical, Specialty & Hospital Systems (16-20)
+                ['title' => 'Altera', 'desc' => 'Scalable enterprise electronic health records, inpatient charting, and clinic management.', 'icon' => 'building'],
+                ['title' => 'CollaborateMD', 'desc' => 'High-speed medical billing claims, billing diagnostics, and practice scheduling.', 'icon' => 'lock'],
+                ['title' => 'eMDs', 'desc' => 'Comprehensive multi-specialty charting, billing, and direct laboratory interfaces.', 'icon' => 'building'],
+                ['title' => 'Evident', 'desc' => 'Community hospital clinical charting, emergency logs, and inpatient data entry.', 'icon' => 'building'],
+                ['title' => 'FreeMED', 'desc' => 'Flexible, open-source clinical records, custom databases, and treatment plan tracking.', 'icon' => 'building'],
+
+                // Clinical Systems & Tools (21-25)
+                ['title' => 'GE Healthcare', 'desc' => 'Advanced diagnostic imaging data integration, clinical scheduling, and charting.', 'icon' => 'chart'],
+                ['title' => 'Greenway Health', 'desc' => 'Prime Suite clinical charting, workflow tracking, and lab order routing.', 'icon' => 'building'],
+                ['title' => 'MEDITECH', 'desc' => 'Integrated hospital records database, bedside charting, and patient data entry.', 'icon' => 'building'],
+                ['title' => 'Medgen', 'desc' => 'Outpatient clinical documentation, structured SOAP notes, and reporting panels.', 'icon' => 'building'],
+                ['title' => 'MEDHOST', 'desc' => 'Emergency department tracking, inpatient clinical flow sheets, and financial records.', 'icon' => 'building'],
+
+                // Billing / Eligibility / Security Portals (26-30)
+                ['title' => 'Mitochon Systems', 'desc' => 'Cloud EMR, secure Health Information Exchange (HIE), and patient data tracking.', 'icon' => 'lock'],
+                ['title' => 'NextGen Healthcare', 'desc' => 'Specialized billing cycle management, insurance claims processing, and portal management.', 'icon' => 'lock'],
+                ['title' => 'NueMD', 'desc' => 'Secure insurance eligibility checks, billing claims tracking, and scheduling tools.', 'icon' => 'lock'],
+                ['title' => 'OpenEMR', 'desc' => 'Open-source patient charts, custom encounter forms, and integrated billing cycles.', 'icon' => 'chart'],
+                ['title' => 'OpenMRS', 'desc' => 'Global health metadata-driven records platform, patient tracking, and research charting.', 'icon' => 'chart'],
+
+                // Enterprise, Intake & Analytics (31-33)
+                ['title' => 'Oracle Health', 'desc' => 'Hospital database administration, system analytics, and clinical operations charting.', 'icon' => 'chart'],
+                ['title' => 'Webchart', 'desc' => 'Web-native clinical documentation, occupational health portals, and database search.', 'icon' => 'chart'],
+                ['title' => 'ZipChart EMR', 'desc' => 'Rapid, tablet-optimized clinical documentation, custom macros, and encounter logs.', 'icon' => 'chart'],
+            ];
+
+            // Shuffles the array randomly on each page render
+            shuffle($ehrList);
+        @endphp
+
         <!-- EHR Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            @php
-                $ehrList = [
-
-                    [
-                        'title' => 'CAQH ProView',
-                        'desc' => 'Provider profile setup, attestation, maintenance, and ongoing updates for credentialing requirements.',
-                        'icon' => 'building'
-                    ],
-
-                    [
-                        'title' => 'PECOS',
-                        'desc' => 'Medicare provider enrollment, revalidation, and federal participation management.',
-                        'icon' => 'building'
-                    ],
-
-                    [
-                        'title' => 'Availity',
-                        'desc' => 'Payer communication, credential submission, application tracking, and status verification.',
-                        'icon' => 'lock'
-                    ],
-
-                    [
-                        'title' => 'Medicare & Medicaid',
-                        'desc' => 'Provider enrollment, eligibility verification, updates, and ongoing participation management.',
-                        'icon' => 'building'
-                    ],
-
-                    [
-                        'title' => 'Insurance Payer Portals',
-                        'desc' => 'Commercial payer credentialing, enrollment applications, follow-ups, and status monitoring.',
-                        'icon' => 'building'
-                    ],
-
-                    [
-                        'title' => 'NextGen Healthcare',
-                        'desc' => 'Provider data coordination, credential documentation, and workflow management.',
-                        'icon' => 'building'
-                    ],
-
-                    [
-                        'title' => 'Athenahealth',
-                        'desc' => 'Credentialing workflow support, provider onboarding, and payer enrollment coordination.',
-                        'icon' => 'building'
-                    ],
-
-                    [
-                        'title' => 'eClinicalWorks',
-                        'desc' => 'Enrollment documentation management, provider verification, and practice workflow support.',
-                        'icon' => 'building'
-                    ],
-
-                ];
-            @endphp
-
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="ehr-grid">
             @foreach($ehrList as $ehr)
-                <div class="bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group">
+                <!-- Hide cards starting from index 8 initially -->
+                <div class="ehr-card bg-white border border-gray-100 rounded-[24px] p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:-translate-y-1 group {{ $loop->index >= 8 ? 'hidden' : '' }}">
                     
                     <!-- Dynamic Icon Container -->
                     <div class="mb-6 text-[var(--primary)] transition-transform duration-300 group-hover:scale-110">
@@ -412,17 +425,41 @@
             @endforeach
         </div>
 
-        <!-- Call to Action Button -->
-        <div class="mt-20 text-center">
-            <a href="#" 
-               class="inline-block px-12 py-4 rounded-2xl text-white font-bold text-[17px] shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
-               style="background-color: var(--primary);">
-                Learn More
-            </a>
+        <!-- Show More Button -->
+        <div class="text-center mt-12">
+            <button id="show-more-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+                Show More Platforms
+            </button>
         </div>
 
     </div>
 </section>
+
+<!-- Vanilla JS Progressive Loader -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const increment = 4; // Reveal 4 cards on each click
+
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden cards
+                const hiddenCards = document.querySelectorAll('.ehr-card.hidden');
+
+                // Reveal up to the next 4 cards
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
+
+                // If no more hidden cards exist, hide the button completely
+                if (document.querySelectorAll('.ehr-card.hidden').length === 0) {
+                    showMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
+
 
 <section class="py-20 px-6 bg-white antialiased">
     <div class="max-w-6xl mx-auto">
@@ -444,32 +481,32 @@
 
                     [
                         'title' => 'Healthcare-Specialized Expertise',
-                        'desc' => 'Dedicated teams experienced in provider credentialing across multiple specialties, healthcare organizations, and payer networks.'
+                        'desc' => 'Dedicated teams experienced in provider credentialing across multiple specialties and payer networks.'
                     ],
 
                     [
                         'title' => 'Faster Enrollment Turnaround',
-                        'desc' => 'Streamlined workflows designed to accelerate insurance approvals, provider enrollment, and network participation.'
+                        'desc' => 'Streamlined workflows designed to accelerate insurance approvals and network participation.'
                     ],
 
                     [
                         'title' => 'HIPAA-Compliant Operations',
-                        'desc' => 'Secure handling of sensitive provider and practice information under strict HIPAA-compliant processes and data security standards.'
+                        'desc' => 'Secure handling of sensitive provider and practice information under strict compliance standards.'
                     ],
 
                     [
                         'title' => 'Reduced Administrative Burden',
-                        'desc' => 'Eliminate time-consuming enrollment paperwork, follow-ups, and payer communications from your internal team.'
+                        'desc' => 'Eliminate time-consuming enrollment paperwork and follow-up tasks from your internal team.'
                     ],
 
                     [
                         'title' => 'Scalable Support Model',
-                        'desc' => 'Flexible credentialing assistance that grows alongside your practice, provider roster, and operational needs.'
+                        'desc' => 'Credentialing assistance that grows with your practice and provider volume.'
                     ],
 
                     [
                         'title' => 'No Upfront Risk',
-                        'desc' => 'Get started when you are ready with no advance payment required before onboarding and implementation.'
+                        'desc' => 'Start only when ready and no advance payment required before onboarding.'
                     ],
 
                 ];
@@ -499,10 +536,10 @@
 
         <!-- Call to Action Button -->
         <div class="mt-20 text-center">
-            <a href="#" 
+            <a href="#form" 
                class="inline-block px-12 py-4 rounded-2xl text-white font-bold text-[17px] shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95"
                style="background-color: var(--primary);">
-                Hire Now
+                 Get Credentialed Today
             </a>
         </div>
 
@@ -515,7 +552,7 @@
     }
 </style>
 
-<section class="py-24 bg-white overflow-hidden">
+<section class="py-24 bg-white overflow-hidden" id="form">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
@@ -687,7 +724,7 @@
         <!-- Main Heading -->
         <h2 class="text-white text-[42px] md:text-[46px] font-extrabold leading-[1.1] tracking-[-0.03em] mb-6 capitalize">
             Get matched with your credentialing specialist <br>
-            is <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">in only  7 days</span>
+            is <span class="bg-gradient-to-r from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent">in only 5 days</span>
         </h2>
 
         <!-- Subheading -->
@@ -698,7 +735,7 @@
 
         <!-- CTA Button -->
         <div class="mb-6">
-            <a href="#" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
+            <a href="/contact" class="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-bold text-[17px] transition-transform hover:scale-105">
                 Request a Demo 
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -712,7 +749,7 @@
                 $benefits = [
                     'Pay only after onboarding',
                     'Free replacement support',
-                    'Fast setup in 7 days',
+                    'Fast setup in 5 days',
                     'Cancel anytime'
                 ];
             @endphp
