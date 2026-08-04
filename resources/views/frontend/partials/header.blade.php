@@ -136,103 +136,114 @@
             <!-- 2. VERTICAL DROPDOWN: "Our Expertise" -->
             <div class="relative" @mouseleave="openMenu = null">
                 <button @mouseenter="openMenu = 'Our Expertise'" 
-                        class="px-4 py-2 font-medium text-gray-600 hover:text-[var(--primary-color)] transition flex items-center">
-                    Our Expertise <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
+                        class="px-4 py-2 font-bold text-gray-600 hover:text-[var(--primary-color)] transition flex items-center">
+                    Our Expertise 
+                    <svg class="w-4 h-4 ml-1 transition-transform" :class="openMenu === 'Our Expertise' ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                 </button>
 
-                <!-- Vertical Dropdown -->
-                <div x-show="openMenu === 'Our Expertise'" x-cloak class="absolute left-0 top-full mt-0 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-2 z-50">
-                    <a href="{{ url('dental-billing') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition">
-                        <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border">
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2C8 2 6 5 6 9c0 4 2 6 6 10s6-6 6-10c0-4-2-7-6-7z" />
-                                <circle cx="12" cy="9" r="2" />
+                <!-- Vertical Dropdown Container (Matches Screenshot Layout) -->
+                <div x-show="openMenu === 'Our Expertise'" 
+                     x-cloak 
+                     class="absolute left-0 top-full mt-0 w-[340px] bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 p-3 z-50 space-y-1">
+                    
+                    <!-- Dental Billing Services -->
+                    <a href="{{ url('dental-billing') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 transition-colors group-hover/item:border-[var(--primary-color)] group-hover/item:bg-[var(--primary-color)]/5">
+                            <svg class="w-5 h-5 text-gray-600 transition-colors group-hover/item:text-[var(--primary-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C8 2 7 5 7 7c0 3 2 5 2 8s-2 5-2 5c0 2 2 2 5 2s5 0 5-2c0 0-2-2-2-5s2-5 2-8c0-2-1-5-5-5z" />
                             </svg>
                         </div>
-                        <div>
-                            <h4 class="text-sm font-bold text-gray-900">Dental Billing Services</h4>
-                            <p class="text-xs text-gray-500">Claims, verifications & collections</p>
+                        <div class="text-left">
+                            <h4 class="text-[14px] font-extrabold text-gray-900 leading-tight">Dental Billing Services</h4>
+                            <p class="text-xs text-gray-500 leading-normal mt-0.5">Claims, verifications & collections</p>
                         </div>
                     </a>
 
-                    <a href="{{ url('dme-billing-service') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition">
-                        <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border">
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-                                <path d="M20 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    <!-- DME Billing Services -->
+                    <a href="{{ url('dme-billing-service') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 transition-colors group-hover/item:border-[var(--primary-color)] group-hover/item:bg-[var(--primary-color)]/5">
+                            <svg class="w-5 h-5 text-gray-600 transition-colors group-hover/item:text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
                                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
                             </svg>
                         </div>
-                        <div>
-                            <h4 class="text-sm font-bold text-gray-900">DME Billing Services</h4>
-                            <p class="text-xs text-gray-500">DME claims & equipment billing</p>
+                        <div class="text-left">
+                            <h4 class="text-[14px] font-extrabold text-gray-900 leading-tight">DME Billing Services</h4>
+                            <p class="text-xs text-gray-500 leading-normal mt-0.5">DME claims & equipment billing</p>
                         </div>
                     </a>
 
-                    <a href="{{ url('hospital-billing-service') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition">
-                        <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border">
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Hospital Billing Services -->
+                    <a href="{{ url('hospital-billing-service') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 transition-colors group-hover/item:border-[var(--primary-color)] group-hover/item:bg-[var(--primary-color)]/5">
+                            <svg class="w-5 h-5 text-gray-600 transition-colors group-hover/item:text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
                                 <path d="M17 21v-8a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v8" />
                             </svg>
                         </div>
-                        <div>
-                            <h4 class="text-sm font-bold text-gray-900">Hospital Billing Services</h4>
-                            <p class="text-xs text-gray-500">Inpatient & outpatient RCM</p>
+                        <div class="text-left">
+                            <h4 class="text-[14px] font-extrabold text-gray-900 leading-tight">Hospital Billing Services</h4>
+                            <p class="text-xs text-gray-500 leading-normal mt-0.5">Inpatient & outpatient RCM</p>
                         </div>
                     </a>
 
-                    <a href="{{ url('medical-group-practice') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition">
-                        <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border">
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
+                    <!-- Medical Group Practices -->
+                    <a href="{{ url('medical-group-practice') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 transition-colors group-hover/item:border-[var(--primary-color)] group-hover/item:bg-[var(--primary-color)]/5">
+                            <svg class="w-5 h-5 text-gray-600 transition-colors group-hover/item:text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                             </svg>
                         </div>
-                        <div>
-                            <h4 class="text-sm font-bold text-gray-900">Medical Group Practices</h4>
-                            <p class="text-xs text-gray-500">Multi-specialty billing solutions</p>
+                        <div class="text-left">
+                            <h4 class="text-[14px] font-extrabold text-gray-900 leading-tight">Medical Group Practices</h4>
+                            <p class="text-xs text-gray-500 leading-normal mt-0.5">Multi-specialty billing solutions</p>
                         </div>
                     </a>
 
-                    <a href="{{ url('physician-billing-service') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition">
-                        <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border">
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
+                    <!-- Physician Billing Services -->
+                    <a href="{{ url('physician-billing-service') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 transition-colors group-hover/item:border-[var(--primary-color)] group-hover/item:bg-[var(--primary-color)]/5">
+                            <svg class="w-5 h-5 text-gray-600 transition-colors group-hover/item:text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
                             </svg>
                         </div>
-                        <div>
-                            <h4 class="text-sm font-bold text-gray-900">Physician Billing Services</h4>
-                            <p class="text-xs text-gray-500">Solo & practice revenue management</p>
+                        <div class="text-left">
+                            <h4 class="text-[14px] font-extrabold text-gray-900 leading-tight">Physician Billing Services</h4>
+                            <p class="text-xs text-gray-500 leading-normal mt-0.5">Solo & practice revenue management</p>
                         </div>
                     </a>
 
-                    <a href="{{ url('pharmacy-billing-service') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition decoration-transparent">
-                        <!-- Icon Container -->
-                        <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border shrink-0">
-                            <!-- Scaled & Centered Pill/Capsule SVG -->
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path>
-                                <path d="m8.5 8.5 7 7"></path>
+                    <!-- Pharmacy Billing Services -->
+                    <a href="{{ url('pharmacy-billing-service') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item decoration-transparent">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 transition-colors group-hover/item:border-[var(--primary-color)] group-hover/item:bg-[var(--primary-color)]/5">
+                            <svg class="w-5 h-5 text-gray-600 transition-colors group-hover/item:text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" />
+                                <path d="m8.5 8.5 7 7" />
                             </svg>
                         </div>
-                        <!-- Content -->
-                        <div>
-                            <h4 class="text-sm font-bold text-gray-900">Pharmacy Billing Services</h4>
-                            <p class="text-xs text-gray-500">Prescription & Rx claim processing</p>
+                        <div class="text-left">
+                            <h4 class="text-[14px] font-extrabold text-gray-900 leading-tight">Pharmacy Billing Services</h4>
+                            <p class="text-xs text-gray-500 leading-normal mt-0.5">Prescription & Rx claim processing</p>
                         </div>
                     </a>
 
-                    <a href="{{ url('urgent-care') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition">
-                        <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border">
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    <!-- Urgent Care -->
+                    <a href="{{ url('urgent-care') }}" class="flex items-start gap-4 p-3.5 rounded-2xl hover:bg-gray-50 transition group/item">
+                        <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-xl border border-gray-100 transition-colors group-hover/item:border-[var(--primary-color)] group-hover/item:bg-[var(--primary-color)]/5">
+                            <svg class="w-5 h-5 text-gray-600 transition-colors group-hover/item:text-[var(--primary-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                             </svg>
                         </div>
-                        <div>
-                            <h4 class="text-sm font-bold text-gray-900">Urgent Care</h4>
-                            <p class="text-xs text-gray-500">Fast acute care billing workflow</p>
+                        <div class="text-left">
+                            <h4 class="text-[14px] font-extrabold text-gray-900 leading-tight">Urgent Care</h4>
+                            <p class="text-xs text-gray-500 leading-normal mt-0.5">Fast acute care billing workflow</p>
                         </div>
                     </a>
                 </div>
