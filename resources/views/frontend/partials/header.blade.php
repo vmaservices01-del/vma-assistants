@@ -1,4 +1,4 @@
-<header class="bg-white sticky top-0 z-50 border-b border-gray-100" x-data="{ openMenu: null }">
+<header class="bg-white sticky top-0 z-50 border-b border-gray-100" x-data="{ openMenu: null, mobileOpen: false, activeMobileSection: null }">
     <div class="container mx-auto px-6 py-4 flex items-center justify-between">
         
         <!-- Logo -->
@@ -133,10 +133,6 @@
                 </div>
             </div>
 
-            <style>
-                [x-cloak] { display: none !important; }
-            </style>
-
             <!-- 2. VERTICAL DROPDOWN: "Our Expertise" -->
             <div class="relative" @mouseleave="openMenu = null">
                 <button @mouseenter="openMenu = 'Our Expertise'" 
@@ -213,7 +209,6 @@
                     </a>
 
                     <a href="{{ url('pharmacy-billing-service') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition decoration-transparent">
-    
                         <!-- Icon Container -->
                         <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border shrink-0">
                             <!-- Scaled & Centered Pill/Capsule SVG -->
@@ -222,19 +217,17 @@
                                 <path d="m8.5 8.5 7 7"></path>
                             </svg>
                         </div>
-                        
                         <!-- Content -->
                         <div>
                             <h4 class="text-sm font-bold text-gray-900">Pharmacy Billing Services</h4>
                             <p class="text-xs text-gray-500">Prescription & Rx claim processing</p>
                         </div>
-                        
                     </a>
 
                     <a href="{{ url('urgent-care') }}" class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition">
                         <div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-lg border">
-                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            <svg class="w-5 h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12h-4l-3 9L9 3l-3 9H2" />
                             </svg>
                         </div>
                         <div>
@@ -343,21 +336,100 @@
             </a>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button class="lg:hidden p-2 text-gray-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        <!-- Mobile Menu Button (Interactive using Alpine.js state) -->
+        <button class="lg:hidden p-2 text-gray-600 focus:outline-none" @click="mobileOpen = !mobileOpen">
+            <!-- Hamburger Icon (Shows when menu is closed) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="!mobileOpen">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <!-- Close Icon (Shows when menu is open) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="mobileOpen" x-cloak>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
         </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b px-6 py-4 space-y-3">
-        <a href="{{ url('services/virtual-administrative-assistant') }}" class="block font-medium text-gray-700 hover:text-primary">Services</a>
-        <a href="{{ url('dental-billing') }}" class="block font-medium text-gray-700 hover:text-primary">Practice Billing</a>
-        <a href="{{ url('specialty') }}" class="block font-medium text-gray-700 hover:text-primary">Specialties</a>
-        <a href="{{ url('about-us') }}" class="block font-medium text-gray-700 hover:text-primary">Company</a>
-        <a href="{{ url('how-it-works') }}" class="block font-medium text-gray-700 hover:text-primary">How It Works</a>
-        <a href="{{ url('blog') }}" class="block font-medium text-gray-700 hover:text-primary">Blog & Resources</a>
-        <a href="{{ url('contact') }}" class="block font-medium text-gray-700 hover:text-primary">Contact</a>
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" 
+         x-show="mobileOpen" 
+         x-cloak 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         class="lg:hidden bg-white border-t px-6 py-4 space-y-2 max-h-[85vh] overflow-y-auto">
+         
+        <!-- 1. Mobile Accordion: Services -->
+        <div>
+            <button @click="activeMobileSection = activeMobileSection === 'services' ? null : 'services'"
+                    class="flex items-center justify-between w-full py-2 font-bold text-gray-700 hover:text-primary transition text-left">
+                <span>Services</span>
+                <svg class="w-4 h-4 transform transition-transform duration-200" :class="activeMobileSection === 'services' ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            
+            <div x-show="activeMobileSection === 'services'" x-cloak class="pl-4 border-l border-gray-100 mt-2 space-y-4 pb-2">
+                @foreach($industries as $industry)
+                    <div>
+                        <span class="block text-xs font-extrabold uppercase tracking-wider text-[var(--primary-color)] mb-1">{{ $industry['title'] }}</span>
+                        <div class="space-y-1.5 pl-1">
+                            @foreach($industry['roles'] as $role)
+                                <a href="{{ $role['link'] }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-0.5">{{ $role['name'] }}</a>
+                            @endforeach
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- 2. Mobile Accordion: Our Expertise -->
+        <div>
+            <button @click="activeMobileSection = activeMobileSection === 'expertise' ? null : 'expertise'"
+                    class="flex items-center justify-between w-full py-2 font-bold text-gray-700 hover:text-primary transition text-left">
+                <span>Our Expertise</span>
+                <svg class="w-4 h-4 transform transition-transform duration-200" :class="activeMobileSection === 'expertise' ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            
+            <div x-show="activeMobileSection === 'expertise'" x-cloak class="pl-4 border-l border-gray-100 mt-1 space-y-2 pb-2">
+                <a href="{{ url('dental-billing') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Dental Billing Services</a>
+                <a href="{{ url('dme-billing-service') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">DME Billing Services</a>
+                <a href="{{ url('hospital-billing-service') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Hospital Billing Services</a>
+                <a href="{{ url('medical-group-practice') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Medical Group Practices</a>
+                <a href="{{ url('physician-billing-service') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Physician Billing Services</a>
+                <a href="{{ url('pharmacy-billing-service') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Pharmacy Billing Services</a>
+                <a href="{{ url('urgent-care') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Urgent Care</a>
+            </div>
+        </div>
+
+        <!-- Static Mobile Links -->
+        <a href="{{ url('specialty') }}" class="block py-2 font-bold text-gray-700 hover:text-primary">Specialties</a>
+        <a href="{{ url('about-us') }}" class="block py-2 font-bold text-gray-700 hover:text-primary">Company</a>
+
+        <!-- 3. Mobile Accordion: Resources -->
+        <div>
+            <button @click="activeMobileSection = activeMobileSection === 'resources' ? null : 'resources'"
+                    class="flex items-center justify-between w-full py-2 font-bold text-gray-700 hover:text-primary transition text-left">
+                <span>Resources</span>
+                <svg class="w-4 h-4 transform transition-transform duration-200" :class="activeMobileSection === 'resources' ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            
+            <div x-show="activeMobileSection === 'resources'" x-cloak class="pl-4 border-l border-gray-100 mt-1 space-y-2 pb-2">
+                <a href="{{ url('blog') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Blog & News</a>
+                <a href="{{ url('how-it-works') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">How It Works</a>
+                <a href="{{ url('vma-compliance') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Security & Compliance</a>
+                <a href="{{ url('why-vm-assistant') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Why VM Assistant</a>
+                <a href="{{ url('trust-and-security') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Trust & Security</a>
+                <a href="{{ url('contact') }}" class="block text-sm font-medium text-gray-600 hover:text-primary py-1">Contact & FAQs</a>
+            </div>
+        </div>
+
+        <a href="{{ url('contact') }}" class="block py-2 font-bold text-gray-700 hover:text-primary">Careers</a>
+        
+        <!-- Mobile Actions -->
         <hr class="my-2 border-gray-100">
         <a href="{{ url('contact') }}" class="block w-full text-center text-white py-2.5 rounded-lg bg-primary font-semibold transition-all duration-300 hover:opacity-80">
            Book a Demo
