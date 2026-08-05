@@ -30,14 +30,41 @@
     .border-primary { border-color: var(--primary-color); }
 </style>
 
+<!-- THEME SYSTEM CSS VARIABLES -->
+<style>
+    :root {
+        /* Professional defaults directly matched to your screenshot */
+        --primary: {{ $page->primary_color ?? '#6366f1' }}; /* Purple/Indigo accent */
+        --secondary: {{ $page->secondary_color ?? '#0f172a' }}; /* Deep slate for headings */
+        --accent: {{ $page->primary_color ?? '#76b729' }}; /* Green CTA button */
+        
+        --primary-color: var(--primary);
+        --secondary-color: var(--secondary);           
+        --accent-color: var(--accent);
+        
+        /* Layout Configuration Variables */
+        --theme-bg: #EAE4FC; /* Light lavender background matching your screenshot */
+        --accent-hover: color-mix(in srgb, var(--accent-color) 85%, #000000);
+        --border-color: #cbd5e1; /* Soft slate gray border for inputs */
+        --input-text: #1e293b;
+        --card-bg: #ffffff;
+    }
+
+    /* Standard utility classes if required by layout engine */
+    .text-primary { color: var(--primary-color); }
+    .bg-primary { background-color: var(--primary-color); }
+    .bg-secondary { background-color: var(--secondary-color); }
+    .border-primary { border-color: var(--primary-color); }
+</style>
+
 <!-- SECTION: MEDCARE COHESIVE ONE-PAGE LANDING -->
 <section class="relative w-full min-h-screen flex items-end justify-center pt-12 md:pt-16 pb-0 px-4 sm:px-6 lg:px-12 overflow-hidden font-sans" style="background-color: var(--theme-bg);">
     
-    <!-- Unified 12-Column Grid Container -->
-    <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch relative z-10">
+    <!-- Unified Flexbox Container (Replaced Grid with Flex) -->
+    <div class="max-w-7xl w-full flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch relative z-10">
         
-        <!-- Left Column: Copy & Pinned Doctor Illustration -->
-        <div class="lg:col-span-6 flex flex-col justify-between h-full space-y-12 self-stretch">
+        <!-- Left Column: Copy & Pinned Doctor Illustration (50% Width on Large Screens) -->
+        <div class="w-full lg:w-1/2 flex flex-col justify-between h-full space-y-12 self-stretch">
             
             <!-- Headline and Paragraph -->
             <div class="max-w-xl text-left">
@@ -50,7 +77,7 @@
                 </p>
             </div>
 
-            <!-- Grounded Doctor Image (Fixed Negative Margins and Viewport Heights using Inline Styles) -->
+            <!-- Grounded Doctor Image (Fixed Negative Margins and Viewport Heights) -->
             <div class="relative w-full mx-auto lg:mx-0 flex items-end justify-center select-none mt-auto transition-all duration-300" style="width: 115%; margin-left: -10%; margin-bottom: -3rem;">
                 <img src="{{ asset('storage/media/request-demo2-banner.webp') }}" 
                     alt="MedCare Doctor" 
@@ -60,8 +87,8 @@
 
         </div>
 
-        <!-- Right Column: Interactive Leads Form Card -->
-        <div class="lg:col-span-6 flex items-center justify-center lg:justify-end pb-12 lg:pb-16">
+        <!-- Right Column: Interactive Leads Form Card (50% Width on Large Screens) -->
+        <div class="w-full lg:w-1/2 flex items-center justify-center lg:justify-end pb-12 lg:pb-16">
             <div class="w-full max-w-xl rounded-3xl shadow-2xl p-6 sm:p-10 transition-all duration-300" style="background-color: var(--card-bg);">
                 
                 <!-- Form Title Block -->
@@ -232,7 +259,7 @@
                         </p>
                     </div>
 
-                    <!-- Pill Submit Button (Corrected bg inline-style) -->
+                    <!-- Pill Submit Button -->
                     <div class="pt-4">
                         <button type="submit" 
                                 class="w-full text-white text-base font-bold py-3.5 px-6 rounded-full transition-all duration-300 text-center hover:-translate-y-0.5 active:translate-y-0 shadow-md hover:shadow-lg"
@@ -248,7 +275,6 @@
 
     </div>
 </section>
-
 
 <!-- SECTION: CALL TO ACTION DEMO STRIP -->
 <section class="relative w-full overflow-hidden font-sans z-10 py-8 md:py-9" style="background-color: var(--primary-color);">
