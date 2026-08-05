@@ -95,35 +95,41 @@
         </div>
         </div>
 
-        <!-- Right Side Container -->
-        <!-- Right Side Container -->
+        <!-- Right Side Container (Menu-Safe & Purge-Proof Stacking) -->
         <div class="relative w-full max-w-[450px] mx-auto h-[500px] hidden lg:block" 
              x-data="{ 
                 active: 1, 
-                init() { 
-                    setInterval(() => { this.active = this.active === 3 ? 1 : this.active + 1 }, 5000) 
-                } 
-             }">
+                timer: null,
+                start() { 
+                    this.stop(); 
+                    this.timer = setInterval(() => { 
+                        this.active = this.active === 3 ? 1 : this.active + 1 
+                    }, 5000); 
+                },
+                stop() {
+                    clearInterval(this.timer);
+                }
+             }"
+             x-init="start()"
+             @mouseleave="start()"> 
             
             <!-- Box 1: Fatima (Active: 1) -->
-            <div class="absolute right-0 top-0 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:z-[15] hover:scale-110"
-                 :class="active === 1 ? 'z-[10] scale-105 shadow-blue-900/10' : 'z-[1] scale-100 opacity-90'"
-                 @mouseenter="active = 1">
+            <div class="absolute right-0 top-0 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:scale-110 hover:z-40"
+                 :class="active === 1 ? 'z-30 scale-105 shadow-blue-900/10' : 'z-10 scale-100 opacity-90'"
+                 @mouseenter="active = 1; stop()">
                 <div class="w-full h-40 bg-slate-50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden">
-                     <!-- High-res professional portrait (light/white studio bg) -->
-                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover object-top" alt="Fatima">
+                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover object-center" alt="Fatima">
                 </div>
                 <h3 class="font-bold text-slate-900">Fatima A.</h3>
                 <p class="text-xs text-slate-400 font-medium">Administrative Assistant</p>
             </div>
 
             <!-- Box 2: Shezil (Active: 2) -->
-            <div class="absolute right-12 top-24 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:z-[15] hover:scale-110"
+            <div class="absolute right-12 top-24 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:scale-110 hover:z-40"
                  style="animation-delay: 1s;"
-                 :class="active === 2 ? 'z-[10] scale-105 shadow-blue-900/10' : 'z-[2] scale-100 opacity-90'"
-                 @mouseenter="active = 2">
+                 :class="active === 2 ? 'z-30 scale-105 shadow-blue-900/10' : 'z-20 scale-100 opacity-90'"
+                 @mouseenter="active = 2; stop()">
                 <div class="w-full h-40 bg-slate-50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden">
-                     <!-- Changed to object-center and used a perfectly centered portrait -->
                      <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop" 
                           class="w-full h-full object-cover object-center" 
                           alt="Shezil">
@@ -133,23 +139,23 @@
             </div>
 
             <!-- Box 3: Arsalan (Active: 3) -->
-            <div class="absolute right-24 top-48 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:z-[15] hover:scale-110"
+            <div class="absolute right-24 top-48 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:scale-110 hover:z-40"
                  style="animation-delay: 2s;"
-                 :class="active === 3 ? 'z-[10] scale-105 shadow-blue-900/10' : 'z-[3] scale-100 opacity-90'"
-                 @mouseenter="active = 3">
+                 :class="active === 3 ? 'z-30 scale-105 shadow-blue-900/10' : 'z-20 scale-100 opacity-90'"
+                 @mouseenter="active = 3; stop()">
                 <div class="w-full h-40 bg-slate-50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden">
-                     <!-- High-res professional portrait (light/white studio bg) -->
-                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover object-top" alt="Arsalan">
+                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover object-center" alt="Arsalan">
                 </div>
                 <h3 class="font-bold text-slate-900">Arsalan K.</h3>
                 <p class="text-xs text-slate-400 font-medium">Appointment Scheduler</p>
             </div>
             
-            <!-- Animated Badge -->
-            <div class="absolute -right-4 bottom-12 bg-white border border-slate-50 px-6 py-3 rounded-2xl font-bold shadow-2xl z-[20] text-sm text-[#7C3AED] animate-bounce">
+            <!-- Animated Badge (z-30 so it sits on top, but below hover elements) -->
+            <div class="absolute -right-4 bottom-12 bg-white border border-slate-50 px-6 py-3 rounded-2xl font-bold shadow-2xl z-30 text-sm text-[#7C3AED] animate-bounce">
                 Matched in 5 days <span class="text-amber-500">⚡</span>
             </div>
         </div>
+
     </div>
 
     <!-- Arrow Button - Fixed Position at bottom center -->
@@ -199,7 +205,7 @@
 
 <section class="max-w-6xl mx-auto px-6 py-20 text-center antialiased">
     <!-- Badge -->
-    <div class="inline-flex px-3 py-1 mb-6 text-[11px] font-bold text-primary uppercase tracking-widest bg-indigo-50/50 rounded-full border border-indigo-100">
+    <div class="inline-flex px-3 py-1 mb-6 text-xs font-bold text-primary uppercase tracking-widest bg-indigo-50 rounded-full border border-indigo-100">
         Accelerated Hiring for Healthcare Teams
     </div>
 
@@ -215,6 +221,45 @@
     <div class="grid md:grid-cols-3 gap-6 text-left" id="services-grid">
         @php
             $roles = [
+                // The 6 Default Services (Always visible on load/refresh)
+                [
+                    'title' => 'Patient Care Monitoring',
+                    'desc' => 'Monitors patient health remotely to support timely interventions and improve care outcomes.',
+                    'url' => '/services/remote-patient-monitoring',
+                    'icon' => 'M 22 12 h -4 l -3 9 L 9 3 l -3 9 H 2' // EKG Pulse line
+                ],
+                [
+                    'title' => 'Administrative Support',
+                    'desc' => 'Manages daily administrative tasks to keep your healthcare operations organized and efficient.',
+                    'url' => '/services/virtual-administrative-assistant',
+                    'icon' => 'M 22 19 a 2 2 0 0 1 -2 2 H 4 a 2 2 0 0 1 -2 -2 V 5 a 2 2 0 0 1 2 -2 h 5 l 2 3 h 7 a 2 2 0 0 1 2 2 z' // Folder Organizer
+                ],
+                [
+                    'title' => 'Appointment Scheduling',
+                    'desc' => 'Coordinates patient appointments efficiently to reduce no-shows and optimize provider schedules.',
+                    'url' => '/services/medical-receptionist',
+                    'icon' => 'M 19 4 H 5 a 2 2 0 0 0 -2 2 v 14 a 2 2 0 0 0 2 2 h 14 a 2 2 0 0 0 2 -2 V 6 a 2 2 0 0 0 -2 -2 z M 16 2 v 4 M 8 2 v 4 M 3 10 h 18' // Calendar
+                ],
+                [
+                    'title' => 'Medical Billing & Coding',
+                    'desc' => 'Ensures accurate coding and billing to maximize reimbursements and maintain compliance.',
+                    'url' => '/services/medical-billing-and-coding',
+                    'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 8 13 l -2 2 l 2 2 M 16 13 l 2 -2 l -2 -2 M 13 12 l -2 6' // File Code (< >)
+                ],
+                [
+                    'title' => 'Provider Credentialing',
+                    'desc' => 'Handles provider credentialing to ensure compliance and timely enrollment with insurance payers.',
+                    'url' => '/services/provider-and-payers-credentialing',
+                    'icon' => 'M 16 4 h 2 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 6 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 h 2 M 9 2 h 6 M 9 14 l 2 2 l 4 -4' // Clipboard Check
+                ],
+                [
+                    'title' => 'Accounts Receivable',
+                    'desc' => 'Tracks outstanding payments and follows up on claims to improve cash flow.',
+                    'url' => '/services/account-receivable-services',
+                    'icon' => 'M 22 11 V 3 h -8 M 22 3 L 12 13 l -4 -4 L 2 17' // Trending Up Chart
+                ],
+
+                // The 5 Hidden Services (Revealed on clicking "View More Services")
                 [
                     'title' => 'Front Desk Expert', 
                     'desc' => 'Manages initial patient intake, verifies registration data, and coordinates clinic front-office scheduling.', 
@@ -228,28 +273,10 @@
                     'icon' => 'M 12 20 h 9 M 16.5 3.5 a 2.121 2.121 0 0 1 3 3 L 7 19 l -4 1 l 1 -4 L 16.5 3.5 z' // Pencil writing/Scribing
                 ],
                 [
-                    'title' => 'Virtual Medical Receptionist', 
-                    'desc' => 'Handles inbound patient calls, manages complex calendar scheduling, and answers general clinic inquiries.', 
-                    'url' => '/services/medical-receptionist',
-                    'icon' => 'M 22 16.92 v 3 a 2 2 0 0 1 -2.18 2 a 19.79 19.79 0 0 1 -8.63 -3.07 a 19.5 19.5 0 0 1 -6 -6 a 19.79 19.79 0 0 1 -3.07 -8.67 A 2 2 0 0 1 4.11 2 h 3 a 2 2 0 0 1 2 1.72 a 12.06 12.06 0 0 0 .57 2.4 a 2 2 0 0 1 -.45 2.11 L 8.09 9.91 a 16 16 0 0 0 6 6 l 1.27 -1.27 a 2 2 0 0 1 2.11 -.45 a 12.06 12.06 0 0 0 2.4 .57 A 2 2 0 0 1 22 16.92 z' // Phone Receiver
-                ],
-                [
-                    'title' => 'Remote Patient Monitoring', 
-                    'desc' => 'Tracks physiological data from home devices, alerts providers of vital changes, and ensures patient compliance.', 
-                    'url' => '/services/remote-patient-monitoring',
-                    'icon' => 'M 22 12 h -4 l -3 9 L 9 3 l -3 9 H 2' // EKG Pulse line
-                ],
-                [
                     'title' => 'Virtual Chronic Care Management', 
                     'desc' => 'Coordinates continuous monthly outreach, tracks care plans, and monitors progress for patients with chronic illnesses.', 
                     'url' => '/services/virtual-chronic-care-management',
                     'icon' => 'M 20.84 4.61 a 5.5 5.5 0 0 0 -7.78 0 L 12 5.67 l -1.06 -1.06 a 5.5 5.5 0 0 0 -7.78 7.78 l 1.06 1.06 L 12 21.23 l 7.78 -7.78 1.06 -1.06 a 5.5 5.5 0 0 0 0 -7.78 z' // Heart Shape
-                ],
-                [
-                    'title' => 'Provider and Payer Credentialing', 
-                    'desc' => 'Monitors patient health remotely to support timely interventions and improve care outcomes.', 
-                    'url' => '/services/provider-and-payers-credentialing',
-                    'icon' => 'M 16 4 h 2 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 6 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 h 2 M 9 2 h 6 M 9 14 l 2 2 l 4 -4' // Clipboard Check
                 ],
                 [
                     'title' => 'Pre Authorization Service', 
@@ -258,28 +285,10 @@
                     'icon' => 'M 14.5 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 7.5 L 14.5 2 z M 14 2 v 5 h 5 M 10 13 a 3 3 0 1 0 0 -6 a 3 3 0 0 0 0 6 z M 19 19 l -3.5 -3.5' // File Search / Audit Document
                 ],
                 [
-                    'title' => 'Medical Billing and Coding', 
-                    'desc' => 'Translates medical records into ICD-10 and CPT codes, submits claims, and maximizes reimbursement velocity.', 
-                    'url' => '/services/medical-billing-and-coding',
-                    'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 8 13 l -2 2 l 2 2 M 16 13 l 2 -2 l -2 -2 M 13 12 l -2 6' // File Code (< >)
-                ],
-                [
                     'title' => 'Eligibility and Benefits Verifications', 
                     'desc' => 'Validates patient coverage, co-pays, and deductibles with insurance portals prior to scheduled appointments.', 
                     'url' => '/services/eligibility-and-benefits-verification',
                     'icon' => 'M 12 22 s 8 -4 8 -10 V 5 l -8 -3 l -8 3 v 7 c 0 6 8 10 8 10 z M 9 11 l 2 2 l 4 -4' // Shield Check
-                ],
-                [
-                    'title' => 'Account Receivable Service', 
-                    'desc' => 'Audits outstanding claims, manages secondary billing submissions, and negotiates recovery of aged accounts.', 
-                    'url' => '/services/account-receivable-services',
-                    'icon' => 'M 22 11 V 3 h -8 M 22 3 L 12 13 l -4 -4 L 2 17' // Trending Up Chart
-                ],
-                [
-                    'title' => 'Virtual Administrative Service', 
-                    'desc' => 'Delivers comprehensive email management, database records organization, and daily operational support.', 
-                    'url' => '/services/virtual-administrative-assistant',
-                    'icon' => 'M 22 19 a 2 2 0 0 1 -2 2 H 4 a 2 2 0 0 1 -2 -2 V 5 a 2 2 0 0 1 2 -2 h 5 l 2 3 h 7 a 2 2 0 0 1 2 2 z' // Folder/Database Organizer
                 ]
             ];
         @endphp
@@ -303,7 +312,7 @@
                     </div>
                     
                     <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $role['title'] }}</h3>
-                    <p class="text-gray-500 text-[13px] leading-relaxed mb-6">{{ $role['desc'] }}</p>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">{{ $role['desc'] }}</p>
                 </div>
 
                 <!-- Button (Dynamic Text Color) -->
@@ -318,7 +327,161 @@
 
     <!-- View More Button -->
     <div class="text-center mt-12">
-        <button id="view-more-services-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-[14px] font-bold transition-all duration-300 shadow-sm cursor-pointer">
+        <button id="view-more-services-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-sm font-bold transition-all duration-300 shadow-sm cursor-pointer">
+            View More Services
+        </button>
+    </div>
+</section>
+
+<!-- Progressive Loader Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const viewMoreBtn = document.getElementById('view-more-services-btn');
+        const increment = 3; // Reveals 3 more cards on each click (keeps a balanced 3-column layout)
+
+        if (viewMoreBtn) {
+            viewMoreBtn.addEventListener('click', function () {
+                // Find all currently hidden service cards
+                const hiddenCards = document.querySelectorAll('.service-card.hidden');
+
+                // Reveal the next batch
+                for (let i = 0; i < Math.min(increment, hiddenCards.length); i++) {
+                    hiddenCards[i].classList.remove('hidden');
+                }
+
+                // Hide the button if no more hidden cards remain
+                if (document.querySelectorAll('.service-card.hidden').length === 0) {
+                    viewMoreBtn.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
+<section class="max-w-6xl mx-auto px-6 py-20 text-center antialiased">
+    <!-- Badge -->
+    <div class="inline-flex px-3 py-1 mb-6 text-xs font-bold text-primary uppercase tracking-widest bg-indigo-50 rounded-full border border-indigo-100">
+        Accelerated Hiring for Healthcare Teams
+    </div>
+
+    <!-- Title & Desc -->
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tighter mb-4 capitalize">
+        SMART SUPPORT FOR HEALTHCARE TEAMS  
+    </h2>
+    <p class="text-gray-500 mb-10 max-w-lg mx-auto leading-relaxed">
+        VMA professionals are backed by expertise in EHR systems, ICD-10, and CPT processes, and integrate into your workflow to support efficient healthcare operations. 
+    </p>
+
+    <!-- Grid: 3 Columns -->
+    <div class="grid md:grid-cols-3 gap-6 text-left" id="services-grid">
+        @php
+            $roles = [
+                // The 6 Default Services (Always visible on load/refresh)
+                [
+                    'title' => 'Patient Care Monitoring',
+                    'desc' => 'Monitors patient health remotely to support timely interventions and improve care outcomes.',
+                    'url' => '/services/remote-patient-monitoring',
+                    'icon' => 'M 22 12 h -4 l -3 9 L 9 3 l -3 9 H 2' // EKG Pulse line
+                ],
+                [
+                    'title' => 'Administrative Support',
+                    'desc' => 'Manages daily administrative tasks to keep your healthcare operations organized and efficient.',
+                    'url' => '/services/virtual-administrative-assistant',
+                    'icon' => 'M 22 19 a 2 2 0 0 1 -2 2 H 4 a 2 2 0 0 1 -2 -2 V 5 a 2 2 0 0 1 2 -2 h 5 l 2 3 h 7 a 2 2 0 0 1 2 2 z' // Folder Organizer
+                ],
+                [
+                    'title' => 'Appointment Scheduling',
+                    'desc' => 'Coordinates patient appointments efficiently to reduce no-shows and optimize provider schedules.',
+                    'url' => '/services/medical-receptionist',
+                    'icon' => 'M 19 4 H 5 a 2 2 0 0 0 -2 2 v 14 a 2 2 0 0 0 2 2 h 14 a 2 2 0 0 0 2 -2 V 6 a 2 2 0 0 0 -2 -2 z M 16 2 v 4 M 8 2 v 4 M 3 10 h 18' // Calendar
+                ],
+                [
+                    'title' => 'Medical Billing & Coding',
+                    'desc' => 'Ensures accurate coding and billing to maximize reimbursements and maintain compliance.',
+                    'url' => '/services/medical-billing-and-coding',
+                    'icon' => 'M 14 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 8 z M 14 2 v 6 h 6 M 8 13 l -2 2 l 2 2 M 16 13 l 2 -2 l -2 -2 M 13 12 l -2 6' // File Code (< >)
+                ],
+                [
+                    'title' => 'Provider Credentialing',
+                    'desc' => 'Handles provider credentialing to ensure compliance and timely enrollment with insurance payers.',
+                    'url' => '/services/provider-and-payers-credentialing',
+                    'icon' => 'M 16 4 h 2 a 2 2 0 0 1 2 2 v 14 a 2 2 0 0 1 -2 2 H 6 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 h 2 M 9 2 h 6 M 9 14 l 2 2 l 4 -4' // Clipboard Check
+                ],
+                [
+                    'title' => 'Accounts Receivable',
+                    'desc' => 'Tracks outstanding payments and follows up on claims to improve cash flow.',
+                    'url' => '/services/account-receivable-services',
+                    'icon' => 'M 22 11 V 3 h -8 M 22 3 L 12 13 l -4 -4 L 2 17' // Trending Up Chart
+                ],
+
+                // The 5 Hidden Services (Revealed on clicking "View More Services")
+                [
+                    'title' => 'Front Desk Expert', 
+                    'desc' => 'Manages initial patient intake, verifies registration data, and coordinates clinic front-office scheduling.', 
+                    'url' => '/services/front-desk-expert',
+                    'icon' => 'M 2 18 h 20 M 12 4 v 4 M 12 8 a 8 8 0 0 0 -8 8 h 16 a 8 8 0 0 0 -8 -8 z' // Concierge Service Bell
+                ],
+                [
+                    'title' => 'Virtual Medical Scribes', 
+                    'desc' => 'Accurately documents patient encounters, updates EHR charts in real-time, and assists during live consultations.', 
+                    'url' => '/services/virtual-medical-scribing',
+                    'icon' => 'M 12 20 h 9 M 16.5 3.5 a 2.121 2.121 0 0 1 3 3 L 7 19 l -4 1 l 1 -4 L 16.5 3.5 z' // Pencil writing/Scribing
+                ],
+                [
+                    'title' => 'Virtual Chronic Care Management', 
+                    'desc' => 'Coordinates continuous monthly outreach, tracks care plans, and monitors progress for patients with chronic illnesses.', 
+                    'url' => '/services/virtual-chronic-care-management',
+                    'icon' => 'M 20.84 4.61 a 5.5 5.5 0 0 0 -7.78 0 L 12 5.67 l -1.06 -1.06 a 5.5 5.5 0 0 0 -7.78 7.78 l 1.06 1.06 L 12 21.23 l 7.78 -7.78 1.06 -1.06 a 5.5 5.5 0 0 0 0 -7.78 z' // Heart Shape
+                ],
+                [
+                    'title' => 'Pre Authorization Service', 
+                    'desc' => 'Submits prior authorizations to insurance payers, coordinates medical necessity appeals, and prevents denials.', 
+                    'url' => '/services/pre-authorization-services',
+                    'icon' => 'M 14.5 2 H 6 a 2 2 0 0 0 -2 2 v 16 a 2 2 0 0 0 2 2 h 12 a 2 2 0 0 0 2 -2 V 7.5 L 14.5 2 z M 14 2 v 5 h 5 M 10 13 a 3 3 0 1 0 0 -6 a 3 3 0 0 0 0 6 z M 19 19 l -3.5 -3.5' // File Search / Audit Document
+                ],
+                [
+                    'title' => 'Eligibility and Benefits Verifications', 
+                    'desc' => 'Validates patient coverage, co-pays, and deductibles with insurance portals prior to scheduled appointments.', 
+                    'url' => '/services/eligibility-and-benefits-verification',
+                    'icon' => 'M 12 22 s 8 -4 8 -10 V 5 l -8 -3 l -8 3 v 7 c 0 6 8 10 8 10 z M 9 11 l 2 2 l 4 -4' // Shield Check
+                ]
+            ];
+        @endphp
+
+        @foreach($roles as $role)
+            <!-- Parent Card (Adds class "hidden" to items starting from index 6) -->
+            <div style="--primary: {{ $page->primary_color ?? '#4f46e5' }};" 
+                 class="service-card relative bg-white p-8 rounded-3xl border border-gray-100 shadow-sm transition-all overflow-hidden hover:shadow-lg group flex flex-col justify-between hover:-translate-y-1 {{ $loop->index >= 6 ? 'hidden' : '' }}">
+                
+                <!-- Hover Active Indicator (Dynamic BG) -->
+                <div class="absolute top-0 left-0 right-0 h-0.5 bg-transparent group-hover:bg-[var(--primary)] transition-colors duration-300 rounded-t-3xl"></div>
+                
+                <!-- Content Wrapper -->
+                <div>
+                    <!-- Icon (Dynamic Stroke on Hover) -->
+                    <div class="mb-6">
+                        <svg class="w-8 h-8 text-gray-400 group-hover:text-[var(--primary)] transition-colors duration-300" 
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="{{ $role['icon'] }}" />
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $role['title'] }}</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">{{ $role['desc'] }}</p>
+                </div>
+
+                <!-- Button (Dynamic Text Color) -->
+                <a href="{{ $role['url'] }}" 
+                   class="inline-flex items-center font-bold text-sm transition-all duration-300 hover:opacity-80 text-[var(--primary)] decoration-transparent">
+                    Learn More 
+                    <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </div>
+        @endforeach
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-12">
+        <button id="view-more-services-btn" class="inline-flex items-center justify-center px-8 py-3 rounded-full border border-gray-200 text-[#111827] hover:bg-gray-50 text-sm font-bold transition-all duration-300 shadow-sm cursor-pointer">
             View More Services
         </button>
     </div>

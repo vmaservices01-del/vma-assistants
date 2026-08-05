@@ -51,35 +51,68 @@
             </div>
         </div>
 
-        <!-- Right Side -->
-        <div class="relative w-full max-w-[450px] mx-auto h-[450px] hidden lg:block">
+        <!-- Right Side Container (Menu-Safe & Purge-Proof Stacking) -->
+        <div class="relative w-full max-w-[450px] mx-auto h-[500px] hidden lg:block" 
+             x-data="{ 
+                active: 1, 
+                timer: null,
+                start() { 
+                    this.stop(); 
+                    this.timer = setInterval(() => { 
+                        this.active = this.active === 3 ? 1 : this.active + 1 
+                    }, 5000); 
+                },
+                stop() {
+                    clearInterval(this.timer);
+                }
+             }"
+             x-init="start()"
+             @mouseleave="start()"> 
             
-            <!-- Box 1: Top Right (Main Focus) -->
-            <div class="absolute right-0 top-0 w-64 bg-white rounded-3xl p-4 shadow-2xl border border-gray-100 z-30 animate-float">
-                <img src="/fatima.jpg" class="w-full h-40 object-cover rounded-2xl mb-3" alt="Person">
-                <h3 class="font-bold text-sm">Fatima A.</h3>
-                <p class="text-xs text-gray-400">Patient Care Assistant</p>
+            <!-- Box 1: Fatima (Active: 1) -->
+            <div class="absolute right-0 top-0 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:scale-110 hover:z-40"
+                 :class="active === 1 ? 'z-30 scale-105 shadow-blue-900/10' : 'z-10 scale-100 opacity-90'"
+                 @mouseenter="active = 1; stop()">
+                <div class="w-full h-40 bg-slate-50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden">
+                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover object-center" alt="Fatima">
+                </div>
+                <h3 class="font-bold text-slate-900">Fatima A.</h3>
+                <p class="text-xs text-slate-400 font-medium">Administrative Assistant</p>
             </div>
 
-            <!-- Box 2: Middle (Offset) -->
-            <div class="absolute right-12 top-20 w-64 bg-white rounded-3xl p-4 shadow-xl border border-gray-100 z-20 animate-float" style="animation-delay: 1s;">
-                <img src="/shezil.jpg" class="w-full h-40 object-cover rounded-2xl mb-3" alt="Person">
-                <h3 class="font-bold text-sm">Shezil R.</h3>
-                <p class="text-xs text-gray-400">Treatment Coordinator</p>
+            <!-- Box 2: Shezil (Active: 2) -->
+            <div class="absolute right-12 top-24 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:scale-110 hover:z-40"
+                 style="animation-delay: 1s;"
+                 :class="active === 2 ? 'z-30 scale-105 shadow-blue-900/10' : 'z-20 scale-100 opacity-90'"
+                 @mouseenter="active = 2; stop()">
+                <div class="w-full h-40 bg-slate-50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden">
+                     <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop" 
+                          class="w-full h-full object-cover object-center" 
+                          alt="Shezil">
+                </div>
+                <h3 class="font-bold text-slate-900">Shezil R.</h3>
+                <p class="text-xs text-slate-400 font-medium">Patient Care Coordinator</p>
             </div>
 
-            <!-- Box 3: Bottom (Deep offset) -->
-            <div class="absolute right-24 top-40 w-64 bg-white rounded-3xl p-4 shadow-lg border border-gray-100 z-10 animate-float" style="animation-delay: 2s;">
-                <img src="/arsalan.jpg" class="w-full h-40 object-cover rounded-2xl mb-3" alt="Person">
-                <h3 class="font-bold text-sm">Arsalan K.</h3>
-                <p class="text-xs text-gray-400">Insurance Auditor</p>
+            <!-- Box 3: Arsalan (Active: 3) -->
+            <div class="absolute right-24 top-48 w-64 bg-white rounded-[40px] p-8 shadow-2xl border border-gray-50 animate-float transition-all duration-500 cursor-pointer hover:scale-110 hover:z-40"
+                 style="animation-delay: 2s;"
+                 :class="active === 3 ? 'z-30 scale-105 shadow-blue-900/10' : 'z-20 scale-100 opacity-90'"
+                 @mouseenter="active = 3; stop()">
+                <div class="w-full h-40 bg-slate-50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden">
+                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover object-center" alt="Arsalan">
+                </div>
+                <h3 class="font-bold text-slate-900">Arsalan K.</h3>
+                <p class="text-xs text-slate-400 font-medium">Appointment Scheduler</p>
             </div>
             
-            <!-- Animated Badge -->
-            <div class="absolute right-0 bottom-20 bg-white border border-gray-100 px-5 py-3 rounded-full font-bold shadow-lg z-40 text-xs animate-pulse">
-                Matched in 7 days ⚡
+            <!-- Animated Badge (z-30 so it sits on top, but below hover elements) -->
+            <div class="absolute -right-4 bottom-12 bg-white border border-slate-50 px-6 py-3 rounded-2xl font-bold shadow-2xl z-30 text-sm text-[#7C3AED] animate-bounce">
+                Matched in 5 days <span class="text-amber-500">⚡</span>
             </div>
         </div>
+
+        
     </div>
 
     <!-- Arrow Button - Fixed Position at bottom center -->
