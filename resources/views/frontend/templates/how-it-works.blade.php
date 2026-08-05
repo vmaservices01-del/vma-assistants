@@ -369,11 +369,11 @@
          }"
          x-init="setInterval(() => next(), 8000)"> <!-- Auto rotates every 8 seconds -->
 
-        <!-- Main Card Frame (Using inline styles to guarantee heights on live servers) -->
-        <div class="bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-stretch" style="min-height: 460px;">
+        <!-- Main Card Frame (Converted Grid to Flexbox with Responsive Stacking) -->
+        <div class="bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden flex flex-col lg:flex-row items-stretch" style="min-height: 460px;">
             
-            <!-- Left Column: Background Team Photo -->
-            <div class="lg:col-span-6 relative overflow-hidden select-none" style="min-height: 280px;">
+            <!-- Left Column: Background Team Photo (Full width on mobile, 50% width on desktop) -->
+            <div class="w-full lg:w-1/2 relative overflow-hidden select-none" style="min-height: 280px;">
                 <template x-for="(slide, index) in slides" :key="index">
                     <div class="absolute inset-0 w-full h-full"
                          x-show="activeSlide === index"
@@ -392,8 +392,8 @@
                 <div class="absolute inset-0 bg-slate-900/5 pointer-events-none"></div>
             </div>
 
-            <!-- Right Column: Interactive Review Content -->
-            <div class="lg:col-span-6 flex flex-col justify-between p-8 sm:p-12 md:p-16 text-center relative bg-white">
+            <!-- Right Column: Interactive Review Content (Full width on mobile, 50% width on desktop) -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-between p-8 sm:p-12 md:p-16 text-center relative bg-white">
                 
                 <!-- SVG Quote Icon Backdrop -->
                 <div class="w-full flex justify-center mb-4 text-indigo-200 select-none">
@@ -402,7 +402,7 @@
                     </svg>
                 </div>
 
-                <!-- Active Review Quote/Author (Using safe min-height) -->
+                <!-- Active Review Quote/Author -->
                 <div class="relative flex-grow flex flex-col justify-center mb-8" style="min-height: 180px;">
                     <template x-for="(slide, index) in slides" :key="index">
                         <div class="w-full"

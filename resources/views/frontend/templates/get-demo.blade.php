@@ -3,7 +3,7 @@
 @section('content')   
 <!-- SECTION: MEDCARE INTEREST LANDING PAGE -->
 
-<!-- THEME SYSTEM CSS VARIABLES -->
+<!-- THEME SYSTEM CSS VARIABLES & RESPONSIVE ILLUSTRATION OVERRIDES -->
 <style>
     :root {
         /* Professional defaults directly matched to your screenshot */
@@ -28,43 +28,31 @@
     .bg-primary { background-color: var(--primary-color); }
     .bg-secondary { background-color: var(--secondary-color); }
     .border-primary { border-color: var(--primary-color); }
-</style>
 
-<!-- THEME SYSTEM CSS VARIABLES -->
-<style>
-    :root {
-        /* Professional defaults directly matched to your screenshot */
-        --primary: {{ $page->primary_color ?? '#6366f1' }}; /* Purple/Indigo accent */
-        --secondary: {{ $page->secondary_color ?? '#0f172a' }}; /* Deep slate for headings */
-        --accent: {{ $page->primary_color ?? '#76b729' }}; /* Green CTA button */
-        
-        --primary-color: var(--primary);
-        --secondary-color: var(--secondary);           
-        --accent-color: var(--accent);
-        
-        /* Layout Configuration Variables */
-        --theme-bg: #EAE4FC; /* Light lavender background matching your screenshot */
-        --accent-hover: color-mix(in srgb, var(--accent-color) 85%, #000000);
-        --border-color: #cbd5e1; /* Soft slate gray border for inputs */
-        --input-text: #1e293b;
-        --card-bg: #ffffff;
+    /* Purge-Safe Responsive Doctor Container */
+    .doctor-container {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -1rem;
     }
-
-    /* Standard utility classes if required by layout engine */
-    .text-primary { color: var(--primary-color); }
-    .bg-primary { background-color: var(--primary-color); }
-    .bg-secondary { background-color: var(--secondary-color); }
-    .border-primary { border-color: var(--primary-color); }
-</style>
-
-<!-- SECTION: MEDCARE COHESIVE ONE-PAGE LANDING -->
-<section class="relative w-full min-h-screen flex items-end justify-center pt-12 md:pt-16 pb-0 px-4 sm:px-6 lg:px-12 overflow-hidden font-sans" style="background-color: var(--theme-bg);">
     
-    <!-- Unified Flexbox Container (Replaced Grid with Flex) -->
+    @media (min-width: 1024px) {
+        .doctor-container {
+            width: 115%;
+            margin-left: -10%;
+            margin-bottom: -3rem;
+        }
+    }
+</style>
+
+<!-- SECTION: MEDCARE COHESIVE ONE-PAGE LANDING (Fully Responsive Layout) -->
+<section class="relative w-full min-h-screen flex items-center justify-center pt-24 md:pt-28 pb-12 lg:pb-0 px-4 sm:px-6 lg:px-12 overflow-hidden font-sans" style="background-color: var(--theme-bg);">
+    
+    <!-- Unified Flexbox Container (Responsive flex-direction) -->
     <div class="max-w-7xl w-full flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch relative z-10">
         
-        <!-- Left Column: Copy & Pinned Doctor Illustration (50% Width on Large Screens) -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-between h-full space-y-12 self-stretch">
+        <!-- Left Column: Copy & Pinned Doctor Illustration (Stacked on Mobile, Side-by-Side on Desktop) -->
+        <div class="w-full lg:w-1/2 flex flex-col justify-between h-full space-y-8 lg:space-y-12 self-stretch">
             
             <!-- Headline and Paragraph -->
             <div class="max-w-xl text-left">
@@ -77,8 +65,8 @@
                 </p>
             </div>
 
-            <!-- Grounded Doctor Image (Fixed Negative Margins and Viewport Heights) -->
-            <div class="relative w-full mx-auto lg:mx-0 flex items-end justify-center select-none mt-auto transition-all duration-300" style="width: 115%; margin-left: -10%; margin-bottom: -3rem;">
+            <!-- Grounded Doctor Image (Responsive Sizing & Alignment) -->
+            <div class="doctor-container relative mx-auto lg:mx-0 flex items-end justify-center select-none mt-auto transition-all duration-300">
                 <img src="{{ asset('storage/media/request-demo2-banner.webp') }}" 
                     alt="MedCare Doctor" 
                     class="relative z-10 w-full h-auto object-contain object-bottom block drop-shadow-2xl align-bottom" 
@@ -87,7 +75,7 @@
 
         </div>
 
-        <!-- Right Column: Interactive Leads Form Card (50% Width on Large Screens) -->
+        <!-- Right Column: Interactive Leads Form Card -->
         <div class="w-full lg:w-1/2 flex items-center justify-center lg:justify-end pb-12 lg:pb-16">
             <div class="w-full max-w-xl rounded-3xl shadow-2xl p-6 sm:p-10 transition-all duration-300" style="background-color: var(--card-bg);">
                 
