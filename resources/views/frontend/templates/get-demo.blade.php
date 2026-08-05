@@ -46,10 +46,10 @@
 </style>
 
 <!-- SECTION: MEDCARE COHESIVE ONE-PAGE LANDING (Fully Responsive Layout) -->
-<section class="relative w-full min-h-screen flex items-center justify-center pt-24 md:pt-28 pb-12 lg:pb-0 px-4 sm:px-6 lg:px-12 overflow-hidden font-sans" style="background-color: var(--theme-bg);">
+<section class="relative w-full min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-12 overflow-hidden font-sans" style="background-color: var(--theme-bg);">
     
     <!-- Unified Flexbox Container (Responsive flex-direction) -->
-    <div class="max-w-7xl w-full flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch relative z-10">
+    <div class="max-w-6xl w-full flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch relative z-10">
         
         <!-- Left Column: Copy & Pinned Doctor Illustration (Stacked on Mobile, Side-by-Side on Desktop) -->
         <div class="w-full lg:w-1/2 flex flex-col justify-between h-full space-y-8 lg:space-y-12 self-stretch">
