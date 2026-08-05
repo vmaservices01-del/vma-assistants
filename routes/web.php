@@ -66,8 +66,8 @@ require __DIR__.'/auth.php';
 Route::get('/enter-password', [FrontendPasswordController::class, 'showForm'])->name('frontend.password.form');
 Route::post('/enter-password', [FrontendPasswordController::class, 'verify'])->name('frontend.password.verify');
 
-// 2. Protect Frontend Routes with the Middleware Group
-Route::middleware(['frontend.password'])->group(function () {
+// // 2. Protect Frontend Routes with the Middleware Group
+// Route::middleware(['frontend.password'])->group(function () {
 
 // Redirect /home to /
 Route::permanentRedirect('/home', '/');
@@ -86,5 +86,5 @@ Route::get('/{slug}', [PageController::class, 'show'])->name('page.show');
 
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
-});
+// });
 

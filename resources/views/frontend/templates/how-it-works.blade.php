@@ -321,15 +321,14 @@
 </section>
 
 <!-- TESTIMONIALS SECTION -->
-<section class="relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-slate-50/50 overflow-hidden font-sans">
+<section class="relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 overflow-hidden font-sans">
     
     <!-- Centered Header Block -->
     <div class="max-w-4xl mx-auto text-center mb-12 relative z-10">
-        <span class="text-[11px] sm:text-xs font-bold tracking-widest uppercase mb-2 block text-primary">
+        <span class="text-xs font-bold tracking-widest uppercase mb-2 block text-indigo-600">
             Testimonials
         </span>
-        <!-- Title with "Cust" highlight block matching your screenshot exactly -->
-        <h2 class="text-3xl sm:text-4xl md:text-[38px] font-extrabold tracking-tight leading-none mb-6 text-black flex items-center justify-center">
+        <h2 class="text-3xl sm:text-4xl md:text-4xl font-extrabold tracking-tight leading-none mb-6 text-black flex items-center justify-center">
             Customers Reviews
         </h2>
     </div>
@@ -370,11 +369,11 @@
          }"
          x-init="setInterval(() => next(), 8000)"> <!-- Auto rotates every 8 seconds -->
 
-        <!-- Main Card Frame -->
-        <div class="bg-white rounded-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-slate-100 overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-[460px] items-stretch">
+        <!-- Main Card Frame (Using inline styles to guarantee heights on live servers) -->
+        <div class="bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-stretch" style="min-height: 460px;">
             
-            <!-- Left Column: Background Team Photo (Transitions dynamically) -->
-            <div class="lg:col-span-6 relative min-h-[280px] lg:min-h-full overflow-hidden select-none">
+            <!-- Left Column: Background Team Photo -->
+            <div class="lg:col-span-6 relative overflow-hidden select-none" style="min-height: 280px;">
                 <template x-for="(slide, index) in slides" :key="index">
                     <div class="absolute inset-0 w-full h-full"
                          x-show="activeSlide === index"
@@ -397,14 +396,14 @@
             <div class="lg:col-span-6 flex flex-col justify-between p-8 sm:p-12 md:p-16 text-center relative bg-white">
                 
                 <!-- SVG Quote Icon Backdrop -->
-                <div class="w-full flex justify-center mb-4 text-primary/15 select-none">
+                <div class="w-full flex justify-center mb-4 text-indigo-200 select-none">
                     <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.748-9.762 9-10.914l.983 1.961c-3.147.743-4.833 2.583-5.101 5.518H24v10.826H14.017zM0 13.609c0-5.704 3.748-9.762 9-10.914l.983 1.961c-3.147.743-4.833 2.583-5.101 5.518H10v10.826H0V13.609z"/>
                     </svg>
                 </div>
 
-                <!-- Active Review Quote/Author (Transitions dynamically) -->
-                <div class="relative flex-grow flex flex-col justify-center mb-8 min-h-[180px]">
+                <!-- Active Review Quote/Author (Using safe min-height) -->
+                <div class="relative flex-grow flex flex-col justify-center mb-8" style="min-height: 180px;">
                     <template x-for="(slide, index) in slides" :key="index">
                         <div class="w-full"
                              x-show="activeSlide === index"
@@ -416,7 +415,7 @@
                              x-transition:leave-end="opacity-0 -translate-x-8">
                             
                             <!-- Testimonial Copy -->
-                            <p class="font-serif italic text-slate-600 text-[14.5px] sm:text-base leading-relaxed mb-6 max-w-md mx-auto">
+                            <p class="font-serif italic text-slate-600 text-sm md:text-base leading-relaxed mb-6 max-w-md mx-auto">
                                 "<span x-text="slide.quote"></span>"
                             </p>
 
@@ -428,19 +427,19 @@
                                      class="w-11 h-11 rounded-full object-cover shadow-sm mb-3 select-none" />
                                 
                                 <h4 class="text-sm sm:text-base font-extrabold text-slate-900 leading-tight mb-1" x-text="slide.author"></h4>
-                                <p class="text-xs sm:text-[13px] text-slate-400 font-medium" x-text="slide.role"></p>
+                                <p class="text-xs sm:text-sm text-slate-400 font-medium" x-text="slide.role"></p>
                             </div>
 
                         </div>
                     </template>
                 </div>
 
-                <!-- Slider Navigation Pill/Dot Indicators -->
+                <!-- Slider Navigation Pill/Dot Indicators (Purge-Safe colors) -->
                 <div class="flex items-center justify-center gap-2 select-none pt-2">
                     <template x-for="(slide, index) in slides" :key="index">
                         <button @click="activeSlide = index"
-                                class="h-2.5 rounded-full transition-all duration-300 outline-none focus:outline-none"
-                                :class="activeSlide === index ? 'w-8 bg-primary' : 'w-2.5 bg-[#00a896]/30 hover:bg-[#00a896]/50'"></button>
+                                class="h-2 transition-all duration-300 outline-none focus:outline-none rounded-full"
+                                :class="activeSlide === index ? 'w-8 bg-indigo-600' : 'w-2 bg-indigo-200 hover:bg-indigo-300'"></button>
                     </template>
                 </div>
 
